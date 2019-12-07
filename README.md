@@ -1,2 +1,2 @@
-# vskbellala.github.io
+# bellala.org
 My personal website (wip)
