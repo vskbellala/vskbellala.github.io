@@ -12,3 +12,12 @@ main {
 .icons-social a svg path{
 	fill: #FAFAFA;
 }
+#color:link {
+	color:#FAFAFA ;
+}
+#color:visited {
+	color:#FAFAFA ;
+}
+#color:hover {
+	color:#FFFFFF ;
+}
