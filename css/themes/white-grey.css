@@ -13,12 +13,12 @@ main {
 	fill: #4B5658;
 }
 
-#color:link {
-	color:#4B5658 ;
-}
-#color:visited {
-	color:#4B5658 ;
+#color:link, #color:visited {
+	text-decoration: none;
+	color:#4B5658;
+	font-weight: bold;
 }
 #color:hover {
 	color:#000000 ;
+	text-decoration: none;
 }
