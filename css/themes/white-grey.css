@@ -1,6 +1,6 @@
 /* Theme */
 
-main {
+main, article{
 	background: #EDEDED;
 	color: #4B5658;
 }
