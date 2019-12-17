@@ -6,17 +6,17 @@ I am not a coder so my knowledge of html/css concepts as well as Github is quite
 ![Screenshot](https://i.ibb.co/DpLt9cr/asdfjasdfasdfasfdsfaiol-hagkla.png)
 
 ## Have done 
-- Main landing page (name, description, 
+- Main landing page (name, description, links, etc.)
 - a bunch of theme modifications (hover effects, font changes, etc.)
 - about
 - contact
+- cv outline (note: still have to add the actual cv)
+- 1 page (finally figured out the "#" style links)
 
 ## Todo
 - Modify other themes in the template (missing hover effects, etc.)
-- Add more links
-- CV
-- 1 pager?
-- Stop using fontawesome's icons?
+- Add more links. I am not sure what to add.
+- Stop using fontawesome's icons? (Note: I have no clue for an alternative)
 
 ## License
 
