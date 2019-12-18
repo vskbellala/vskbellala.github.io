@@ -10,13 +10,20 @@ I am not a coder so my knowledge of html/css concepts as well as Github is quite
 - a bunch of theme modifications (hover effects, font changes, etc.)
 - about
 - contact
-- cv outline (note: still have to add the actual cv)
-- 1 page (finally figured out the "#" style links)
+- cv outline
+  - Note: still have to add the actual cv
+- 1 page ("#" links)
+- minified html and own css
+  - fonts and icons are not minified. looking for solution
 
 ## Todo
-- Modify other themes in the template (missing hover effects, etc.)
+- Modify other themes in the template
+  - currently missing extra css effects and colors
 - Add more links. I am not sure what to add.
-- Stop using fontawesome's icons? (Note: I have no clue for an alternative)
+- Stop using fontawesome's icons?
+  - Note: I have no clue for an alternative
+  - using text only could work...
+- clean up code/directory (in progress)
 
 ## License
 
