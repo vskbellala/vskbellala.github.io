@@ -1,0 +1,45 @@
+/* Theme */
+
+main{
+	background: #485564;
+	color: #FAFAFA;
+}
+
+main > .icons-social a {
+	color: #FAFAFA;
+}
+
+main > .icons-social a svg path{
+	fill: #FAFAFA;
+}
+#mcolor:link, #mcolor:visited {
+	text-decoration: none;
+	color:#FAFAFA;
+	font-weight: bold;
+}
+#mcolor:hover {
+	color:#aeaeae ;
+	text-decoration: none;
+}
+article{
+	background: #EDEDED;
+	color: #4B5658;
+}
+
+article > .icons-social a {
+	color: #4B5658;
+}
+
+article > .icons-social a svg path{
+	fill: #4B5658;
+}
+
+#color:link, #color:visited {
+	text-decoration: none;
+	color:#4B5658;
+	font-weight: bold;
+}
+#color:hover {
+	color:#000000 ;
+	text-decoration: none;
+}
