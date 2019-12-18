@@ -2,6 +2,7 @@
 
 html {
 	font-family: 'Fira Sans', sans-serif;
+	font-display: swap;
 }
 
 @media (min-width: 576px) {
@@ -52,12 +53,10 @@ article {
 }
 
 main > .intro {
-	font-family: 'Fira Sans', sans-serif;
 	font-size: 3.75rem;
 	font-weight: 600;
 }
 main,article > .subhead {
-	font-family: 'Fira Sans', sans-serif;
 	font-size: 2.5rem;
 	font-weight: 600;
 }
