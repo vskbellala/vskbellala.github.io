@@ -1,6 +1,6 @@
-/* Theme */
+/* Theme 485564 FAFAFA*/
 
-main {
+main{
 	background: #485564;
 	color: #FAFAFA;
 }
@@ -12,12 +12,12 @@ main {
 .icons-social a svg path{
 	fill: #FAFAFA;
 }
-#color:link {
-	color:#FAFAFA ;
+#mcolor:link, #mcolor:visited {
+	text-decoration: none;
+	color:#FAFAFA;
+	font-weight: bold;
 }
-#color:visited {
-	color:#FAFAFA ;
-}
-#color:hover {
-	color:#FFFFFF ;
+#mcolor:hover {
+	color:#aeaeae ;
+	text-decoration: none;
 }

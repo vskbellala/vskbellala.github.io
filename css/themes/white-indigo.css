@@ -1,6 +1,6 @@
 /* Theme */
 
-main {
+main, article{
 	background: #E8EAF6;
 	color: #303F9F;
 }
@@ -11,4 +11,13 @@ main {
 
 .icons-social a svg path{
 	fill: #303F9F;
+}
+#color:link, #color:visited {
+	text-decoration: none;
+	color:#303F9F;
+	font-weight: bold;
+}
+#color:hover {
+	color:#0000ff;
+	text-decoration: none;
 }

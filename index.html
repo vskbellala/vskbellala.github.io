@@ -8,7 +8,16 @@
 	<title>bellala</title>
 
 	<link rel="icon" href="favicon.ico" type="image/png" />
-
+	<!--
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+	<script>
+		$(function() {
+   			var items = ['css/themes/white-grey.css', 'css/themes/white-indigo.css','css/themes/white-red.css'];
+   			var item = items[Math.floor(Math.random()*items.length)];
+   			$("head").append("<link rel='stylesheet' href='" + item + "' type='text/css' media='screen'>");
+		});
+	</script>
+	-->
 	<link href="https://code.cdn.mozilla.net/fonts/fira.css" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
@@ -16,7 +25,7 @@
 	<!--<link rel="stylesheet" href="css/themes/indigo-white.css"> -->
 	<!-- <link rel="stylesheet" href="css/themes/green-white.css"> -->
 	<!-- <link rel="stylesheet" href="css/themes/red-white.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/grey-white.css"> -->
+	 <link rel="stylesheet" href="css/themes/grey-white.css"> 
 	<!-- <link rel="stylesheet" href="css/themes/white-indigo.css"> -->
 	<!-- <link rel="stylesheet" href="css/themes/white-blue.css"> -->
 	<link rel="stylesheet" href="css/themes/white-grey.css"> 
@@ -26,14 +35,14 @@
 <body>
 	<main>
 		<div class="intro" style=>Hi. I'm Venkatsai Bellala.</div>
-		<div class="tagline">Student at <a id="color" target="_blank" href="http://mvhs.ipsd.org">MVHS</a> </div>
+		<div class="tagline">Student at <a id="mcolor" target="_blank" href="http://mvhs.ipsd.org">MVHS</a> </div>
 		<!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
 		<div class="icons-social">
-			<a title="About" target="_self" href="#about" id="color"><i class="far fa-user"></i></a>
-			<a title="Contact" target="_self" href="#contact" id="color"><i class="fas fa-at"></i></a>
-			<a title="CV" target="_self" href="#cv" id="color"><i class="far fa-file-alt"></i></a>
-			<i title="Portfolio" class="far fa-folder-open" id="color"></i>
-			<a title="Github" target="_blank" href="https://github.com/vskbellala" id="color"><i class="fab fa-github"></i></a>
+			<a title="About" target="_self" href="#about" id="mcolor"><i class="far fa-user"></i></a>
+			<a title="Contact" target="_self" href="#contact" id="mcolor"><i class="fas fa-at"></i></a>
+			<a title="CV" target="_self" href="#cv" id="mcolor"><i class="far fa-file-alt"></i></a>
+			<i title="Portfolio" class="far fa-folder-open" id="mcolor"></i>
+			<a title="Github" target="_blank" href="https://github.com/vskbellala" id="mcolor"><i class="fab fa-github"></i></a>
 		</div>
 	</main>
 	<article id="about">
@@ -44,7 +53,7 @@
 			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Of course, as with all projects, this website is constantly evolving and growing, so be sure check back every once in a while.</p>
 		</div>
 		<div class="icons-social">
-			<a target="_self" href="" id="color"><i class="fas fa-angle-up"></i></a>
+			<a target="_self" href="#" id="color"><i class="fas fa-angle-up"></i></a>
     	</div>
 	</article>
 	<article id="contact">
@@ -55,7 +64,7 @@
 			<p style="font-size: .75rem">This is an email!</p>
 		</div>
 		<div class="icons-social">
-			<a target="_self" href="" id="color"><i class="fas fa-angle-up"></i></a>
+			<a target="_self" href="#" id="color"><i class="fas fa-angle-up"></i></a>
     	</div>
 	</article>
 	<article id="cv">
@@ -64,11 +73,11 @@
 			<p>Want to know what I have done so far? Check out my resume, viewable online and available to download as a pdf, if you so choose.</p>
 		</div>
 		<div class="icons-social">
-			<i id="color" title="View Online" class="far fa-id-card"></i>
+			<i id="color" title="View Online" class="fas fa-desktop"></i>
 			<i id="color" title="View PDF" class="far fa-file-pdf"></i>
 		</div>
 		<div class="icons-social">
-			<a target="_self" href="" id="color"><i class="fas fa-angle-up"></i></a>
+			<a target="_self" href="#" id="color"><i class="fas fa-angle-up"></i></a>
     	</div>
 	</article>
 </body>
