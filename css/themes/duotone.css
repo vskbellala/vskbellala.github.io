@@ -45,3 +45,23 @@ article a {
 	color:#000000 ;
 	text-decoration: none;
 }
+.mbut {
+ background-color: #485564;
+ color: #FAFAFA;
+ border: 2px solid #FAFAFA;
+}
+
+.mbut:hover {
+  background-color: #FAFAFA;
+  color: #485564;
+}
+.abut {
+ background-color: #EDEDED;
+ color: #4B5658;
+ border: 2px solid #4B5658;
+}
+
+.abut:hover {
+  background-color: #4B5658;
+  color: #EDEDED;
+}
