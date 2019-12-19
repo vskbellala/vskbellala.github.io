@@ -6,44 +6,21 @@ main{
 	background: #485564;
 	color: #FAFAFA;
 }
-
-main > .icons-social a {
-	color: #FAFAFA;
-}
-
-main > .icons-social a svg path{
-	fill: #FAFAFA;
-}
 main a {
-	text-decoration: none;
 	color:#FAFAFA;
-	font-weight: bold;
 }
 main a:hover,#mcolor:hover {
 	color:#aeaeae ;
-	text-decoration: none;
 }
 article{
 	background: #EDEDED;
 	color: #4B5658;
 }
-
-article > .icons-social a {
-	color: #4B5658;
-}
-
-article > .icons-social a svg path{
-	fill: #4B5658;
-}
-
-article a {
-	text-decoration: none;
+article a {	
 	color:#4B5658;
-	font-weight: 500;
 }
 #color:hover, article a:hover {
 	color:#000000 ;
-	text-decoration: none;
 }
 .mbut {
  background-color: #485564;

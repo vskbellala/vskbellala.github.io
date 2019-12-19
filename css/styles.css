@@ -1,5 +1,11 @@
 /* Typography */
-
+@font-face {
+	font-family: 'Fira Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../assets/fonts/fira-sans-v10-latin-regular.eot');
+	src: local('Fira Sans Regular'), local('FiraSans-Regular'), url('../assets/fonts/fira-sans-v10-latin-regular.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/fira-sans-v10-latin-regular.woff2') format('woff2'), url('../assets/fonts/fira-sans-v10-latin-regular.woff') format('woff'), url('../assets/fonts/fira-sans-v10-latin-regular.ttf') format('truetype'), url('../assets/fonts/fira-sans-v10-latin-regular.svg#FiraSans') format('svg');
+}
 html {
 	font-family: 'Fira Sans', sans-serif;
 }
@@ -85,31 +91,31 @@ article {
 
 main > .intro {
 	font-size: 3.75rem;
-	font-weight: 600;
+	font-weight: bold;
 }
 /*main,article > .subhead, */
 h1 {
 	font-size: 2.5rem;
 	margin: 1.5rem 0;
-	font-weight: 600;
+	font-weight: bold;
 	text-align: left;
 }
 h2 {
 	font-size: 2rem;
 	margin: 1.5rem 0;
-	font-weight: 550;
+	font-weight: bold;
 	text-align: left;
 }
 h3 {
 	font-size: 1.5rem;
 	margin: 1.5rem 0;
-	font-weight: 500;
+	font-weight: normal;
 	text-align: left;
 }
 main > .tagline {
 	font-size: 1.5rem;
 	margin: 1.5rem 0;
-	font-weight: 300;
+	font-weight: normal;
 }
 /*article > .links, article > .bodytext*/
 p {
@@ -117,4 +123,8 @@ p {
 	text-indent: 25px;
 	font-weight: normal;
 	text-align: left;
+}
+main a, article a {
+	text-decoration: none;
+	font-weight: bold;
 }
