@@ -1,5 +1,7 @@
 /* Theme */
-
+html{
+	background:#EDEDED;
+}
 main{
 	background: #485564;
 	color: #FAFAFA;
@@ -12,12 +14,12 @@ main > .icons-social a {
 main > .icons-social a svg path{
 	fill: #FAFAFA;
 }
-#mcolor:link, #mcolor:visited {
+main a {
 	text-decoration: none;
 	color:#FAFAFA;
 	font-weight: bold;
 }
-#mcolor:hover {
+main a:hover,#mcolor:hover {
 	color:#aeaeae ;
 	text-decoration: none;
 }
@@ -34,12 +36,12 @@ article > .icons-social a svg path{
 	fill: #4B5658;
 }
 
-#color:link, #color:visited {
+article a {
 	text-decoration: none;
 	color:#4B5658;
-	font-weight: bold;
+	font-weight: 500;
 }
-#color:hover {
+#color:hover, article a:hover {
 	color:#000000 ;
 	text-decoration: none;
 }

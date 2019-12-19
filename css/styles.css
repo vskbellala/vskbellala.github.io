@@ -8,11 +8,18 @@ html {
 	html {
 		font-size: 14px;
 	}
+	article{
+		max-width: 75vw;
+	}
+
 }
 
 @media (min-width: 768px) {
 	html {
 		font-size: 16px;
+	}
+	article{
+		max-width: 50vw;
 	}
 }
 
@@ -46,6 +53,7 @@ article {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	margin: auto;
 	justify-content: center;
 	padding: 0 30px;
 	text-align: center;
@@ -55,19 +63,36 @@ main > .intro {
 	font-size: 3.75rem;
 	font-weight: 600;
 }
-main,article > .subhead {
+/*main,article > .subhead, */
+h1 {
 	font-size: 2.5rem;
+	margin: 1.5rem 0;
 	font-weight: 600;
+	text-align: left;
+}
+h2 {
+	font-size: 2rem;
+	margin: 1.5rem 0;
+	font-weight: 550;
+	text-align: left;
+}
+h3 {
+	font-size: 1.5rem;
+	margin: 1.5rem 0;
+	font-weight: 500;
+	text-align: left;
 }
 main > .tagline {
 	font-size: 1.5rem;
 	margin: 1.5rem 0;
 	font-weight: 300;
 }
-article > .links, article > .bodytext{
+/*article > .links, article > .bodytext*/
+p {
 	font-size: 1.25rem;
-	margin: 1.5rem 0;
-	font-weight: 200;
+	text-indent: 25px;
+	font-weight: normal;
+	text-align: left;
 }
 .icons-social i {
 	padding: 10px;
