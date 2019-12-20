@@ -5,6 +5,7 @@
 	font-weight: 400;
 	src: url('../assets/fonts/fira-sans-v10-latin-regular.eot');
 	src: local('Fira Sans Regular'), local('FiraSans-Regular'), url('../assets/fonts/fira-sans-v10-latin-regular.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/fira-sans-v10-latin-regular.woff2') format('woff2'), url('../assets/fonts/fira-sans-v10-latin-regular.woff') format('woff'), url('../assets/fonts/fira-sans-v10-latin-regular.ttf') format('truetype'), url('../assets/fonts/fira-sans-v10-latin-regular.svg#FiraSans') format('svg');
+	font-display: swap;
 }
 html {
 	font-family: 'Fira Sans', sans-serif;
