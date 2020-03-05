@@ -1,0 +1,14 @@
+/* Theme */
+html{
+	background:#EDEDED;
+}
+main{
+	background: #EDEDED;
+	color: #4B5658;
+}
+main a {
+	color:#4B5658;
+}
+main a:hover,#mcolor:hover {
+	color:#000000 ;
+}

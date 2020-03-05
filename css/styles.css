@@ -15,7 +15,7 @@ html {
 	html {
 		font-size: 14px;
 	}
-	article{
+	main{
 		max-width: 75vw;
 	}
 
@@ -25,7 +25,7 @@ html {
 	html {
 		font-size: 16px;
 	}
-	article{
+	main{
 		max-width: 50vw;
 	}
 }
@@ -41,93 +41,39 @@ html {
 		font-size: 20px;
 	}
 }
-
-.more-links {
-	padding: 10px;
-}
-
-.button {
-	background-color: white;
-  	color: black;
-  	border-radius: 8px;
-  	border: 2px solid black;
-  	padding: 12px 28px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	/*max-width: 25vw;*/
-	font-size: 1.25rem;
-	font-weight: normal;
-	margin: 4px 2px;
-	-webkit-transition-duration: 0.2s; /* Safari */
-	transition-duration: 0.2s;
-	cursor: pointer;
-}
-
-.nav-icon {
-	font-size: 2.5rem;
-	font-weight:normal;
-	padding: 10px;
-}
-
 /* Custom Styles */
 
-main,article {
+main {
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+	max-height: 100vh;
 	justify-content: center;
-	padding: 0 30px;
+	padding: 7%;
 	text-align: center;
 	margin: auto;
 }
-/*
-article {
+div.links{
+	padding: 7%;
 	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	margin: auto;
-	justify-content: center;
-	padding: 0 30px;
-	text-align: center;
+	justify-content: space-between;
 }
-*/
-main > .intro {
+div.links a {
+	font-size: 1.75rem;
+
+}
+h1 {
 	font-size: 3.75rem;
 	font-weight: bold;
-}
-/*main,article > .subhead, */
-h1 {
-	font-size: 2.5rem;
-	margin: 1.5rem 0;
-	font-weight: bold;
 	text-align: left;
 }
-h2 {
-	font-size: 2rem;
-	margin: 1.5rem 0;
-	font-weight: bold;
-	text-align: left;
-}
-h3 {
-	font-size: 1.5rem;
-	margin: 1.5rem 0;
-	font-weight: normal;
-	text-align: left;
-}
-main > .tagline {
-	font-size: 1.5rem;
-	margin: 1.5rem 0;
-	font-weight: normal;
-}
-/*article > .links, article > .bodytext*/
-p {
+p, li {
 	font-size: 1.25rem;
-	text-indent: 25px;
+	/*text-indent: 25px;*/
 	font-weight: normal;
 	text-align: left;
 }
-main a, article a {
-	text-decoration: none;
-	font-weight: bold;
+a{
+	font-size: 1.25rem;
+	text-decoration: underline;
+	text-decoration-style: double;
 }
