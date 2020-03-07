@@ -46,16 +46,19 @@ html {
 main {
 	display: flex;
 	flex-direction: column;
-	max-height: 100vh;
 	justify-content: center;
 	padding: 7%;
-	text-align: center;
 	margin: auto;
+	font-size: 1.25rem;
+	font-weight: normal;
+	text-align: left;
+}
+div{
+	padding: 7% 0%;
 }
 div.links{
-	padding: 7%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 div.links a {
 	font-size: 1.75rem;
@@ -66,14 +69,48 @@ h1 {
 	font-weight: bold;
 	text-align: left;
 }
-p, li {
-	font-size: 1.25rem;
-	/*text-indent: 25px;*/
-	font-weight: normal;
+h2{
+	font-size: 1.75rem;
+	font-weight: bold;
 	text-align: left;
 }
+h3{
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+}
+p{
+	text-indent: 25px;
+}
+ul{
+	list-style-type: initial;
+	list-style-position: inside;
+}
 a{
-	font-size: 1.25rem;
+	
 	text-decoration: underline;
 	text-decoration-style: double;
+}
+img {
+	border: 1px solid #4B5658;
+	border-radius: 20px;
+	display: block;
+	margin: 2% auto;
+	max-width: 100%;
+	height: auto;
+}
+
+/* Colors */
+html{
+	background:#EDEDED;
+}
+main{
+	background: #EDEDED;
+	color: #4B5658;
+}
+main a {
+	color:#4B5658;
+}
+main a:hover,#mcolor:hover {
+	color:#000000 ;
 }
