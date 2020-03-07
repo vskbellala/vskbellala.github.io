@@ -1,7 +1,7 @@
 # bellala.org
 My personal website (wip)  
-Very minimal. Original template was modified to have subpages and to customize colors and effects.  
-It's basically taken a whole new level of its own.  
+Very minimal.  
+started with a template but thats been basically completely changed
 I am not a coder so my knowledge of html/css concepts as well as Github is quite limited, unfortunately.  
 100% Mobile and Desktop on [Google's PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fbellala.org).
 
