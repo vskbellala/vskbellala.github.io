@@ -22,8 +22,3 @@ Focus on usability and minimalism.
 - Add CV (link already exists)
 - Add more links. I am not sure what to add.
 - clean up code/directory (in progress)
-
-## License
-
-MIT © Dinesh Pandiyan  
-https://github.com/flexdinesh/dev-landing-page
