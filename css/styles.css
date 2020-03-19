@@ -8,24 +8,19 @@
 	font-display: swap;
 }
 :root {
-	--light: #eeeeee;
-	--lightA: #00ADB5;
-	--mainc: #3596B9; 
-	--dark: #393e46;
-	--darkER: #222831 ; 
-	--darkEST: #101114;
+	--white: #FFF;
+	--nord2: #434c5e;
+	--nord6: #eceff4;
+	--nord9: #81a1c1;
+	--nord10: #5e81ac;
 }
 html {
 	font-family: 'Fira Sans', sans-serif;
-	background:var(--light);
+	background:var(--white);
 }
-
 @media (min-width: 576px) {
 	html {
 		font-size: 14px;
-	}
-	main{
-		max-width: 75vw;
 	}
 
 }
@@ -33,9 +28,6 @@ html {
 @media (min-width: 768px) {
 	html {
 		font-size: 16px;
-	}
-	main{
-		max-width: 50vw;
 	}
 }
 
@@ -49,6 +41,9 @@ html {
 	html {
 		font-size: 20px;
 	}
+	main{
+		max-width: 75vw;	
+	}
 }
 /* Custom Styles */
 
@@ -61,51 +56,75 @@ main {
 	font-size: 1.25rem;
 	font-weight: normal;
 	text-align: left;
-	color: var(--darkER);
+	color: var(--nord2);
+	align-items: center;
 }
-a:link,mark{
+a{
+	text-decoration: underline;
+	color:var(--nord9);
+}
+mark{
 	background: none;
-	color:var(--mainc);
-}
-a:visited {
-	color:var(--dark);
+	color:var(--nord10);
 }
 a:hover, a:active, a:focus{
 	text-decoration: none;
 }	
 div{
-	padding: 7% 0%;
+	padding: 3% 0%;
+	align-items: center;
+}
+div.port{
+	display: flex;
+	flex-direction: row;	
 }
 div.links{
 	display: flex;
 	justify-content: space-around;
 	font-size: 1.75rem;
+	padding: 2% 0%;
+	flex-wrap: wrap;
 }
 h1 {
 	font-size: 3.75rem;
+	padding-bottom: 2%;
+	text-align: center;
 }
 h2{
 	font-size: 1.75rem;
+	padding-bottom: 2%;
 }
-a.nav{
-	font-size: 1.5rem;
+a.nav, a.nav:visited{
 	text-align: center;
 	text-decoration: none;
-	font-weight: bold;
-	color: var(--mainc);
+	padding: 1rem 1.5rem;
+	border-radius: 10px;
+  	color: var(--nord9);
+}
+a.nav:hover,a.nav:focus{
+  	background: var(--nord6);
 }
 p{
 	text-indent: 25px;
+	padding-bottom: 1%;
 }
 ul{
 	list-style-type: initial;
 	list-style-position: inside;
+	padding-bottom: 1%;
 }
 img {
-	border: 1px solid var(--mainc);
+	border: 3px solid var(--nord10);
 	border-radius: 20px;
 	display: block;
-	margin: 2% auto;
+	margin: 3%;
+	min-width: 40%;
 	max-width: 100%;
 	height: auto;
+}
+@media (max-width: 576px) {
+	div.port, div{
+		flex-direction: column;
+	}
+
 }
