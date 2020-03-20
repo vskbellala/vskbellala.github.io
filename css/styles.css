@@ -8,19 +8,53 @@
 	font-display: swap;
 }
 :root {
+	/* Colors - Nord */
 	--white: #FFF;
-	--nord2: #434c5e;
-	--nord6: #eceff4;
-	--nord9: #81a1c1;
-	--nord10: #5e81ac;
+    --nord0: #2e3440;
+    --nord1: #3b4252;
+    --nord2: #434c5e;
+    --nord3: #4c566a;
+    --nord4: #d8dee9;
+    --nord5: #e5e9f0;
+    --nord6: #eceff4;
+    --nord7: #8fbcbb;
+    --nord8: #88c0d0;
+    --nord9: #81a1c1;
+    --nord10: #5e81ac;
+    --nord11: #bf616a;
+    --nord12: #d08770;
+    --nord13: #ebcb8b;
+    --nord14: #a3be8c;
+    --nord15: #b48ead;
+
+    /* defaults */
+    --color-bg: var(--white);
+    --color-txt: var(--nord2);
+    --color-main: var(--nord10);
+    --color-link: var(--nord9);
+    --color-hover: var(--nord6);
+    --color-highlight: var(--nord7);
+
+    /*dark theme???
+	--color-bg: var(--nord1);
+    --color-txt: var(--nord6);
+    --color-main: var(--nord10);
+    --color-link: var(--nord9);
+    --color-hover: var(--nord0);
+    */
+
 }
 html {
 	font-family: 'Fira Sans', sans-serif;
-	background:var(--white);
+	background:var(--color-bg);
 }
 @media (min-width: 576px) {
 	html {
 		font-size: 14px;
+	}
+	img{
+		max-width: 45%;
+		height: auto;
 	}
 
 }
@@ -29,6 +63,7 @@ html {
 	html {
 		font-size: 16px;
 	}
+	
 }
 
 @media (min-width: 992px) {
@@ -56,16 +91,16 @@ main {
 	font-size: 1.25rem;
 	font-weight: normal;
 	text-align: left;
-	color: var(--nord2);
+	color: var(--color-txt);
 	align-items: center;
 }
 a{
 	text-decoration: underline;
-	color:var(--nord9);
+	color:var(--color-link);
 }
 mark{
-	background: none;
-	color:var(--nord10);
+	background: var(--color-highlight);
+	color: var(--color-txt);
 }
 a:hover, a:active, a:focus{
 	text-decoration: none;
@@ -90,6 +125,10 @@ h1 {
 	padding-bottom: 2%;
 	text-align: center;
 }
+h1:after{
+	content:".";
+	color: var(--color-main);
+}
 h2{
 	font-size: 1.75rem;
 	padding-bottom: 2%;
@@ -99,10 +138,9 @@ a.nav, a.nav:visited{
 	text-decoration: none;
 	padding: 1rem 1.5rem;
 	border-radius: 10px;
-  	color: var(--nord9);
 }
 a.nav:hover,a.nav:focus{
-  	background: var(--nord6);
+  	background: var(--color-hover);
 }
 p{
 	text-indent: 25px;
@@ -114,12 +152,10 @@ ul{
 	padding-bottom: 1%;
 }
 img {
-	border: 3px solid var(--nord10);
+	border: 3px solid var(--color-main);
 	border-radius: 20px;
 	display: block;
 	margin: 3%;
-	max-width: 100%;
-	height: auto;
 }
 @media (max-width: 576px) {
 	div.port, div{
