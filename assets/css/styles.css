@@ -76,16 +76,16 @@ html {
 	html {
 		font-size: 20px;
 	}
-	main, article{
+	main{
 		max-width: 75vw;	
 	}
 }
-/* Custom Stylesjustify-content: center;	 */
+/* Custom Styles */
 
-main,article {
+main {
 	display: flex;
 	flex-direction: column;
-	min-height: 100vw;	
+	justify-content: center;
 	padding: 7%;
 	margin: auto;
 	font-size: 1.25rem;
@@ -94,7 +94,6 @@ main,article {
 	color: var(--color-txt);
 	align-items: center;
 }
-
 a{
 	text-decoration: underline;
 	color:var(--color-link);
