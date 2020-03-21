@@ -5,7 +5,7 @@ Uses the ever wonderful [Nord Color Palette](https://www.nordtheme.com/).
 
 100% Mobile and Desktop on [Google's PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fbellala.org).
 
-![Screenshot](https://bellala.org/portfolio/pics/site.png)
+![Screenshot](https://bellala.org/assets/pics/site.png)
 
 ## Have done 
 - Main landing page (name, description, links, etc.)
