@@ -55,7 +55,7 @@
   	}
 }
 html {
-	font-family: 'Fira Sans', sans-serif;
+	font-family: sans-serif;
 	background:var(--color-bg);
 }
 @media (min-width: 576px) {
@@ -114,6 +114,7 @@ mark{
 }
 a:hover, a:active, a:focus{
 	text-decoration: none;
+
 }	
 div{
 	padding: 3% 0%;
