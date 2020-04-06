@@ -34,15 +34,25 @@
     --color-link: var(--nord9);
     --color-hover: var(--nord6);
     --color-highlight: var(--nord7);
-
-    /*dark theme???
-	--color-bg: var(--nord1);
-    --color-txt: var(--nord6);
-    --color-main: var(--nord10);
-    --color-link: var(--nord9);
-    --color-hover: var(--nord0);
-    */
-
+	
+}
+@media (prefers-color-scheme: dark) {
+	/*dark theme??? */
+	:root{
+		--color-bg: var(--nord0);
+	    --color-txt: var(--nord6);
+	    --color-main: var(--nord10);
+	    --color-link: var(--nord9);
+	    --color-hover: var(--nord1);
+	    --color-highlight: var(--nord12);
+	}
+	img {
+    	opacity: .75;
+    	transition: opacity .5s ease-in-out;
+  	}
+  	img:hover {
+    	opacity: 1;
+  	}
 }
 html {
 	font-family: 'Fira Sans', sans-serif;
@@ -149,7 +159,7 @@ p{
 ul{
 	list-style-type: initial;
 	list-style-position: inside;
-	padding-bottom: 1%;
+	padding-bottom: 2%;
 }
 img {
 	border: 3px solid var(--color-main);
