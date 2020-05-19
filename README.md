@@ -7,22 +7,22 @@ Uses the ever wonderful [Nord Color Palette](https://www.nordtheme.com/).
 
 ![Screenshot](https://bellala.org/assets/pics/site.png)
 
-## Have done 
-- Main landing page (name, description, links, etc.)
-- theme customizations (colors, hover effects, etc.)
-- about
-- Portfolio (WIP)
-- 1 page
-- css minified
-  - 1 css file for the entire website (colors, fonts, padding, etc.)
-- No CDNs
-  - Font is served from the website
-  - I use [Fira Sans](https://github.com/mozilla/Fira).
-  - no third-party stuff (i hope)
-
-## Todo
-- Add CV (link already exists)
-- Add more links to cool stuff.
-- clean up code/directory (in progress)
-- image optimization
-- actually make this repo public lol
+## To Do
+- [x] Main landing page (name, description, links, etc.)
+- [x] theme customizations (colors, hover effects, etc.)
+- [x] about
+- [ ] Portfolio
+  - Currently WIP
+  - Looking for stuff to add
+- [ ] 1 page (?)
+- [x] Dark Mode!
+- [x] css simplified (only 1 file)
+- [x] No Third Party
+  - I use [Fira Sans](https://github.com/mozilla/Fira) as the font.
+- [ ] Add Resume PDF
+- [ ] Add Online View of Resume
+- [ ] More Links/Info?
+- [ ] Clean up code
+- [ ] Optimize Images
+- [ ] Migrate to a static site generator?
+- [ ] Make this repo public
