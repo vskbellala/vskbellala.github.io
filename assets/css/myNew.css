@@ -1,0 +1,124 @@
+/* Typography - no longer needed?*/
+@font-face {
+	font-family: 'Fira Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/fira-sans-v10-latin-regular.eot');
+	src: local('Fira Sans Regular'), local('FiraSans-Regular'), url('../fonts/fira-sans-v10-latin-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/fira-sans-v10-latin-regular.woff2') format('woff2'), url('../fonts/fira-sans-v10-latin-regular.woff') format('woff'), url('../fonts/fira-sans-v10-latin-regular.ttf') format('truetype'), url('../fonts/fira-sans-v10-latin-regular.svg#FiraSans') format('svg');
+	font-display: swap;
+}
+:root {
+	/* Colors - Nord */
+	--white: #FFF;
+    --nord0: #2e3440;
+    --nord1: #3b4252;
+    --nord2: #434c5e;
+    --nord3: #4c566a;
+    --nord4: #d8dee9;
+    --nord5: #e5e9f0;
+    --nord6: #eceff4;
+    --nord7: #8fbcbb;
+    --nord8: #88c0d0;
+    --nord9: #81a1c1;
+    --nord10: #5e81ac;
+    --nord11: #bf616a;
+    --nord12: #d08770;
+    --nord13: #ebcb8b;
+    --nord14: #a3be8c;
+    --nord15: #b48ead;
+
+    /* defaults */
+    --color-bg: var(--white);
+    --color-bg-emphasis: var(--nord6);
+    --color-txt: var(--nord3);
+    --color-txt-emphasis: var(--nord1);
+    --color-main: var(--nord10);
+    --color-link: var(--nord8);
+    --color-highlight: var(--nord13);
+	
+}
+@media (prefers-color-scheme: dark) {
+	/*dark theme??? */
+	:root{
+		--color-bg: var(--nord0);
+		--color-bg-emphasis: var(--nord1);
+	    --color-txt: var(--nord4);
+	    --color-txt-emphasis: var(--nord6);
+	    --color-main: var(--nord10);
+	    --color-link: var(--nord9);
+	    --color-highlight: var(--nord12);
+	}
+	img {
+    	opacity: .75;
+    	transition: opacity .5s ease-in-out;
+  	}
+  	img:hover {
+    	opacity: 1;
+  	}
+}
+body {
+  margin: 0 auto;
+  max-width: 50rem;
+  font-family: "Fira Sans", sans-serif;
+  line-height: 1.4;
+  padding: 4rem 2rem;
+  background: var(--color-bg);
+  color: var(--color-txt);
+}
+h2 {
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+h1,
+h2,
+strong {
+  color: var(--color-txt-emphasis);
+}
+code,
+pre,blockquote {
+  background: var(--color-bg-emphasis);
+}
+
+code {
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+}
+
+pre {
+  padding: 1rem;
+  border-left: 2px solid var(--color-main);
+}
+blockquote{
+	padding: 1rem;
+	border-left: 2px solid var(--color-highlight);
+}
+a, a:link {
+  color: var(--color-txt);
+  text-decoration: none;
+  background-position-y: -0%;
+  background-image: linear-gradient(var(--color-bg) 50%, var(--color-link) 50%);
+  transition: background 100ms ease;
+  background-size: 2px;
+  background-size: auto 175%;
+}
+a:hover, a:focus {
+  background-position-y: 50%;
+}
+blockquote a, blockquote a:link{
+	background-image: linear-gradient(var(--color-bg-emphasis) 50%, var(--color-link) 50%);
+}
+mark{
+	background: var(--color-highlight);
+	color: var(--color-txt);
+}
+.nav a{
+	margin-right: 1.5rem;
+	font-size: 1.15rem;
+}
+img {
+  display: block;
+  margin-left: 0;
+  width: 70%;
+  height: auto;
+  border: 2px solid var(--color-bg-emphasis);
+}

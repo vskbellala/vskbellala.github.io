@@ -55,9 +55,9 @@ img {
 
     /* defaults */
     --color-bg: var(--white);
-    --color-txt: var(--nord2);
+    --color-txt: var(--nord1);
     --color-main: var(--nord10);
-    --color-link: var(--nord9);
+    --color-link: var(--nord8);
     --color-hover: var(--nord6);
     --color-highlight: var(--nord7);
 	
@@ -81,7 +81,7 @@ img {
   	}
 }
 html {
-	font-family:'Fira Sans', sans-serif;
+	font-family: 'Fira Sans', sans-serif;
 	background:var(--color-bg);
 }
 @media (min-width: 576px) {
@@ -124,23 +124,30 @@ main {
 	justify-content: center;
 	padding: 7%;
 	margin: auto;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	font-weight: normal;
 	text-align: left;
 	color: var(--color-txt);
-	align-items: center;
+	align-items: center;	
 }
-a{
-	text-decoration: underline;
-	color:var(--color-link);
+
+a, a:link {
+  color: var(--color-txt);
+  text-decoration: none;
+  background-position-y: -0%;
+  background-image: linear-gradient( var(--white) 50%, var(--color-link) 50%);
+  transition: background 100ms ease;
+  background-size: 2px;
+  background-size: auto 175%;
+}
+
+a:hover {
+  background-position-y: 50%;
+
 }
 mark{
 	background: var(--color-highlight);
 	color: var(--color-txt);
-}
-a:hover, a:active, a:focus{
-	text-decoration: none;
-
 }	
 div{
 	padding: 3% 0%;
@@ -150,17 +157,22 @@ div.port{
 	display: flex;
 	flex-direction: row;	
 }
-div.links{
+div.footer{
 	display: flex;
 	justify-content: space-around;
-	font-size: 1.75rem;
-	padding: 2% 0%;
+	padding: 2% 5%;
 	flex-wrap: wrap;
+	align-items: center;
 }
+a.nav{
+	margin: 1rem 1.5rem;
+}
+
 h1 {
-	font-size: 3.75rem;
+	font-size: 2.5rem;
 	padding-bottom: 2%;
-	text-align: center;
+	padding-top: 7%;
+
 }
 h1:after{
 	content:".";
@@ -169,16 +181,9 @@ h1:after{
 h2{
 	font-size: 1.75rem;
 	padding-bottom: 2%;
+	padding-top: 5%;
 }
-a.nav, a.nav:visited{
-	text-align: center;
-	text-decoration: none;
-	padding: 1rem 1.5rem;
-	border-radius: 10px;
-}
-a.nav:hover,a.nav:focus{
-  	background: var(--color-hover);
-}
+
 p{
 	text-indent: 25px;
 	padding-bottom: 1%;
@@ -197,8 +202,9 @@ img {
 	margin: 3%;
 }
 @media (max-width: 576px) {
-	div.port, div{
+	div.port{
 		flex-direction: column;
 	}
+	
 
 }
