@@ -65,17 +65,21 @@ body {
   background: var(--color-bg);
   color: var(--color-txt);
 }
-h2 {
+h2,h3 {
   margin-top: 1rem;
   padding-top: 1rem;
 }
 h1,
 h2,
-strong {
+h3,
+h4,
+h5,
+h6,
+strong,thead,caption {
   color: var(--color-txt-emphasis);
 }
 code,
-pre,blockquote {
+pre {
   background: var(--color-bg-emphasis);
 }
 
@@ -86,11 +90,29 @@ code {
 
 pre {
   padding: 1rem;
-  border-left: 2px solid var(--color-main);
+  display: block;
+  border-left: 2px dashed var(--color-main);
+  border-radius: 0 0.5rem 0.5rem 0;
+  overflow-x: auto;
 }
-blockquote{
+blockquote,q{
 	padding: 1rem;
-	border-left: 2px solid var(--color-highlight);
+	border-left: 4px solid var(--color-highlight);
+	margin-left: 0;
+	font-style: italic;
+}
+blockquote cite, q cite {
+  font-style: normal;
+  font-size: 0.9rem;
+}
+q:before {
+   content: none;
+}
+q:after {
+   content: none;
+}
+blockquote cite:before, q cite:before {
+  content: '— ';
 }
 a, a:link {
   color: var(--color-txt);
@@ -104,21 +126,70 @@ a, a:link {
 a:hover, a:focus {
   background-position-y: 50%;
 }
-blockquote a, blockquote a:link{
+blockquote a, blockquote a:link, q a, q a:link{
 	background-image: linear-gradient(var(--color-bg-emphasis) 50%, var(--color-link) 50%);
 }
-mark{
-	background: var(--color-highlight);
-	color: var(--color-txt);
+mark {
+  background-color: var(--color-highlight);
+  border-radius: 2px;
+  padding: 0px 2px 0px 2px;
+  color: var(--color-txt);
 }
-.nav a{
+footer a,.nav a{
 	margin-right: 1.5rem;
 	font-size: 1.15rem;
+}
+footer {
+  padding: 1rem 0;
 }
 img {
   display: block;
   margin-left: 0;
-  width: 70%;
+  max-width: 70%;
   height: auto;
   border: 2px solid var(--color-bg-emphasis);
+}
+hr,footer {
+  border: none;
+  border-top: 1px solid var(--color-bg-emphasis);
+}
+caption {
+	text-align: left;
+	font-size: 1.25rem;
+}
+table {
+  border-collapse: collapse;
+  margin: 1rem 0;
+  width: 100%;
+}
+td,
+th {
+  padding: 0.5rem;
+  text-align: left;
+}
+tbody tr:nth-child(odd) {
+  background: var(--color-bg-emphasis);
+}
+tbody tr:hover {
+  background: var(--color-main);
+  color: var(--white);
+}
+tfoot {
+	font-weight: bold;
+	border-top: 1px dotted var(--color-main);
+}
+address {
+  font-style: normal;
+}
+
+a[href^='mailto']::before {
+  content: '📧 ';
+}
+
+a[href^='tel']::before {
+  content: '📞 ';
+}
+
+a[href^='sms']::before {
+  content: '💬 ';
 }
