@@ -59,6 +59,7 @@
       opacity: 1;
     }
 }
+
 body {
   margin: 0 auto;
   max-width: 50rem;
@@ -153,6 +154,7 @@ hr{
   border-top: 2px solid var(--color-main);
   margin: 1rem 0;
   width: 10rem;
+  height: 0px;
 }
 caption {
 	text-align: left;
@@ -187,14 +189,67 @@ tfoot {
 }
 address {
   font-style: normal;
+  margin-bottom: 1rem;
 }
-a[href^='mailto']::before {
+address a[href^='mailto']::before {
   content: '📧 ';
 }
-a[href^='tel']::before {
+address a[href^='tel']::before {
   content: '📞 ';
 }
-a[href^='sms']::before {
+address a[href^='sms']::before {
   content: '💬 ';
 }
-
+address a::before {
+  content: '🔗 ';
+}
+dt{
+  font-weight: bold;
+  color: var(--color-txt-emphasis);
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+dd em{
+  color: var(--color-main);
+}
+dd ul{
+  margin-top: 0;
+}
+.show{
+  display: none;
+}
+@media print{
+  :root{
+    --color-bg: var(--white);
+    --color-bg-emphasis: var(--nord6);
+    --color-accent: var(--nord4);
+    --color-txt: var(--nord3);
+    --color-txt-emphasis: var(--nord1);
+    --color-main: var(--nord9);
+    --color-link: var(--nord7);
+    --color-highlight: var(--nord13);
+  }
+  body{
+  font-size: 10px;
+  padding: 0;
+  margin: 10px;
+  }
+  footer,.noshow{
+    display: none;
+  }
+  
+  h2{
+    padding-top:0;
+    font-size: 14px;
+  }
+  h1{
+    font-size: 18px;
+  }
+  .show{
+    display: block;
+  }
+  hr{
+    margin:0;
+    padding: 0;
+  }
+}
