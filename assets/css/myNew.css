@@ -115,16 +115,13 @@ a, a:link {
   color: var(--color-txt);
   text-decoration: none;
   background-position-y: -0%;
-  background-image: linear-gradient(var(--color-bg) 50%, var(--color-link) 50%);
+  background-image: linear-gradient(transparent 50%, var(--color-link) 50%);
   transition: background 100ms ease;
   background-size: 2px;
   background-size: auto 175%;
 }
 a:hover, a:focus {
   background-position-y: 50%;
-}
-blockquote a, blockquote a:link, q a, q a:link, pre a, pre a:link{
-	--color-bg: var(--color-bg-emphasis);
 }
 mark {
   background-color: var(--color-highlight);
@@ -209,15 +206,16 @@ dt{
   text-transform: uppercase;
   margin-top: 0.5rem;
 }
-dd em{
+dd > em{
   color: var(--color-main);
 }
-dd ul{
+dd > ul{
   margin-top: 0;
 }
 .show{
   display: none;
 }
+
 @media print{
   :root{
     --color-bg: var(--white);
