@@ -130,9 +130,12 @@ mark {
   color: var(--color-txt);
 }
 footer a,.nav a{
-	margin-right: 1.5rem;
+	margin-right: 1.75rem;
 	font-size: 1.15rem;
   --color-link: var(--color-main);
+}
+a.active{
+  --color-link: var(--color-highlight);
 }
 footer {
   padding: 1rem 0;
@@ -141,10 +144,13 @@ footer {
 }
 img {
   display: block;
-  margin-left: 0;
-  max-width: 70%;
+  margin: 0 auto;
+  width: 90%;
   height: auto;
   border: 2px solid var(--color-accent);
+}
+section{
+  margin: 6rem 0;
 }
 hr{
   border: none;
