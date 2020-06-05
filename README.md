@@ -19,8 +19,8 @@ Uses the ever wonderful [Nord Color Palette](https://www.nordtheme.com/).
 - [x] css simplified (only 1 file)
 - [x] No Third Party
   - I use [Fira Sans](https://github.com/mozilla/Fira) as the font.
-- [ ] Add Resume PDF
-- [ ] Add Online View of Resume
+- [x] Add Resume PDF
+- [x] Add Online View of Resume
 - [ ] More Links/Info?
 - [ ] Clean up code
 - [ ] Optimize Images
