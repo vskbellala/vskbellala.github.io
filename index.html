@@ -13,22 +13,45 @@
 	<!-- for adding stuff idk
 		<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/duo.min.css">
-		<link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet"> 
-		-->
+		<link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet"> -->
+		
 	<link rel="stylesheet" href="assets/css/myNew.css">
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
 	<main>
+		<div id="content"></div>
+		<!--
 		<h1>I'm Venkatsai Bellala.</h1>
 		<p>
 			<em>Brown University '24. <a target="_blank" href="https://www.brown.edu/academics/medical/plme/" rel="noopener noreferrer">Program in Liberal Medical Education</a>.</em>
 		</p>
 		<p>
 			But you can call me Shri.
-		</p>
+		</p>-->
 		<footer>
 			<a href="about/">About</a><a href="projects/">Projects</a><a href="resume/">Resume</a>
 		</footer>
+		<script>
+			
+			// Set options
+			marked.setOptions({
+			 headerIds: false
+			});
+
+			//Function for reading MD file
+			function readFile(file, out) {
+			    var http = new XMLHttpRequest();
+			    http.open('get', file);
+			    http.onreadystatechange = function () {
+			        document.getElementById(out).innerHTML = marked(http.responseText);//.replace(/\n/g, '<br>'));
+			    };
+			    http.send();
+			}
+			
+			// Load file
+			readFile('content.md','content');
+		</script>
 	</main>
 </body>
 </html>
