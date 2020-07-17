@@ -1,13 +1,14 @@
 ul > li {
-  font-weight: bold;
-  color: var(--color-txt-emphasis);
-  text-transform: uppercase;
   margin-top: 0.5rem;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-
+strong{
+  font-weight: bold;
+  color: var(--color-txt-emphasis);
+  text-transform: uppercase;
+}
 li > ul > li{
   font-weight: normal;
   color: var(--color-txt);
@@ -16,8 +17,8 @@ li > ul > li{
   list-style-type: none;
 }
 
-li > ul > li:not(:first-child){
-  margin-left: 2rem;
+li > ul > li > ul > li{ 
+  list-style-type: initial;
 }
 
 li > em{
