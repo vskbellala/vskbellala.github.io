@@ -62,7 +62,7 @@
 ## Personal
 
 - **Experiences:**
-	- Chicago, IL – Mohana Medical Center: Physician Shadower, Summer 2019-2020
+	- Chicago, IL – Mohana Medical Center: Physician Shadower, Summer 2019
 	- Aurora, IL – Modeling the Future Challenge: Semifinalist, 2019
 - **Interests:** Piano, competitive baking shows, biking, short stories, open source technology
 
