@@ -3,7 +3,7 @@ My personal website (wip)
 Focus on usability and minimalism.  
 Uses the ever wonderful [Nord Color Palette](https://www.nordtheme.com/).  
 
-100% Mobile and Desktop on [Google's PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fbellala.org).
+100% Desktop & 98% Mobile on [Google's PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fbellala.org).
 
 ![Screenshot](https://bellala.org/assets/pics/site.png)
 
@@ -24,5 +24,6 @@ Uses the ever wonderful [Nord Color Palette](https://www.nordtheme.com/).
 - [ ] More Links/Info?
 - [ ] Clean up code
 - [ ] Optimize Images
-- [ ] Migrate to a static site generator?
+- [x] Migrate to a static site generator?
+  - effectively fulfilled by the use of [Marked.js](https://marked.js.org/) to translate site's MD files to raw html
 - [ ] Make this repo public
