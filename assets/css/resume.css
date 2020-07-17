@@ -1,12 +1,8 @@
-ul{
-  margin: 0;
-  padding: 0;
-}
 ul > li {
   margin-top: 0.5rem;
   list-style-type: none;
-  margin: 2rem;
-  padding: 2rem;
+  margin: 0;
+  padding: 0;
 }
 strong{
   font-weight: bold;
@@ -58,7 +54,7 @@ dd > ul{
     --color-highlight: var(--nord13);
   }
   body{
-  font-size: 10px;
+  font-size: 9px;
   padding: 0;
   margin: 10px;
   }
@@ -68,10 +64,10 @@ dd > ul{
   
   h2{
     padding-top:0;
-    font-size: 12px;
+    font-size: 11px;
   }
   h1{
-    font-size: 18px;
+    font-size: 16px;
   }
   .show{
     display: block;
