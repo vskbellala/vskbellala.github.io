@@ -14,7 +14,6 @@ Uses the ever wonderful [Nord Color Palette](https://www.nordtheme.com/).
 - [ ] Portfolio
   - Currently WIP
   - Looking for stuff to add
-- [ ] 1 page (?)
 - [x] Dark Mode!
 - [x] css simplified (only 1 file)
 - [x] No Third Party
