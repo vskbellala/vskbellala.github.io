@@ -173,7 +173,6 @@ pre {
     border-radius: 0.25rem;
     overflow-x: auto;
 }
-
 blockquote,
 q {
     padding: 1rem;
@@ -248,10 +247,11 @@ img {
     margin: 0 auto;
     width: 100%;
     height: auto;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .05), 0 15px 40px rgba(0, 0, 0, .2);
     border-radius: 0.25rem;
 }
-
+img, pre{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .05), 0 15px 40px rgba(0, 0, 0, .2);
+}
 .port div {
     margin-top: 3rem;
 }
