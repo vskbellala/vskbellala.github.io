@@ -1,15 +1,75 @@
-/* Typography - no longer needed?*/
+/* Typography - no longer needed?
 @font-face {
-	font-family: 'Fira Sans';
-	font-style: normal;
-	font-weight: 400;
-	src: url('../fonts/fira-sans-v10-latin-regular.eot');
-	src: local('Fira Sans Regular'), local('FiraSans-Regular'), url('../fonts/fira-sans-v10-latin-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/fira-sans-v10-latin-regular.woff2') format('woff2'), url('../fonts/fira-sans-v10-latin-regular.woff') format('woff'), url('../fonts/fira-sans-v10-latin-regular.ttf') format('truetype'), url('../fonts/fira-sans-v10-latin-regular.svg#FiraSans') format('svg');
-	font-display: swap;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/fira-sans-v10-latin-regular.eot');
+    src: local('Fira Sans Regular'), local('FiraSans-Regular'), url('../fonts/fira-sans-v10-latin-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/fira-sans-v10-latin-regular.woff2') format('woff2'), url('../fonts/fira-sans-v10-latin-regular.woff') format('woff'), url('../fonts/fira-sans-v10-latin-regular.ttf') format('truetype'), url('../fonts/fira-sans-v10-latin-regular.svg#FiraSans') format('svg');
+    font-display: swap;
 }
+*/
+
+/*! system-font.css v2.0.2 | CC0-1.0 License | github.com/jonathantneal/system-font-css */
+
+@font-face {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 300;
+    src: local(".SFNS-Light"), local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Segoe UI Light"), local("Ubuntu Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+@font-face {
+    font-family: system-ui;
+    font-style: italic;
+    font-weight: 300;
+    src: local(".SFNS-LightItalic"), local(".SFNSText-LightItalic"), local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"), local("Segoe UI Light Italic"), local("Ubuntu Light Italic"), local("Roboto-LightItalic"), local("DroidSans"), local("Tahoma");
+}
+
+@font-face {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 400;
+    src: local(".SFNS-Regular"), local(".SFNSText-Regular"), local(".HelveticaNeueDeskInterface-Regular"), local(".LucidaGrandeUI"), local("Segoe UI"), local("Ubuntu"), local("Roboto-Regular"), local("DroidSans"), local("Tahoma");
+}
+
+@font-face {
+    font-family: system-ui;
+    font-style: italic;
+    font-weight: 400;
+    src: local(".SFNS-Italic"), local(".SFNSText-Italic"), local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"), local("Segoe UI Italic"), local("Ubuntu Italic"), local("Roboto-Italic"), local("DroidSans"), local("Tahoma");
+}
+
+@font-face {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 500;
+    src: local(".SFNS-Medium"), local(".SFNSText-Medium"), local(".HelveticaNeueDeskInterface-MediumP4"), local(".LucidaGrandeUI"), local("Segoe UI Semibold"), local("Ubuntu Medium"), local("Roboto-Medium"), local("DroidSans-Bold"), local("Tahoma Bold");
+}
+
+@font-face {
+    font-family: system-ui;
+    font-style: italic;
+    font-weight: 500;
+    src: local(".SFNS-MediumItalic"), local(".SFNSText-MediumItalic"), local(".HelveticaNeueDeskInterface-MediumItalicP4"), local(".LucidaGrandeUI"), local("Segoe UI Semibold Italic"), local("Ubuntu Medium Italic"), local("Roboto-MediumItalic"), local("DroidSans-Bold"), local("Tahoma Bold");
+}
+
+@font-face {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 700;
+    src: local(".SFNS-Bold"), local(".SFNSText-Bold"), local(".HelveticaNeueDeskInterface-Bold"), local(".LucidaGrandeUI"), local("Segoe UI Bold"), local("Ubuntu Bold"), local("Roboto-Bold"), local("DroidSans-Bold"), local("Tahoma Bold");
+}
+
+@font-face {
+    font-family: system-ui;
+    font-style: italic;
+    font-weight: 700;
+    src: local(".SFNS-BoldItalic"), local(".SFNSText-BoldItalic"), local(".HelveticaNeueDeskInterface-BoldItalic"), local(".LucidaGrandeUI"), local("Segoe UI Bold Italic"), local("Ubuntu Bold Italic"), local("Roboto-BoldItalic"), local("DroidSans-Bold"), local("Tahoma Bold");
+}
+
 :root {
-	/* Colors - Nord */
-  --white: #FFF;
+    /* Colors - Nord */
+    --white: #FAFAFA;
     --nord0: #2e3440;
     --nord1: #3b4252;
     --nord2: #434c5e;
@@ -36,177 +96,234 @@
     --color-main: var(--nord9);
     --color-link: var(--nord7);
     --color-highlight: var(--nord13);
-	
+
 }
 
 @media (prefers-color-scheme: dark) {
-	/*dark theme??? */
-	:root{
-    --color-bg: var(--nord0);
-    --color-bg-emphasis: var(--nord1);
-    --color-accent: var(--nord3);
-    --color-txt: var(--nord4);
-    --color-txt-emphasis: var(--nord6);
-    --color-main: var(--nord10);
-    --color-link: var(--nord9);
-    --color-highlight: var(--nord12);
-  }
-  img {
-      opacity: .75;
-      transition: opacity .5s ease-in-out;
+
+    /*dark theme??? */
+    :root {
+        --color-bg: var(--nord0);
+        --color-bg-emphasis: var(--nord1);
+        --color-accent: var(--nord3);
+        --color-txt: var(--nord4);
+        --color-txt-emphasis: var(--nord6);
+        --color-main: var(--nord10);
+        --color-link: var(--nord9);
+        --color-highlight: var(--nord12);
     }
+
+    img {
+        opacity: .75;
+        transition: opacity .5s ease-in-out;
+    }
+
     img:hover {
-      opacity: 1;
+        opacity: 1;
     }
 }
 
 body {
-  margin: 0 auto;
-  max-width: 50rem;
-  font-family: "Fira Sans", sans-serif;
-  line-height: 1.4;
-  padding: 4rem 2rem;
-  background: var(--color-bg);
-  color: var(--color-txt);
+    margin: 0 auto;
+    max-width: 50rem;
+    font-family: system-ui, sans-serif;
+    line-height: 1.4;
+    padding: 4rem 2rem;
+    background: var(--color-bg);
+    color: var(--color-txt);
 }
-h2,h3 {
-  margin-top: 1rem;
-  padding-top: 1rem;
+
+h2,
+h3 {
+    margin-top: 1rem;
+    padding-top: 1rem;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-strong,thead,caption,code,pre {
-  color: var(--color-txt-emphasis);
-}
+strong,
+thead,
+caption,
 code,
 pre {
-  background: var(--color-bg-emphasis);
+    color: var(--color-txt-emphasis);
+    font-weight: 500;
 }
-code {
-  padding: 2px 4px;
-  vertical-align: text-bottom;
-}
+
+code,
 pre {
-  padding: 1rem;
-  display: block;
-  border-radius: 0.5rem;
-  overflow-x: auto;
+    background: var(--color-bg-emphasis);
 }
-blockquote,q{
-	padding: 1rem;
-	margin-left: 0;
-	border-left: 4px solid var(--color-main);
+
+code {
+    padding: 2px 4px;
+    vertical-align: text-bottom;
+    font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+    font-size: 0.8rem;
+    font-weight: 400;
 }
-blockquote:after{
-  content: "— " attr(cite);
-  display: block;
-  font-weight: bold;
-  font-size: 0.875rem;
-  color: var(--color-main);
+
+pre {
+    padding: 1rem;
+    display: block;
+    border-radius: 0.25rem;
+    overflow-x: auto;
 }
-q:before,q:after {
-   content: none;
+
+blockquote,
+q {
+    padding: 1rem;
+    margin-left: 0;
+    border-left: 4px solid var(--color-main);
 }
-a, a:link {
-  color: var(--color-txt);
-  text-decoration: none;
-  background-position-y: -0%;
-  background-image: linear-gradient(transparent 50%, var(--color-link) 50%);
-  transition: background 100ms ease;
-  background-size: 2px;
-  background-size: auto 175%;
+
+blockquote:after {
+    content: "— "attr(cite);
+    display: block;
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: var(--color-main);
 }
-a:hover, a:focus {
-  background-position-y: 50%;
+
+q:before,
+q:after {
+    content: none;
 }
+
+a,
+a:link {
+    color: var(--color-txt);
+    text-decoration: none;
+    background-position-y: -0%;
+    background-image: linear-gradient(transparent 50%, var(--color-link) 50%);
+    transition: background 100ms ease;
+    background-size: 2px;
+    background-size: auto 175%;
+}
+
+a:hover,
+a:focus {
+    background-position-y: 50%;
+}
+
+a:active {
+    outline: none;
+}
+
 mark {
-  background-color: var(--color-highlight);
-  border-radius: 2px;
-  padding: 0px 2px 0px 2px;
-  color: var(--color-txt);
+    background-color: var(--color-highlight);
+    border-radius: 2px;
+    padding: 0px 2px 0px 2px;
+    color: var(--color-txt);
 }
+
+li {
+    margin: 0.25rem 0;
+}
+
 footer {
-  padding: 1rem 0;
-  border: none;
-  border-top: 1px solid var(--color-accent);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-footer a,.nav a{
-  padding: 0.25rem;
-	font-size: 1.15rem;
-  --color-link: var(--color-main);
+
+footer a,
+.nav a {
+    padding: 0.25rem;
+    font-size: 1.15rem;
+    --color-link: var(--color-main);
 }
-a.active{
-  --color-link: var(--color-highlight);
+
+a.active {
+    --color-link: var(--color-highlight);
 }
 
 img {
-  display: block;
-  margin: 0 auto;
-  width: 90%;
-  height: auto;
-  border: 2px solid var(--color-accent);
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .05), 0 15px 40px rgba(0, 0, 0, .2);
+    border-radius: 0.25rem;
 }
-section, div.port{
-  margin: 6rem 0;
+
+.port div {
+    margin-top: 3rem;
 }
-hr{
-  border: none;
-  border-top: 2px solid var(--color-main);
-  margin: 1rem 0;
-  width: 10rem;
-  height: 0px;
+
+.port div+div {
+    margin-top: 6rem;
 }
+
+hr {
+    border: none;
+    border-top: 2px solid var(--color-main);
+    margin: 1rem 0;
+    width: 10rem;
+    height: 0px;
+}
+
 caption {
-	text-align: left;
-	font-size: 1.25rem;
+    text-align: left;
+    font-size: 1.25rem;
 }
+
 table {
-  border-collapse: collapse;
-  margin: 1rem 0;
-  width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    width: 100%;
 }
+
 td,
 th {
-  padding: 0.5rem;
-  text-align: left;
+    padding: 0.5rem;
+    text-align: left;
 }
+
 table.stripe tbody tr:nth-child(odd) {
-  background: var(--color-bg-emphasis);
+    background: var(--color-bg-emphasis);
 }
+
 table.hover tbody tr {
-	border-bottom: 1px solid var(--color-accent);
+    border-bottom: 1px solid var(--color-accent);
 }
-table.hover tr:last-child{
-	border-bottom: 0;
+
+table.hover tr:last-child {
+    border-bottom: 0;
 }
+
 table.hover tbody tr:hover {
-  background: var(--color-bg-emphasis);
-  transition: background 100ms ease;
+    background: var(--color-bg-emphasis);
+    transition: background 100ms ease;
 }
+
 tfoot {
-	font-weight: bold;
-	background: var(--color-bg);
+    font-weight: bold;
+    background: var(--color-bg);
 }
+
 address {
-  font-style: normal;
-  margin-bottom: 1rem;
+    font-style: normal;
+    margin-bottom: 1rem;
 }
+
 address a[href^='mailto']::before {
-  content: '📧 ';
+    content: '📧 ';
 }
+
 address a[href^='tel']::before {
-  content: '📞 ';
+    content: '📞 ';
 }
+
 address a[href^='sms']::before {
-  content: '💬 ';
+    content: '💬 ';
 }
+
 address a::before {
-  content: '🔗 ';
+    content: '🔗 ';
 }
