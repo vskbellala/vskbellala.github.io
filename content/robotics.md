@@ -1,4 +1,4 @@
-![Robot Picture](../../assets/pics/mvrobot.png)
+![Robot Picture](../../assets/pics/mvrobot.webp)
 
 ## MVHS Robotics
 
