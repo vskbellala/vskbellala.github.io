@@ -17,12 +17,15 @@ Uses the ever wonderful [Nord Color Palette](https://www.nordtheme.com/).
 - [x] Dark Mode!
 - [x] css simplified (only 1 file)
 - [x] No Third Party
-  - I use [Fira Sans](https://github.com/mozilla/Fira) as the font.
+  - I use the [System Font Stack](https://github.com/jonathantneal/system-font-css).
 - [x] Add Resume PDF
 - [x] Add Online View of Resume
 - [ ] More Links/Info?
 - [ ] Clean up code
 - [ ] Optimize Images
+  - [x] Use .webp format
+  - [ ] Resize images
 - [x] Migrate to a static site generator?
   - effectively fulfilled by the use of [Marked.js](https://marked.js.org/) to translate site's MD files to raw html
+  - Marked.js is self hosted.
 - [ ] Make this repo public
