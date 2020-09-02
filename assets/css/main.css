@@ -1,14 +1,3 @@
-/* Typography - no longer needed?
-@font-face {
-    font-family: 'Fira Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/fira-sans-v10-latin-regular.eot');
-    src: local('Fira Sans Regular'), local('FiraSans-Regular'), url('../fonts/fira-sans-v10-latin-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/fira-sans-v10-latin-regular.woff2') format('woff2'), url('../fonts/fira-sans-v10-latin-regular.woff') format('woff'), url('../fonts/fira-sans-v10-latin-regular.ttf') format('truetype'), url('../fonts/fira-sans-v10-latin-regular.svg#FiraSans') format('svg');
-    font-display: swap;
-}
-*/
-
 /*! system-font.css v2.0.2 | CC0-1.0 License | github.com/jonathantneal/system-font-css */
 
 @font-face {
@@ -172,7 +161,9 @@ pre {
     display: block;
     border-radius: 0.25rem;
     overflow-x: auto;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
+
 blockquote,
 q {
     padding: 1rem;
@@ -248,10 +239,9 @@ img {
     width: 100%;
     height: auto;
     border-radius: 0.25rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
-img, pre{
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .05), 0 15px 40px rgba(0, 0, 0, .2);
-}
+
 .port div {
     margin-top: 3rem;
 }
