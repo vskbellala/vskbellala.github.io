@@ -1,4 +1,4 @@
-![Screenshot of Site](../../assets/pics/site.webp)
+![Screenshot of Site](../assets/pics/site.webp)
 
 ## bellala.org
 

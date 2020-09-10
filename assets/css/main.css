@@ -1,4 +1,5 @@
 /*! system-font.css v2.0.2 | CC0-1.0 License | github.com/jonathantneal/system-font-css */
+@import 'open-color.css';
 
 @font-face {
     font-family: system-ui;
@@ -58,7 +59,7 @@
 
 :root {
     /* Colors - Nord */
-    --white: #FAFAFA;
+    --white: #fafbfc;
     --nord0: #2e3440;
     --nord1: #3b4252;
     --nord2: #434c5e;
@@ -76,10 +77,10 @@
     --nord14: #a3be8c;
     --nord15: #b48ead;
 
+
     /* defaults */
     --color-bg: var(--white);
     --color-bg-emphasis: var(--nord6);
-    --color-accent: var(--nord4);
     --color-txt: var(--nord3);
     --color-txt-emphasis: var(--nord1);
     --color-main: var(--nord9);
@@ -94,7 +95,6 @@
     :root {
         --color-bg: var(--nord0);
         --color-bg-emphasis: var(--nord1);
-        --color-accent: var(--nord3);
         --color-txt: var(--nord4);
         --color-txt-emphasis: var(--nord6);
         --color-main: var(--nord10);
@@ -280,7 +280,7 @@ table.stripe tbody tr:nth-child(odd) {
 }
 
 table.hover tbody tr {
-    border-bottom: 1px solid var(--color-accent);
+    border-bottom: 1px solid var(--color-main);
 }
 
 table.hover tr:last-child {
