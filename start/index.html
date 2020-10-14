@@ -73,19 +73,20 @@
 	        box-sizing: border-box;
 
 	    }
-
 	    p {
 	        margin: 0;
 	    }
-	    span {
+	    span{
 	        color: var(--nord7);
 	    }
-
+	    #time{
+	    	color: var(--color-link);
+	    	padding: 0.75em 0;
+	    }
 	    a {
 	        color: inherit;
 	        text-decoration: none;
 	    }
-
 	    a:focus,
 	    a:hover {
 	        font-weight: bold;
@@ -154,9 +155,35 @@
 		  font: inherit;
 		}
     </style>
+    <script type="text/javascript">
+	    function updateClock() {
+	        var now = new Date(), // current date
+	            months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', '']; // you get the idea
+	        var h = now.getHours(),
+	        	m = now.getMinutes(),
+	        	s = now.getSeconds(),
+	        	mo = now.getMonth() + 1,
+	        	da = now.getDate();
+
+	        time = (h < 10 ? '0'+h : h) + ':' + (m < 10 ? '0'+m : m) + ':' + (s < 10 ? '0'+s : s) // again, you get the idea
+
+	        // a cleaner way than string concatenation
+	        date = [(mo < 10 ? '0'+mo : mo),
+	            (da < 10 ? '0'+da : da),
+	            now.getFullYear()
+	        ].join('/');
+
+	        // set the content of the element with the ID time to the formatted string
+	        document.getElementById('time').innerHTML = [date, time].join(' ');
+
+	    }
+	    setInterval(updateClock, 1000);
+    </script>
 </head>
 
 <body>
+    <p><span>shri@<a href='https://bellala.org'>home</a> <i>~ $</i> </span>date +'%m/%d/%Y %H:%M:%S'</p>
+    <p id='time'></p>
     <p><span>shri@<a href='https://bellala.org'>home</a> <i>~ $</i> </span>ls</p>
     <nav>
         <ul>
