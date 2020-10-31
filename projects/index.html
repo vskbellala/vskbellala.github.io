@@ -29,6 +29,7 @@
 <body>
     <main class="port">
         <h1>My Projects</h1>
+        <div id='covid'></div>
         <div id="robotics"></div>
         <div id="site"></div>
         <footer>
@@ -36,6 +37,7 @@
         </footer>
         <script>
         // Load file
+        readFile('../content/covid.md', 'covid');
         readFile('../content/robotics.md', 'robotics');
         readFile('../content/site.md', 'site');
         </script>
