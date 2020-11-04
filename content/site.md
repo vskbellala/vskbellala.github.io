@@ -4,13 +4,14 @@
 
 My first foray into the wonderful world of web design. Inspired by the tenets of <mark>minimalism</mark>.
 
-Technologies used:
+### Technologies used
+
 - HTML
 - CSS
 - A little bit of [JS](https://marked.js.org/)
 - And some Markdown too
 
-[Open Source on GitHub](https://github.com/vskbellala/vskbellala.github.io) (eventually).
+It's also [open source on GitHub](https://github.com/vskbellala/vskbellala.github.io)!.
 
 ```css
 /* Here is my image CSS! */
