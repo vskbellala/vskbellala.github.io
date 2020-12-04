@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png?v=PYAnWEX75A">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png?v=PYAnWEX75A">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png?v=PYAnWEX75A">
+    <link rel="manifest" href="../assets/favicons/site.webmanifest?v=PYAnWEX75A">
+    <link rel="mask-icon" href="../assets/favicons/safari-pinned-tab.svg?v=PYAnWEX75A" color="#8fbcbb">
+    <link rel="shortcut icon" href="../assets/favicons/favicon.ico?v=PYAnWEX75A">
+    <meta name="apple-mobile-web-app-title" content="~">
+    <meta name="application-name" content="~">
+    <meta name="msapplication-TileColor" content="#8fbcbb">
+    <meta name="msapplication-config" content="../assets/favicons/browserconfig.xml?v=PYAnWEX75A">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+    <style>
+        :root {
+	        /* Colors - Nord */
+	        --white: #FFF;
+	        --nord0: #2e3440;
+	        --nord1: #3b4252;
+	        --nord2: #434c5e;
+	        --nord3: #4c566a;
+	        --nord4: #d8dee9;
+	        --nord5: #e5e9f0;
+	        --nord6: #eceff4;
+	        --nord7: #8fbcbb;
+	        --nord8: #88c0d0;
+	        --nord9: #81a1c1;
+	        --nord10: #5e81ac;
+	        --nord11: #bf616a;
+	        --nord12: #d08770;
+	        --nord13: #ebcb8b;
+	        --nord14: #a3be8c;
+	        --nord15: #b48ead;
+
+	        /* defaults */
+	        --color-bg: var(--nord3);
+	        --color-terminal: var(--nord0);
+	        --color-link: var(--nord8);
+	        --color-txt: var(--nord4);
+	        --color-txt-accent: var(--nord15);
+
+    	}
+
+	    html {
+	        align-items: center;
+	        background-color: var(--color-bg);
+	        color: var(--color-txt);
+	        display: flex;
+	        font: 20px/1.4 'Fira Mono', monospace;
+	        height: 100%;
+	        justify-content: center;
+
+	    }
+
+	    body {
+	        background-color: var(--color-terminal);
+	        border-radius: 2px;
+	        box-shadow: 1px 1px 6px var(--color-terminal);
+	        color: var(--color-txt);
+	        display: flex;
+	        flex-direction: column;
+	        min-height: 30ch;
+	        min-width: 50vw;
+	        padding: 2rem;
+	        margin:0;
+	        box-sizing: border-box;
+
+	    }
+	    p {
+	        margin: 0;
+	    }
+	    span{
+	        color: var(--nord7);
+	    }
+	    #time{
+	    	color: var(--color-link);
+	    	padding: 0.75em 0;
+	    }
+	    a {
+	        color: inherit;
+	        text-decoration: none;
+	    }
+	    a:focus,
+	    a:hover {
+	        font-weight: bold;
+	        color: var(--color-link);
+	    }
+	    i, form label {
+		    font-style: normal;
+		    color: var(--color-txt-accent);
+	    }
+	    ul {
+	        list-style-type: none;
+	        margin: 0;
+	        padding: 0;
+	    }
+	    nav {
+	        column-gap: 2em;
+	        display: grid;
+	        grid-template-columns: auto auto auto auto;
+	        padding: 1em 0;
+	    }
+	    
+	    ul:nth-child(4n + 1) li:first-child {
+	        color: var(--nord11);
+	    }
+
+	    ul:nth-child(4n + 2) li:first-child {
+	        color: var(--nord12);
+	    }
+
+	    ul:nth-child(4n + 3) li:first-child {
+	        color: var(--nord13);
+	    }
+
+	    ul:nth-child(4n + 4) li:first-child {
+	        color: var(--nord14);
+	    }
+	    li:first-child {
+	        font-weight: bold;
+	    }
+	    li:first-child::after{
+	    	content:'/';
+	    	font:inherit;
+	    	color:inherit;
+	    }
+	    li:last-child {
+	        margin: 0 0 1rem;
+	    }
+		form {
+		  margin-left: 1rem;
+		  position: relative;
+		  display: flex;
+		  align-items: center;
+		}
+
+		form input[type="search"] {
+		  background-color: transparent;
+		  border: none;
+		  font: inherit;
+		  color: inherit;
+		  width: 100%;
+		  outline: none;
+		}
+		form label {
+		  left: -1rem;
+		  position: absolute;
+		  font: inherit;
+		}
+    </style>
+    <script type="text/javascript">
+	    function updateClock() {
+	        var now = new Date(), // current date
+	            months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', '']; // you get the idea
+	        var h = now.getHours(),
+	        	m = now.getMinutes(),
+	        	s = now.getSeconds(),
+	        	mo = now.getMonth() + 1,
+	        	da = now.getDate();
+
+	        time = (h < 10 ? '0'+h : h) + ':' + (m < 10 ? '0'+m : m) + ':' + (s < 10 ? '0'+s : s) // again, you get the idea
+
+	        // a cleaner way than string concatenation
+	        date = [(mo < 10 ? '0'+mo : mo),
+	            (da < 10 ? '0'+da : da),
+	            now.getFullYear()
+	        ].join('/');
+
+	        // set the content of the element with the ID time to the formatted string
+	        document.getElementById('time').innerHTML = [date, time].join(' ');
+
+	    }
+	    setInterval(updateClock, 1000);
+    </script>
+</head>
+
+<body>
+    <p><span>shri@<a href='https://bellala.org'>home</a> <i>~ $</i> </span>date +'%m/%d/%Y %H:%M:%S'</p>
+    <p id='time'></p>
+    <p><span>shri@<a href='https://bellala.org'>home</a> <i>~ $</i> </span>ls</p>
+    <nav>
+        <ul>
+            <li>news</li>
+            <li><a href="https://www.theverge.com/">The Verge</a></li>
+            <li><a href="https://www.browndailyherald.com/">The Brown Daily Herald</a></li>
+            <li><a href="https://today.brown.edu/">Today @ Brown</a></li>
+        </ul>
+        <ul>
+            <li>uni</li>
+            <li><a href="https://healthy.brown.edu/">Healthy Brown</a></li>
+            <li><a href="https://canvas.brown.edu">Canvas</a></li>
+            <li><a href="https://brown.joinhandshake.com/">Handshake</a></li>
+            <li><a href="https://cab.brown.edu/">Courses @ Brown</a></li>
+        </ul>
+        <ul>
+            <li>fun</li>
+            <li><a href="https://www.youtube.com/">YouTube</a></li>
+            <li><a href="https://open.spotify.com/">Spotify</a></li>
+            <li><a href="https://old.reddit.com/">Reddit</a></li>
+            <li><a href="https://old.reddit.com/r/learnprogramming">r/learnprogramming</a></li>
+        </ul>
+        <ul>
+            <li>utils</li>
+            <li><a href="https://mail.google.com/">Mail</a></li>
+            <li><a href="https://drive.google.com">Drive</a></li>
+            <li><a href="https://github.com">GitHub</a></li>
+        </ul>
+    </nav>
+    <p><span>shri@<a href='https://bellala.org'>home</a> <i>~ $</i></span> find</p>
+    <form action="https://duckduckgo.com/" method="POST">
+        <label for="q">&gt;</label>
+        <input autofocus id="q" name="q" type="search" placeholder="">
+    </form>
+    </p>
+</body>
+
+</html>
