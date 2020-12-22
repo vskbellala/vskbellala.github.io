@@ -1,5 +1,4 @@
 /*! system-font.css v2.0.2 | CC0-1.0 License | github.com/jonathantneal/system-font-css */
-@import 'open-color.css';
 
 @font-face {
     font-family: system-ui;
@@ -77,8 +76,22 @@
     --nord14: #a3be8c;
     --nord15: #b48ead;
 
+    /*Open color*/
+    --oc-white-rgb: 255, 255, 255;
+    --oc-black-rgb: 0, 0, 0;
+    --oc-gray-0-rgb: 248, 249, 250;
+    --oc-gray-1-rgb: 241, 243, 245;
+    --oc-gray-2-rgb: 233, 236, 239;
+    --oc-gray-3-rgb: 222, 226, 230;
+    --oc-gray-4-rgb: 206, 212, 218;
+    --oc-gray-5-rgb: 173, 181, 189;
+    --oc-gray-6-rgb: 134, 142, 150;
+    --oc-gray-7-rgb: 73, 80, 87;
+    --oc-gray-8-rgb: 52, 58, 64;
+    --oc-gray-9-rgb: 33, 37, 41;
 
-    /* defaults */
+
+    /* defaults 
     --color-bg: var(--white);
     --color-bg-emphasis: var(--nord6);
     --color-txt: var(--nord3);
@@ -86,7 +99,14 @@
     --color-main: var(--nord9);
     --color-link: var(--nord7);
     --color-highlight: var(--nord13);
-
+    */
+    --color-bg: rgb(var(--oc-white-rgb));
+    --color-bg-emphasis: rgb(var(--oc-gray-1-rgb));
+    --color-txt: rgb(var(--oc-gray-7-rgb));
+    --color-txt-emphasis: rgb(var(--oc-gray-8-rgb));
+    --color-main: var(--nord9);
+    --color-link: var(--nord7);
+    --color-highlight: var(--nord13);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -315,30 +335,33 @@ address a[href^='sms']::before {
 address a::before {
     content: '🔗 ';
 }
-
+/* needs to be reworked */
 form {
     background-color: var(--color-bg);
     overflow-x: visible;
-    text-align: center;
+    /*text-align: center;*/
     box-shadow: none;
 }
 
-input,
+input:not([type="submit"]),
 textarea,
 select {
     width: 100%;
+    max-width: 100%;
+    min-width: 50%;
     height: auto;
-    background-color: var(--color-bg-emphasis);
-    color: var(--color-txt-emphasis);
+    /*background-color: var(--color-bg-emphasis);*/
+    /*color: var(--color-txt-emphasis);*/
     border: none;
-    border-radius: 0.25rem;
+    border-bottom: 2px solid var(--color-main);
+    /*border-radius: 0.25rem;*/
     margin: 0.5rem auto;
     padding: 0.5rem 1rem;
     font-family: inherit;
     font-size: inherit;
     outline: none;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition-property: background-color, border, box-shadow;
+    box-shadow: none;
+    transition-property: background-color;
     transition-duration: 100ms;
     transition-timing-function: ease;
     -webkit-box-sizing: border-box;
@@ -352,23 +375,29 @@ select {
 }
 
 input[type^='submit'] {
-    width: 25%;
+    width: auto;
     background-color: var(--color-main);
     color: var(--white);
-    transition-property: box-shadow;
+    border: 2px solid transparent;
+    margin: 0.5rem auto;
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    transition-property: background-color, color,border;
     transition-duration: 100ms;
     transition-timing-function: ease;
 }
 
 input[type^='submit']:focus {
-    background-color: var(--color-main);
-    border: none;
-    box-shadow: none;
+    background-color: transparent;
+    color: var(--color-txt-emphasis);
+    border: 2px solid var(--color-main);
 }
 
 input:focus,
 textarea:focus {
-    background-color: var(--color-bg);
-    border: 1px solid var(--color-main);
+    background-color: var(--color-bg-emphasis);
+    /*border: 1px solid var(--color-main);*/
     box-shadow: none;
 }
