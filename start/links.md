@@ -13,9 +13,10 @@
 - [YouTube](https://www.youtube.com/)
 - [Spotify](https://open.spotify.com/)
 - [Reddit](https://old.reddit.com/)
-- [r/learnprogramming](https://old.reddit.com/r/learnprogramming)
+- [RL Garage](https://rocket-league.com/trading)
 
 ## utils
 - [Mail](https://mail.google.com/)
 - [Drive](https://drive.google.com/)
 - [GitHub](https://github.com/)
+- [Overleaf](https://www.overleaf.com/)
