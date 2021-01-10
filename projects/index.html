@@ -24,22 +24,25 @@
     <link rel="stylesheet" href="../assets/css/main.css">
     <script src="../assets/js/marked.min.js"></script>
     <script src="../assets/js/scripts.min.js"></script>
+    <script src="../content/projects.js"></script>
 </head>
 
 <body>
-    <main class="port">
+    <main>
         <h1>My Projects</h1>
-        <div id='covid'></div>
-        <div id="site"></div>
-        <div id="robotics"></div>
+        <div id="content" class="port"></div>
         <footer>
             <a href="..">Home</a><a href="../about/">About</a><a href="../projects/" class="active">Projects</a><a href="../resume/" target="_blank">Resume</a>
         </footer>
         <script>
         // Load file
-        readFile('../content/covid.md', 'covid');
-        readFile('../content/site.md', 'site');
-        readFile('../content/robotics.md', 'robotics');
+        // readFile('../content/covid.md', 'covid');
+        // readFile('../content/site.md', 'site');
+        // readFile('../content/robotics.md', 'robotics');
+        tpath = '../content/'
+        for (i = 0; i < projects.length; i++) {
+            readTime(tpath, projects[i]);
+        }
         </script>
     </main>
 </body>

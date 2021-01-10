@@ -91,7 +91,7 @@
     --oc-gray-9-rgb: 33, 37, 41;
 
 
-    /* defaults 
+    /* defaults */
     --color-bg: var(--white);
     --color-bg-emphasis: var(--nord6);
     --color-txt: var(--nord3);
@@ -99,14 +99,14 @@
     --color-main: var(--nord9);
     --color-link: var(--nord7);
     --color-highlight: var(--nord13);
-    */
-    --color-bg: rgb(var(--oc-white-rgb));
+    
+    /*--color-bg: rgb(var(--oc-white-rgb));
     --color-bg-emphasis: rgb(var(--oc-gray-1-rgb));
     --color-txt: rgb(var(--oc-gray-7-rgb));
     --color-txt-emphasis: rgb(var(--oc-gray-8-rgb));
     --color-main: var(--nord9);
     --color-link: var(--nord7);
-    --color-highlight: var(--nord13);
+    --color-highlight: var(--nord13);*/
 }
 
 @media (prefers-color-scheme: dark) {
