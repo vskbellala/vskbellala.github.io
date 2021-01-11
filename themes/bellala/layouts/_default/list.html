@@ -2,7 +2,7 @@
 <h1>{{ .Title }}</h1>
 {{ .Content }}
 <div class='port'>
-    {{ range .Pages.ByDate }}
+    {{ range .Pages.ByDate.Reverse }}
     <div>
         <img src='/img/{{ .Param "image" }}' alt='{{ .Param "alt" }}'>
         <h2>{{ .Title }}</h2>
