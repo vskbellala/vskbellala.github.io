@@ -12,7 +12,7 @@ My first foray into the wonderful world of web design. Inspired by the tenets of
 
 - HTML
 - CSS
-- A little bit of [JS](https://marked.js.org/)
+- [Hugo](https://gohugo.io/)
 - And some Markdown too
 
 It's also [open source on GitHub](https://github.com/vskbellala/vskbellala.github.io)!.
