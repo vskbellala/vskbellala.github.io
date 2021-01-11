@@ -1,0 +1,13 @@
+<nav>
+    {{ $currentPage := . }}
+
+    {{if (eq $currentPage.RelPermalink "/")}}
+        {{ range where .Site.Menus.main "Name" "!=" "Home" }}
+        <a href="{{ .URL }}" title="{{ .Title }}" target="{{if eq .Name "Resume"}}_blank{{else}}_self{{end}}">{{.Name}}</a>
+        {{ end }}
+    {{else}}
+        {{ range .Site.Menus.main }}
+        <a class="{{if (eq $currentPage.RelPermalink .URL)}}active{{end}}" href="{{ .URL }}" title="{{ .Title }}" target="{{if eq .Name "Resume"}}_blank{{else}}_self{{end}}">{{.Name}}</a>
+        {{ end }}
+    {{end}}
+</nav>

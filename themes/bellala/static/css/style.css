@@ -1,0 +1,401 @@
+/*! system-font.css v2.0.2 | CC0-1.0 License | github.com/jonathantneal/system-font-css */
+
+@font-face {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 300;
+    src: local(".SFNS-Light"), local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Segoe UI Light"), local("Ubuntu Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+@font-face {
+    font-family: system-ui;
+    font-style: italic;
+    font-weight: 300;
+    src: local(".SFNS-LightItalic"), local(".SFNSText-LightItalic"), local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"), local("Segoe UI Light Italic"), local("Ubuntu Light Italic"), local("Roboto-LightItalic"), local("DroidSans"), local("Tahoma");
+}
+
+@font-face {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 400;
+    src: local(".SFNS-Regular"), local(".SFNSText-Regular"), local(".HelveticaNeueDeskInterface-Regular"), local(".LucidaGrandeUI"), local("Segoe UI"), local("Ubuntu"), local("Roboto-Regular"), local("DroidSans"), local("Tahoma");
+}
+
+@font-face {
+    font-family: system-ui;
+    font-style: italic;
+    font-weight: 400;
+    src: local(".SFNS-Italic"), local(".SFNSText-Italic"), local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"), local("Segoe UI Italic"), local("Ubuntu Italic"), local("Roboto-Italic"), local("DroidSans"), local("Tahoma");
+}
+
+@font-face {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 500;
+    src: local(".SFNS-Medium"), local(".SFNSText-Medium"), local(".HelveticaNeueDeskInterface-MediumP4"), local(".LucidaGrandeUI"), local("Segoe UI Semibold"), local("Ubuntu Medium"), local("Roboto-Medium"), local("DroidSans-Bold"), local("Tahoma Bold");
+}
+
+@font-face {
+    font-family: system-ui;
+    font-style: italic;
+    font-weight: 500;
+    src: local(".SFNS-MediumItalic"), local(".SFNSText-MediumItalic"), local(".HelveticaNeueDeskInterface-MediumItalicP4"), local(".LucidaGrandeUI"), local("Segoe UI Semibold Italic"), local("Ubuntu Medium Italic"), local("Roboto-MediumItalic"), local("DroidSans-Bold"), local("Tahoma Bold");
+}
+
+@font-face {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 700;
+    src: local(".SFNS-Bold"), local(".SFNSText-Bold"), local(".HelveticaNeueDeskInterface-Bold"), local(".LucidaGrandeUI"), local("Segoe UI Bold"), local("Ubuntu Bold"), local("Roboto-Bold"), local("DroidSans-Bold"), local("Tahoma Bold");
+}
+
+@font-face {
+    font-family: system-ui;
+    font-style: italic;
+    font-weight: 700;
+    src: local(".SFNS-BoldItalic"), local(".SFNSText-BoldItalic"), local(".HelveticaNeueDeskInterface-BoldItalic"), local(".LucidaGrandeUI"), local("Segoe UI Bold Italic"), local("Ubuntu Bold Italic"), local("Roboto-BoldItalic"), local("DroidSans-Bold"), local("Tahoma Bold");
+}
+
+:root {
+    /* Colors - Nord */
+    --white: #fafbfc;
+    --nord0: #2e3440;
+    --nord1: #3b4252;
+    --nord2: #434c5e;
+    --nord3: #4c566a;
+    --nord4: #d8dee9;
+    --nord5: #e5e9f0;
+    --nord6: #eceff4;
+    --nord7: #8fbcbb;
+    --nord8: #88c0d0;
+    --nord9: #81a1c1;
+    --nord10: #5e81ac;
+    --nord11: #bf616a;
+    --nord12: #d08770;
+    --nord13: #ebcb8b;
+    --nord14: #a3be8c;
+    --nord15: #b48ead;
+
+    /*Open color*/
+    --oc-white-rgb: 255, 255, 255;
+    --oc-black-rgb: 0, 0, 0;
+    --oc-gray-0-rgb: 248, 249, 250;
+    --oc-gray-1-rgb: 241, 243, 245;
+    --oc-gray-2-rgb: 233, 236, 239;
+    --oc-gray-3-rgb: 222, 226, 230;
+    --oc-gray-4-rgb: 206, 212, 218;
+    --oc-gray-5-rgb: 173, 181, 189;
+    --oc-gray-6-rgb: 134, 142, 150;
+    --oc-gray-7-rgb: 73, 80, 87;
+    --oc-gray-8-rgb: 52, 58, 64;
+    --oc-gray-9-rgb: 33, 37, 41;
+
+
+    /* defaults */
+    --color-bg: var(--white);
+    --color-bg-emphasis: var(--nord6);
+    --color-txt: var(--nord3);
+    --color-txt-emphasis: var(--nord1);
+    --color-main: var(--nord9);
+    --color-link: var(--nord7);
+    --color-highlight: var(--nord13);
+    
+    /*--color-bg: rgb(var(--oc-white-rgb));
+    --color-bg-emphasis: rgb(var(--oc-gray-1-rgb));
+    --color-txt: rgb(var(--oc-gray-7-rgb));
+    --color-txt-emphasis: rgb(var(--oc-gray-8-rgb));
+    --color-main: var(--nord9);
+    --color-link: var(--nord7);
+    --color-highlight: var(--nord13);*/
+}
+
+@media (prefers-color-scheme: dark) {
+
+    /*dark theme??? */
+    :root {
+        --color-bg: var(--nord0);
+        --color-bg-emphasis: var(--nord1);
+        --color-txt: var(--nord4);
+        --color-txt-emphasis: var(--nord6);
+        --color-main: var(--nord10);
+        --color-link: var(--nord9);
+        --color-highlight: var(--nord12);
+    }
+
+    img {
+        opacity: .75;
+        transition: opacity .5s ease-in-out;
+    }
+
+    img:hover {
+        opacity: 1;
+    }
+}
+
+body {
+    margin: 0 auto;
+    max-width: 50rem;
+    font-family: system-ui, sans-serif;
+    line-height: 1.4;
+    padding: 4rem 2rem;
+    background: var(--color-bg);
+    color: var(--color-txt);
+}
+
+h2,
+h3 {
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+thead,
+caption{
+    color: var(--color-txt-emphasis);
+    font-weight: 500;
+}
+
+/*code,
+pre {
+    background: var(--color-bg-emphasis);
+}*/
+
+code {
+    padding: 2px 4px;
+    vertical-align: text-bottom;
+    font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+    font-size: 0.8rem;
+    font-weight: 400;
+    border-radius: 2px;
+}
+
+pre {
+    padding: 1rem;
+    display: block;
+    border-radius: 0.25rem;
+    overflow-x: auto;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+blockquote,
+q {
+    padding: 1rem;
+    margin-left: 0;
+    border-left: 4px solid var(--color-main);
+}
+
+blockquote:after {
+    content: "— "attr(cite);
+    display: block;
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: var(--color-main);
+}
+
+q:before,
+q:after {
+    content: none;
+}
+
+a,
+a:link {
+    color: var(--color-txt);
+    text-decoration: none;
+    background-position-y: -0%;
+    background-image: linear-gradient(transparent 50%, var(--color-link) 50%);
+    transition: background 100ms ease;
+    background-size: 2px;
+    background-size: auto 175%;
+    outline: none;
+}
+
+a:hover,
+a:focus {
+    background-position-y: 50%;
+}
+
+mark {
+    background-color: var(--color-highlight);
+    border-radius: 2px;
+    padding: 0px 2px 0px 2px;
+    color: var(--color-txt);
+}
+
+li {
+    margin: 0.25rem 0;
+}
+
+nav {
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+nav a,
+.nav a {
+    padding: 0.25rem;
+    font-size: 1.15rem;
+    --color-link: var(--color-main);
+}
+
+a.active {
+    --color-link: var(--color-highlight);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.port div {
+    margin-top: 3rem;
+}
+
+.port div+div {
+    margin-top: 6rem;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid var(--color-main);
+    margin: 1rem 0;
+    width: 10rem;
+    height: 0px;
+}
+
+caption {
+    text-align: left;
+    font-size: 1.25rem;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+td,
+th {
+    padding: 0.5rem;
+    text-align: left;
+}
+
+table.stripe tbody tr:nth-child(odd) {
+    background: var(--color-bg-emphasis);
+}
+
+table.hover tbody tr {
+    border-bottom: 1px solid var(--color-main);
+}
+
+table.hover tr:last-child {
+    border-bottom: 0;
+}
+
+table.hover tbody tr:hover {
+    background: var(--color-bg-emphasis);
+    transition: background 100ms ease;
+}
+
+tfoot {
+    font-weight: bold;
+    background: var(--color-bg);
+}
+
+address {
+    font-style: normal;
+    margin-bottom: 1rem;
+}
+
+address a[href^='mailto']::before {
+    content: '📧 ';
+}
+
+address a[href^='tel']::before {
+    content: '📞 ';
+}
+
+address a[href^='sms']::before {
+    content: '💬 ';
+}
+
+address a::before {
+    content: '🔗 ';
+}
+/* needs to be reworked */
+form {
+    background-color: var(--color-bg);
+    overflow-x: visible;
+    /*text-align: center;*/
+    box-shadow: none;
+}
+
+input:not([type="submit"]),
+textarea,
+select {
+    width: 100%;
+    max-width: 100%;
+    min-width: 50%;
+    height: auto;
+    /*background-color: var(--color-bg-emphasis);*/
+    /*color: var(--color-txt-emphasis);*/
+    border: none;
+    border-bottom: 2px solid var(--color-main);
+    /*border-radius: 0.25rem;*/
+    margin: 0.5rem auto;
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    box-shadow: none;
+    transition-property: background-color;
+    transition-duration: 100ms;
+    transition-timing-function: ease;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    color: var(--color-txt);
+    opacity: 0.8;
+}
+
+input[type^='submit'] {
+    width: auto;
+    background-color: var(--color-main);
+    color: var(--white);
+    border: 2px solid transparent;
+    margin: 0.5rem auto;
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    transition-property: background-color, color,border;
+    transition-duration: 100ms;
+    transition-timing-function: ease;
+}
+
+input[type^='submit']:focus {
+    background-color: transparent;
+    color: var(--color-txt-emphasis);
+    border: 2px solid var(--color-main);
+}
+
+input:focus,
+textarea:focus {
+    background-color: var(--color-bg-emphasis);
+    /*border: 1px solid var(--color-main);*/
+    box-shadow: none;
+}

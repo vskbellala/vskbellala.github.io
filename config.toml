@@ -1,0 +1,37 @@
+baseURL = "https://bellala.org/"
+languageCode = "en-us"
+title = "Bellala"
+theme = "bellala"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term", "sitemap", "RSS"]
+publishDir = 'docs/'
+
+[taxonomies]
+    category = "categories"
+    tag = "tags"
+[params]
+  tileColor = '#8fbcbb'
+  themeColor = "#ffffff"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 3
+  [[menu.main]]
+    name = "Resume"
+    url = "/resume/"
+    weight = 3
+
+[markup]
+  [markup.highlight]
+  guessSyntax = true
+  style = "dracula"

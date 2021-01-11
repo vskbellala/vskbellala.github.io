@@ -1,4 +1,8 @@
-# About Me
+---
+title: "About Me"
+date: 2021-01-10T11:28:58-06:00
+draft: false
+---
 
 I am a freshman at [Brown University](https://www.brown.edu/) potentially concentrating in Biomedical Engineering and a member of the [Program in Liberal Medical Education](https://www.brown.edu/academics/medical/plme/).
 
