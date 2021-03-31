@@ -99,7 +99,7 @@
     --color-main: var(--nord9);
     --color-link: var(--nord7);
     --color-highlight: var(--nord13);
-    
+
     /*--color-bg: rgb(var(--oc-white-rgb));
     --color-bg-emphasis: rgb(var(--oc-gray-1-rgb));
     --color-txt: rgb(var(--oc-gray-7-rgb));
@@ -156,7 +156,7 @@ h5,
 h6,
 strong,
 thead,
-caption{
+caption {
     color: var(--color-txt-emphasis);
     font-weight: 500;
 }
@@ -258,6 +258,12 @@ img {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
+.icon {
+    margin-right: 0.25rem;
+    vertical-align: middle;
+    fill: var(--color-txt-emphasis);
+}
+
 .port div {
     margin-top: 3rem;
 }
@@ -333,6 +339,7 @@ address a[href^='sms']::before {
 address a::before {
     content: '🔗 ';
 }
+
 /* needs to be reworked */
 form {
     background-color: var(--color-bg);
@@ -382,7 +389,7 @@ input[type^='submit'] {
     font-family: inherit;
     font-size: inherit;
     outline: none;
-    transition-property: background-color, color,border;
+    transition-property: background-color, color, border;
     transition-duration: 100ms;
     transition-timing-function: ease;
 }
