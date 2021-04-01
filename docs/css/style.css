@@ -259,7 +259,7 @@ img {
 }
 
 .icon {
-    margin-right: 0.25rem;
+    margin-right: 0.5rem;
     vertical-align: middle;
     fill: var(--color-txt-emphasis);
 }

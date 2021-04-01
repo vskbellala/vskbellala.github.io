@@ -6,6 +6,8 @@ image: "site.webp"
 alt: "Screenshot of Site"
 weight: 2
 ---
+{{<github "vskbellala/vskbellala.github.io">}}
+
 My first foray into the wonderful world of web design. Inspired by the tenets of <mark>minimalism</mark>.
 
 ### Technologies used
@@ -14,8 +16,6 @@ My first foray into the wonderful world of web design. Inspired by the tenets of
 - CSS
 - [Hugo](https://gohugo.io/)
 - And some Markdown too
-
-{{<github "vskbellala/vskbellala.github.io">}}
 
 ```css
 /* Here is my image CSS! */
