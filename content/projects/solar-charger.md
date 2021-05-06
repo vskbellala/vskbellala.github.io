@@ -1,7 +1,7 @@
 ---
 title: "SSW Solar Charger Dashboard"
 date: 2021-03-31T10:04:12-05:00
-draft: true
+draft: false
 image: "solar_charger.webp"
 alt: "Plotly tech demo"
 ---
@@ -12,7 +12,7 @@ An online, responsive dashboard for monitoring the status of our solar charging 
 
 ### Technologies used
 
-- HTML
-- CSS
 - JS ([JustGage](https://github.com/toorshia/justgage) and [Plotly JS](https://plotly.com/javascript/), plus some XMLHttpRequest)
 - [Firebase](https://firebase.google.com/)
+- HTML
+- CSS

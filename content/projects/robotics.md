@@ -1,7 +1,7 @@
 ---
 title: "MVHS Robotics"
 date: '2021-01-08'
-draft: false
+draft: true
 image: "mvrobot.webp"
 alt: "Robot Picture"
 weight: 3
