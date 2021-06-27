@@ -5,7 +5,7 @@ draft: false
 ---
 {{<github "vskbellala">}}
 
-I am a freshman at [Brown University](https://www.brown.edu/) potentially concentrating in Biomedical Engineering and a member of the [Program in Liberal Medical Education](https://www.brown.edu/academics/medical/plme/).
+I am a freshman at [Brown University](https://www.brown.edu/) potentially concentrating in Biomedical Engineering<!-- and a member of the [Program in Liberal Medical Education](https://www.brown.edu/academics/medical/plme/) -->.
 
 - Pronouns: **He/Him**
 - Social Media: *N/A*

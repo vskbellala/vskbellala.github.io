@@ -26,10 +26,10 @@ publishDir = 'docs/'
     name = "Projects"
     url = "/projects/"
     weight = 3
-  [[menu.main]]
-    name = "Resume"
-    url = "/resume/"
-    weight = 3
+  #[[menu.main]]
+    #name = "Resume"
+    #url = "/resume/"
+    #weight = 4
 
 [markup]
   [markup.highlight]
