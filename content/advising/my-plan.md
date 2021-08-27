@@ -37,7 +37,7 @@ Links to the [Critical Review](https://thecriticalreview.org/) listing for the c
 - If you are interested in entrepreneurship, design, or are unsure of ENGN, consider ENGN0032 -- Introduction to Engineering: Design (*which I will TA for this Fall* 😃).
 
 ### [PHP0310](https://thecriticalreview.org/search/PHP/0310) -- Health Care in US
-- Course was offered fully asynchronous (think recorded lectures and everything posted in advance). Can go at your own pace or follow the recommended calendar.
+- Course was offered asynchronous (think recorded lectures and everything posted in advance) with some synchronous portions (review sections, etc.). Can go at your own pace or follow the recommended calendar. *Note for Fall 2021: PHP0310 will be only offered asynchronous (some synchronous portions)*.
 - This course gives a great overview of US healthcare and talks about many relevant issues facing it today. A must-take for anyone interested in medicine and/or public health. Professor Wilson has also taught the course for over a decade.
 
 ### SOC0300K -- Inequalities and Health *(FYS)*
