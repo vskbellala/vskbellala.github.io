@@ -1,0 +1,13 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{.Content}}
+<ul>
+    <!-- ranges through content in ascending order according to the "title" field set in front matter -->
+    {{ range .Pages.ByTitle }}
+        <li>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+           <!--  <time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time> -->
+        </li>
+    {{ end }}
+</ul>
+{{ end }}

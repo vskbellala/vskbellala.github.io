@@ -3,7 +3,7 @@ title: "Music"
 date: 2021-06-23T15:27:09-04:00
 draft: false
 ---
-I produce music as part of MUSC0200: Computers and Music. Give my [soundcloud](https://soundcloud.com/shri-bellala) a look. Latest music on top.
+I produced music as part of MUSC0200: Computers and Music. Give my [soundcloud](https://soundcloud.com/shri-bellala) a look. Latest music on top.
 ***
 {{<soundcloud 1093625464>}}
 [Read the translation.](/music/coffee-milk)
