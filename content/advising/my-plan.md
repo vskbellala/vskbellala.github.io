@@ -3,19 +3,21 @@ title: "Shri's First-Year Plan"
 date: 2021-08-27T15:22:26-05:00
 draft: false
 ---
-*Take note of these as suggestions. Your first year is all about exploring and finding out what works for you. It does not have to look exactly like my own nor anyone else's.* - Shri
+*Take note of these as suggestions. Your first year is all about exploring and finding out what works for you. It does not have to look exactly like my own nor anyone else's.*
 
-Links to the [Critical Review](https://thecriticalreview.org/) listing are included, if available. Hope this helps with your search!    
+I had an oddly scheduled first year, as well, so my experiences may not relate well to your own. Most students tend to take four (4) courses their first semester, and some - occasionally - will take five (5) courses during their second semester. However, don't let this stop you from exploring all you can, especially during shopping period.
+
+Links to the [Critical Review](https://thecriticalreview.org/) listing for the course are included, if available. Hope this helps with your search!
 
 - [Fall 2020](#fall-2020)
-- [Spring 2021](#spring-2021)
-- [Summer 2021](#summer-2021)
+- [Spring 2021](#spring-2021) (My "Fall")
+- [Summer 2021](#summer-2021) (My "Spring")
 
 ***
 ## Fall 2020
 
 ### [CSCI0111](https://thecriticalreview.org/search/CSCI/0111) -- Computing Foundations: Data
-- Great, kinda laid-back introduction to Computer Science from a data perspective. Also has ethics portions. Also recommended if you are unfamiliar or unsure about CS.
+- Great, kinda laid-back introduction to Computer Science from a data perspective. Also has ethics portions. Highly recommended especially if you are unfamiliar or unsure about CS.
 - It is the first of a three-part sequence, but interested students can complete bridgework (*I did, it wasn't particularly challenging*) to take the final part of CSCI's two-course sequence (CSCI0200).
 
 ***
@@ -30,7 +32,7 @@ Links to the [Critical Review](https://thecriticalreview.org/) listing are inclu
 - Success in this course is dependent on how much you can dedicate to doing the readings, GPS problems, and other practice. I took the lab portion fully online, so my experience may not line up with your own.
 
 ### [ENGN0031](https://thecriticalreview.org/search/ENGN/0031) -- Honors Intro to Engineering *(Not offered Fall 2021)*
-- If you got the time and a hankering for MATLAB, then this course is for you. I found it quite time-consuming, but very fulfilling and interesting. All intro courses have the same group design portions in the [BDW](http://www.browndesignworkshop.org/), which I had so much fun with.
+- If you got the time and a hankering for MATLAB, then this course is for you. I found it quite time-consuming, but very fulfilling and interesting. All intro courses have the same group design portions in the [Brown Design Workshop](http://www.browndesignworkshop.org/) (BDW), which I had so much fun with.
 - For a slower paced introduction, consider [ENGN0030](https://thecriticalreview.org/search/ENGN/0030) -- Introduction to Engineering.
 - If you are interested in entrepreneurship, design, or are unsure of ENGN, consider ENGN0032 -- Introduction to Engineering: Design (*which I will TA for this Fall* 😃).
 
@@ -58,7 +60,7 @@ Links to the [Critical Review](https://thecriticalreview.org/) listing are inclu
 
 ### [APMA0330](https://thecriticalreview.org/search/APMA/0330) -- Methods of Applied Math I + II *(No longer offered)*
 - For the most part, this is a pretty standard differential equations course, with weekly problem sets and all material taught via lecture (although in my experience, reading the textbook does help occasionally). Overall, it is very manageable and the capstones we did allowed me to apply my knowledge to real-life scenarios. Multivariable calculus isn't really needed; Calc II is sufficient.
-- If interested in diffeq and math, consider taking [APMA0350](https://thecriticalreview.org/search/APMA/0350) -- Applied Ordinary Differential Equations, or [MATH0520](https://thecriticalreview.org/search/MATH/0520) -- Linear Algebra ([MATH0540](https://thecriticalreview.org/search/MATH/0540) is the Honors variant).
+- If interested in diffeq and/or math, consider taking [APMA0350](https://thecriticalreview.org/search/APMA/0350) -- Applied Ordinary Differential Equations, or [MATH0520](https://thecriticalreview.org/search/MATH/0520) -- Linear Algebra ([MATH0540](https://thecriticalreview.org/search/MATH/0540) is the Honors variant).
 
 ### [MUSC0200](https://thecriticalreview.org/search/MUSC/0200) -- Computers and Music
 - Offered fully online. This course is really two courses in one: history of computer music and the people who made it, and making your own music using a digital audio workstation (DAW). Music experience does help, but the professor, graduate TA, and the other students are very understanding and consistently give great feedback and advice.
