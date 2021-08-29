@@ -161,11 +161,6 @@ caption {
     font-weight: 500;
 }
 
-/*code,
-pre {
-    background: var(--color-bg-emphasis);
-}*/
-
 code {
     padding: 2px 4px;
     vertical-align: text-bottom;
