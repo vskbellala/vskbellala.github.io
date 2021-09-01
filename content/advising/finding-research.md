@@ -2,6 +2,7 @@
 title: "Finding Research"
 date: 2021-08-28T10:27:15-05:00
 draft: false
+description: "A quick tutorial on finding research opportunities."
 ---
 
 *Here at Brown, you will come across a multitude of opportunities to conduct research, either on your own or with a faculty member. Think of this rough write-up as just a glimpse of where to look.*
@@ -26,7 +27,6 @@ Professors and faculty members looking for undergraduate researchers may post jo
     - Login by clicking the big blue button labeled "Workday Access" and inputting your Brown credentials.
     - Once in, navigate to the search bar, and search the phrase "Find Student Jobs." One more click and you'll arrive at the listings.
     - You can search through the listings and filter them to your specifications. Make sure you don't accidentally apply to old postings!
-***
 
 ## Freezing Cold Emails
 

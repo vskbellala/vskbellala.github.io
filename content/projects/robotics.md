@@ -4,12 +4,13 @@ date: '2021-01-08'
 draft: true
 image: "mvrobot.webp"
 alt: "Robot Picture"
-weight: 3
-headless: true
 ---
-I was the lead builder & designer for my robotics team 8995M Mustang Voltage, <mark>3x</mark> VEX Worlds Qualifiers. I also co-managed a [Twitter](https://twitter.com/mvrobotics8995) account and [website](https://tinyurl.com/mvrobotics) for Metea Robotics. Robot from the 2019-20 season pictured.
+I was the lead builder & designer for my robotics team 8995M Mustang Voltage, 3x VEX Worlds Qualifiers. I also co-managed a [Twitter](https://twitter.com/mvrobotics8995) account and [website](https://tinyurl.com/mvrobotics) for Metea Robotics.
+<!--more-->
 
-### Our achievements
+Robot from the 2019-20 season pictured.
+
+## Our achievements
 - 3x VEX Worlds Appearances
     - 2018: 75th in the Research Division
     - 2019: 24th in the Engineering Division

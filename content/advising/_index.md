@@ -5,4 +5,7 @@ draft: false
 ---
 This is a live document, and will be updated with resources and other info throughout the semester.
 
-Entries sorted in alphabetical order. Email or message me with any questions.
+Articles sorted in alphabetical order. Email or message me with any questions.
+
+***
+## Articles

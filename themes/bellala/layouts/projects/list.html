@@ -1,13 +1,21 @@
 {{ define "main" }}
+{{ $len := (len .Pages) }}
 <h1>{{ .Title }}</h1>
 {{ .Content }}
 <div class='port'>
-    {{ range .Pages.ByDate.Reverse }}
-    <div>
-        <img src='/img/{{ .Param "image" }}' alt='{{ .Param "alt" }}'>
+    {{ range $index, $value := .Pages.ByDate.Reverse }}
+    <!-- <div style='background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/img/{{ .Param "image" }});'> -->
         <h2>{{ .Title }}</h2>
-        {{.Content}}
-    </div>
+        {{.Summary}}
+        <p><a class = 'nav' href="{{ .Permalink }}">Read more...</a></p>
+        <!-- <hr> -->
+        <!-- <img src='/img/{{ .Param "image" }}' alt='{{ .Param "alt" }}'> -->
+        <!-- <h2>{{ .Title }}</h2> -->
+        <!-- {{.Content}} -->
+    <!-- </div> -->
+    {{if not (eq (add $index 1) $len)}}
+    <hr>
+    {{end}}
     {{ end }}
 </div>
 {{ end }}

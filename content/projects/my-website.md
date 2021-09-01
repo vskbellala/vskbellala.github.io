@@ -4,13 +4,13 @@ date: '2021-01-09'
 draft: false
 image: "site.webp"
 alt: "Screenshot of Site"
-weight: 2
 ---
 {{<github "vskbellala/vskbellala.github.io">}}
 
-My first foray into the wonderful world of web design. Inspired by the tenets of <mark>minimalism</mark>.
+My first foray into the wonderful world of web design. Inspired by the tenets of minimalism.
+<!--more-->
 
-### Technologies used
+## Technologies used
 
 - HTML
 - CSS

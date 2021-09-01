@@ -1,7 +1,8 @@
 ---
-title: "Shri's First-Year Plan"
+title: "Shri's First Year Plan"
 date: 2021-08-27T15:22:26-05:00
 draft: false
+description: "An overview of my first year's courses."
 ---
 *Take note of these as suggestions. Your first year is all about exploring and finding out what works for you. It does not have to look exactly like my own nor anyone else's.*
 

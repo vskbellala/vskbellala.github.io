@@ -20,7 +20,7 @@ Uses the ever wonderful [Nord Color Palette](https://www.nordtheme.com/).
   - I use the [System Font Stack](https://github.com/jonathantneal/system-font-css).
 - [x] Add Resume PDF
 - [x] Add Online View of Resume
-- [ ] More Links/Info?
+- [x] More Links/Info?
 - [ ] Clean up code
 - [ ] Optimize Images
   - [x] Use .webp format

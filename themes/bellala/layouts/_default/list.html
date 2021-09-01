@@ -1,13 +1,13 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
 {{ .Content }}
-<div class='port'>
+<ul>
+    <!-- ranges through content in ascending order according to the "title" field set in front matter -->
     {{ range .Pages.ByDate.Reverse }}
-    <div>
-        <img src='/img/{{ .Param "image" }}' alt='{{ .Param "alt" }}'>
-        <h2>{{ .Title }}</h2>
-        {{.Content}}
-    </div>
+        <li>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+           <!--  <time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time> -->
+        </li>
     {{ end }}
-</div>
+</ul>
 {{ end }}
