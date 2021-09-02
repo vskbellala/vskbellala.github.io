@@ -280,6 +280,10 @@ nav#TableOfContents ol{
     font-size: smaller;
 }
 
+nav#TableOfContents li > ol{
+    margin-left: 0.5rem;
+}
+
 nav#TableOfContents {
     border: 2px solid var(--color-bg-emphasis);
     border-radius: 4px;
