@@ -3,6 +3,6 @@
 {{.Content}}
     <!-- ranges through content in ascending order according to the "title" field set in front matter -->
     {{ range .Pages.ByTitle }}
-            <p><a href="{{ .Permalink }}">{{ .Title }}</a> ({{.ReadingTime}} min) -- {{.Description}}</p>
+            <p><a class='nav' href="{{ .Permalink }}">{{ .Title }}</a> ({{.ReadingTime}} min) -- {{.Description}}</p>
     {{ end }}
 {{ end }}

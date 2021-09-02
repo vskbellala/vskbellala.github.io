@@ -35,3 +35,7 @@ publishDir = 'docs/'
   [markup.highlight]
   guessSyntax = true
   style = "dracula"
+  [markup.tableOfContents]
+  endLevel = 3
+  ordered = true
+  startLevel = 2

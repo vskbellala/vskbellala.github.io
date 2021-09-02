@@ -1,5 +1,14 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-<small><strong>{{.FuzzyWordCount}} words &#8226; {{.ReadingTime}} min read</strong></small>
+<header>
+    <h1>{{ .Title }}</h1>
+</header>
+<aside>
+<p><small><strong>{{.WordCount}} words &#8226; {{.ReadingTime}} min read</strong></small></p>
+
+{{ .TableOfContents }}
+<hr>
+</aside>
+<article>
 {{ .Content }}
+</article>
 {{ end }}
