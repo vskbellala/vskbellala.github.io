@@ -261,7 +261,7 @@ nav.menu a {
     font-size: 1.15rem;
 }
 
-a.nav, a[href^="#"], a[href^="/"]{
+a.nav,a.read, a[href^="#"], a[href^="/"]{
     --color-link: var(--color-nav);
 }
 
@@ -273,6 +273,18 @@ a.active, nav.menu a.active {
     --color-link: var(--color-highlight);
 }
 
+a.read{
+    background:  none;
+    color: var(--color-link);
+    font-weight: bold;
+    margin: 0 0.5rem;
+    transition: color 100ms ease;
+    vertical-align: text-top;
+}
+
+a.read:hover,a.read:focus{
+    color: var(--color-txt-emphasis);
+}
 nav#TableOfContents ol{
     list-style-type: none;
     margin: 0;
