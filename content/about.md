@@ -5,8 +5,16 @@ draft: false
 ---
 {{<github "vskbellala">}}
 
-I am a sophomore at [Brown University](https://www.brown.edu/) likely concentrating in Biomedical Engineering<!-- and a member of the [Program in Liberal Medical Education](https://www.brown.edu/academics/medical/plme/) -->.
+I am a sophomore at [Brown University](https://www.brown.edu/) concentrating in Biomedical Engineering. My pronouns are **He/Him**.
 
-- Pronouns: **He/Him**
+I investigate polymer mechanics as an undergraduate researcher in the [Srivastava Lab](https://sites.brown.edu/srivastavalab/).
 
-I am passionate about open source technology, actively integrating it into my own life. I enjoy reading short stories, baking, and sewing. I also love to try my hand at [designing websites](https://github.com/vskbellala/covid-visuals/).
+I write [advising commentaries](/advising) to guide my [Meiklejohn](https://www.brown.edu/academics/college/advising/peer/) advisees.
+
+I enjoy reading short stories and cake-baking.
+
+I am passionate about open source technology, actively integrating it into my own life.
+
+I also love to try my hand at designing [websites](/projects/covid-visuals/) (and [dashboards](/projects/solar-charger)).
+
+<!-- and a member of the [Program in Liberal Medical Education](https://www.brown.edu/academics/medical/plme/) -->
