@@ -15,7 +15,7 @@ The deadline for declaring your first concentration is in the middle of your fou
 2. Make a list of courses that count towards the concentration.
 3. Speak with a concentration advisor about your plan, ideally *before* winter break of your sophomore year.
 4. Complete your declaration in [ASK](https://ask.brown.edu/declarations/)!
-5. Declare additional concentrations and [certificates](https://www.brown.edu/academics/college/degree/undergraduatecertificates)
+5. Declare additional concentrations and [certificates](https://www.brown.edu/academics/college/degree/undergraduatecertificates).
 
 ## Finalizing your concentration {#finalize}
 Although the process to change your concentration after you have already declared isn't too complex, it saves you much hassle if you declare your concentration with confidence and sureness. Generally speaking, I recommend doing the following **before** you declare.
