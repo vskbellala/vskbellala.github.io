@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jim why</title>
+<link rel="apple-touch-icon" sizes="180x180" href="//bellala.org/favicons/apple-touch-icon.png?v=PYAnWEX75A">
+<link rel="icon" type="image/png" sizes="32x32" href="//bellala.org/favicons/favicon-32x32.png?v=PYAnWEX75A">
+<link rel="icon" type="image/png" sizes="16x16" href="//bellala.org/favicons/favicon-16x16.png?v=PYAnWEX75A">
+<link rel="manifest" href="//bellala.org/favicons/site.webmanifest?v=PYAnWEX75A">
+<link rel="mask-icon" href="//bellala.org/favicons/safari-pinned-tab.svg?v=PYAnWEX75A" color="#8fbcbb">
+<link rel="shortcut icon" href="//bellala.org/favicons/favicon.ico?v=PYAnWEX75A">
+<meta name="apple-mobile-web-app-title" content="jim why">
+<meta name="application-name" content="jim why">
+<meta name="msapplication-TileColor" content="#8fbcbb">
+<meta name="msapplication-config" content="//bellala.org/favicons/browserconfig.xml?v=PYAnWEX75A">
+<meta name="theme-color" content="#ffffff">
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        /*border: 2px solid #FFF;*/
+    }
+    body{
+        background-color: white;
+        color:  black;
+        height: 100vh;
+        width: 100vw;
+    }
+    h1{
+        /*margin: 0 auto;*/
+        text-align: center;
+        font-weight: normal;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+</style>
+<script type="text/javascript">
+    var keeb = 0.1227645;
+    function keebCost(){
+        fetch('https://api.cryptonator.com/api/ticker/btc-usd', {
+                method: 'GET'
+            })
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(json) {
+                price = json.ticker.price;
+                cost = keeb * price;
+                document.getElementById('jim').innerHTML = '$'+cost;
+                setTimeout(keebCost,5000);
+            });
+    }
+    keebCost();
+</script>
+</head>
+<body>
+<h1 id='jim' title="0.12 BTC for 1 keyboard please"></h1>
+</body>
+</html>
