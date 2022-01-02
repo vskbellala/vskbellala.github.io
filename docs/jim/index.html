@@ -12,6 +12,7 @@
 <link rel="manifest" href="//bellala.org/favicons/site.webmanifest?v=PYAnWEX75A">
 <link rel="mask-icon" href="//bellala.org/favicons/safari-pinned-tab.svg?v=PYAnWEX75A" color="#8fbcbb">
 <link rel="shortcut icon" href="//bellala.org/favicons/favicon.ico?v=PYAnWEX75A">
+<link rel="stylesheet" type="text/css" href="https://bellala.org/css/style.css">
 <meta name="apple-mobile-web-app-title" content="jim why">
 <meta name="application-name" content="jim why">
 <meta name="msapplication-TileColor" content="#8fbcbb">
@@ -22,24 +23,32 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        /*border: 2px solid #FFF;*/
+        /*border: 1px solid red;*/
     }
     body{
-        background-color: white;
-        color:  black;
         height: 100vh;
-        width: 100vw;
+        /*width: 100vw;*/
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+        height: 100%;
     }
     h1{
-        /*margin: 0 auto;*/
         text-align: center;
+        margin: 1rem 0;
+    }
+    h1{
         font-weight: normal;
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+    }
+    td,th{
+        text-align: center;
+        width: 50%;
     }
 </style>
 <script type="text/javascript">
@@ -54,14 +63,75 @@
             .then(function(json) {
                 price = json.ticker.price;
                 cost = keeb * price;
-                document.getElementById('jim').innerHTML = '$'+cost;
+                document.getElementById('jim').innerHTML = '$'+formatNum(cost.toFixed(2));
+                fillStat(cost);
                 setTimeout(keebCost,5000);
             });
+    }
+    function formatNum(x){
+        // var x = n.toFixed(2);
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+    function fillStat(cost){
+        kb = Math.trunc(cost/90);
+        kb_cost = kb*90;
+        document.getElementById('kb').innerHTML = formatNum(kb);
+        document.getElementById('kb-cost').innerHTML = formatNum(kb_cost.toFixed(2));
+        iphone = Math.trunc(cost/999);
+        iphone_cost = iphone*999;
+        document.getElementById('iphone').innerHTML = formatNum(iphone);
+        document.getElementById('iphone-cost').innerHTML = formatNum(iphone_cost.toFixed(2));
+        banana = Math.trunc(cost/0.30);
+        banana_cost = banana*0.30;
+        document.getElementById('banana').innerHTML = formatNum(banana);
+        document.getElementById('banana-cost').innerHTML = formatNum(banana_cost.toFixed(2));
+        milk = Math.trunc(cost/2.85);
+        milk_cost = milk*2.85;
+        document.getElementById('milk').innerHTML = formatNum(milk);
+        document.getElementById('milk-cost').innerHTML = formatNum(milk_cost.toFixed(2));
+        gt = cost/15685;
+        document.getElementById('gt').innerHTML = gt.toFixed(3);
+        document.getElementById('gt-cost').innerHTML = formatNum(cost.toFixed(2));
     }
     keebCost();
 </script>
 </head>
 <body>
+<div>
 <h1 id='jim' title="0.1227645 BTC for 1 keyboard please"></h1>
+<!-- <h2>You could buy...</h2> -->
+<table>
+<!-- <caption>You could buy...</caption> -->
+<thead>
+    <tr>
+      <th>You could buy...</th>
+      <th>And it would cost...</th>
+    </tr>
+</thead>
+<tbody>
+  <tr>
+    <td title='$999.00 / iPhone'><span id=iphone></span> iPhone 13 Pros</td>
+    <td>$<span id=iphone-cost></span></td>
+  </tr>
+   <tr>
+    <td title='$0.30 / lb banana'><span id='banana'></span> lbs of bananas</td>
+    <td>$<span id='banana-cost'></span></td>
+  </tr>
+    <tr>
+    <td title='$2.85 / gal milk'><span id='milk'></span> gallons of milk</td>
+    <td>$<span id='milk-cost'></span></td>
+  </tr>
+  </tr>
+    <tr>
+    <td title="$90 due to that sweet Black Friday sale"><span id='kb'></span> keyboards</td>
+    <td>$<span id='kb-cost'></span></td>
+  </tr>
+  <tr>
+    <td title="$15,685 / semester for OOS students"><span id='gt'></span> semesters at <a href="https://finaid.gatech.edu/costs/undergraduate-costs">Georgia Tech</a></td>
+    <td>$<span id='gt-cost'></span></td>
+  </tr>
+</tbody>
+</table>
+</div>
 </body>
 </html>
