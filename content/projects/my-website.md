@@ -10,6 +10,8 @@ alt: "Screenshot of Site"
 My first foray into the wonderful world of web design. Inspired by the tenets of minimalism.
 <!--more-->
 
+Adequately tested in Firefox, Microsoft Edge, and Safari iOS.
+
 ## Technologies used
 
 - HTML

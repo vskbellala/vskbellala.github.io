@@ -5,7 +5,7 @@
     <!-- ranges through content in ascending order according to the "title" field set in front matter -->
     {{ range .Pages.ByDate.Reverse }}
         <li>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
            <!--  <time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time> -->
         </li>
     {{ end }}

@@ -1,5 +1,5 @@
 /*! system-font.css v2.0.2 | CC0-1.0 License | github.com/jonathantneal/system-font-css */
-
+/*Icons by Feather https://feathericons.com/*/
 @font-face {
     font-family: system-ui;
     font-style: normal;
@@ -99,7 +99,7 @@
     --color-main: var(--nord9);
     --color-link: var(--nord7);
     --color-highlight: var(--nord13);
-    --color-nav:  var(--nord8);
+    --color-nav: var(--nord8);
 
     /*--color-bg: rgb(var(--oc-white-rgb));
     --color-bg-emphasis: rgb(var(--oc-gray-1-rgb));
@@ -121,7 +121,7 @@
         --color-main: var(--nord10);
         --color-link: var(--nord14);
         --color-highlight: var(--nord12);
-        --color-nav:  var(--nord9);
+        --color-nav: var(--nord9);
     }
 
     img {
@@ -134,9 +134,14 @@
     }
 }
 
+* {
+    box-sizing: border-box;
+    /*border: 1px solid red;*/
+}
+
 body {
     margin: 0 auto;
-    max-width: 50rem;
+    max-width: 52rem;
     font-family: system-ui, sans-serif;
     line-height: 1.4;
     padding: 4rem 2rem;
@@ -170,7 +175,7 @@ code {
     display: inline-block;
 }
 
-pre code{
+pre code {
     padding: 0;
     margin: 0;
     background: inherit;
@@ -184,14 +189,14 @@ pre {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-blockquote{
-    padding: 0.75rem;
-    padding-right: 0;
+blockquote {
+    padding: 0rem;
+    padding-left: 0.75rem;
     margin-left: 4px;
     position: relative;
 }
 
-blockquote::before{
+blockquote::before {
     content: '';
     height: 100%;
     background: var(--color-main);
@@ -231,6 +236,7 @@ a:link {
     background-size: 2px;
     background-size: auto 175%;
     outline: none;
+    --color-icon: var(--color-link);
 }
 
 a:hover,
@@ -261,38 +267,35 @@ nav.menu a {
     font-size: 1.15rem;
 }
 
-a.nav,a.read, a[href^="#"], a[href^="/"]{
+a.nav,
+a[href^="#"],
+a[href^="/"] {
+    /*a[href^="http://localhost:1313/"]*/
     --color-link: var(--color-nav);
 }
 
-nav.menu a{
+nav.menu a {
     --color-link: var(--color-main);
 }
 
-a.active, nav.menu a.active {
+a.active,
+nav.menu a.active {
     --color-link: var(--color-highlight);
 }
 
-a.read{
-    background:  none;
-    color: var(--color-link);
-    font-weight: bold;
-    margin: 0 0.5rem;
-    transition: color 100ms ease;
-    vertical-align: text-top;
+a.nobg {
+    background-image: none;
+    background: none;
 }
 
-a.read:hover,a.read:focus{
-    color: var(--color-txt-emphasis);
-}
-nav#TableOfContents ol{
+nav#TableOfContents ol {
     list-style-type: none;
     margin: 0;
     padding: 0;
     font-size: smaller;
 }
 
-nav#TableOfContents li > ol{
+nav#TableOfContents li>ol {
     margin-left: 0.5rem;
 }
 
@@ -303,13 +306,13 @@ nav#TableOfContents {
     padding: 1rem;
 }
 
-nav#TableOfContents::before{
+nav#TableOfContents::before {
     content: "Contents";
     color: var(--color-txt-emphasis);
     font-weight: 500;
 }
 
-nav#TableOfContents:empty{
+nav#TableOfContents:empty {
     display: none;
 }
 
@@ -323,9 +326,30 @@ img {
 }
 
 .icon {
-    margin-right: 0.5rem;
     vertical-align: middle;
-    fill: var(--color-txt-emphasis);
+    stroke: var(--color-icon);
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.git {
+    /*margin-right: 0.5rem;*/
+    --color-icon: var(--color-txt-emphasis);
+}
+
+.link {
+    transition: stroke 250ms ease;
+}
+
+a:hover .link,
+a:focus .link {
+    stroke: var(--color-txt-emphasis);
+}
+
+h2>a {
+    margin-left: 0.5rem;
 }
 
 .port div {
@@ -345,7 +369,7 @@ img {
 }
 
 a.button {
-    padding: 0.5rem 1rem; 
+    padding: 0.5rem 1rem;
     border: 2px solid var(--color-main);
     border-radius: 0.25rem;
     background-image: none;
@@ -354,11 +378,12 @@ a.button {
     font-weight: bold;
     /*text-transform: uppercase;*/
     font-size: 0.875rem;
-    --color-button:  var(--color-txt);
+    --color-button: var(--color-txt);
     transition: background 200ms, color 200ms;
 }
+
 .port div a.button {
-    --color-button:  var(--white);
+    --color-button: var(--white);
     transition: background 200ms;
 }
 
@@ -503,4 +528,44 @@ textarea:focus {
     background-color: var(--color-bg-emphasis);
     /*border: 1px solid var(--color-main);*/
     box-shadow: none;
+}
+
+@media print {
+    :root {
+        --color-bg: white;
+        --color-txt: black;
+        --color-txt-emphasis: black;
+        --color-bg-emphasis: black;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav.menu,
+    nav#TableOfContents,
+    hr,
+    iframe {
+        display: none;
+    }
+
+    .icon {
+        stroke: black;
+    }
+
+    blockquote {
+        border-left: 4px solid black;
+        margin: initial;
+        position: initial;
+    }
+
+    blockquote::before {
+        display: none;
+    }
+
+    img,
+    pre {
+        box-shadow: none;
+    }
 }

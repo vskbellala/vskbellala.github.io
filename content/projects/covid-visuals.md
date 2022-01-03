@@ -10,7 +10,7 @@ alt: "covid-visuals preview"
 A project a few friends and I undertook in Summer 2020 to visualize and explain the COVID-19 pandemic and its impacts on the United States.
 <!--more-->
 
-I designed and built a website to present our findings from scratch and utilized Python to create data visualizations. [Check it out!](https://covid-visuals.netlify.app/)
+I designed and built a website with Fomantic-UI to present our findings from scratch and utilized Python to create data visualizations.
 
 ## Technologies used
 
