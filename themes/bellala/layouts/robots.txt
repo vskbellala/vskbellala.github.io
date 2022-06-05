@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /advising/
 Allow: /$
+Allow: /sitemap.xml
 Disallow: /
