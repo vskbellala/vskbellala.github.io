@@ -1,6 +1,6 @@
 baseURL = "https://bellala.org/"
 languageCode = "en-us"
-title = "Bellala"
+title = "Venkatsai Bellala"
 theme = "bellala"
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "term", "RSS"]
