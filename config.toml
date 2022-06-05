@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Bellala"
 theme = "bellala"
 enableRobotsTXT = true
-disableKinds = ["taxonomy", "term", "sitemap", "RSS"]
+disableKinds = ["taxonomy", "term", "RSS"]
 publishDir = 'docs/'
 
 [taxonomies]
