@@ -55,7 +55,9 @@
     var keeb = 0.1227645;
     function keebCost(){
         fetch('https://api.cryptonator.com/api/ticker/btc-usd', {
-                method: 'GET'
+                method: 'GET',
+                mode: 'cors',
+                crossorigin: 'anonymous'
             })
             .then(function(response) {
                 return response.json();

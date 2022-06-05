@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /
+Allow: /advising/
+Allow: /index.html
