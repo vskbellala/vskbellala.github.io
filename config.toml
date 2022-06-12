@@ -5,13 +5,14 @@ theme = "bellala"
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "term", "RSS"]
 publishDir = 'docs/'
-
+enableGitInfo = true
 [taxonomies]
     category = "categories"
     tag = "tags"
 [params]
   tileColor = '#8fbcbb'
   themeColor = "#ffffff"
+  authors = ["Venkatsai Bellala"]
 
 [menu]
   [[menu.main]]
