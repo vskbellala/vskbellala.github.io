@@ -8,16 +8,14 @@
         By {{ range $index, $value := $.Param "authors" }}
         {{ . }}{{if not (eq (add $index 1) (add $len -1)) }}{{if not (eq (add $index 1) $len) }},
         {{end}}{{else}}
-             {{if not (eq (add $index 1) $len)}}
-             and
-             {{end}}
+        {{if not (eq (add $index 1) $len)}}
+        and
+        {{end}}
         {{end}}
         {{ end }}
-        &nbsp;|&nbsp;
-        {{.Lastmod.Format "Jan 2, 2006"}}
     </p>
     <p><small>
-            <strong>{{.WordCount}} words &#8226; {{.ReadingTime}} min read
+            <strong>{{.Lastmod.Format "Jan 2, 2006"}} &#8226; {{.ReadingTime}} min &#8226; {{.WordCount}} words
             </strong>
         </small></p>
     {{ .TableOfContents }}
