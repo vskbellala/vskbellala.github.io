@@ -13,6 +13,7 @@
 <link rel="mask-icon" href="//bellala.org/favicons/safari-pinned-tab.svg?v=PYAnWEX75A" color="#8fbcbb">
 <link rel="shortcut icon" href="//bellala.org/favicons/favicon.ico?v=PYAnWEX75A">
 <link rel="stylesheet" type="text/css" href="https://bellala.org/css/style.css">
+<meta name="description" content="Jim is financially stable">
 <meta name="apple-mobile-web-app-title" content="jim why">
 <meta name="application-name" content="jim why">
 <meta name="msapplication-TileColor" content="#8fbcbb">
@@ -54,16 +55,14 @@
 <script type="text/javascript">
     var keeb = 0.1227645;
     function keebCost(){
-        fetch('https://api.cryptonator.com/api/ticker/btc-usd', {
-                method: 'GET',
-                mode: 'cors',
-                crossorigin: 'anonymous'
+        fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd', {
+                method: 'GET'
             })
             .then(function(response) {
                 return response.json();
             })
             .then(function(json) {
-                price = json.ticker.price;
+                price = json.bitcoin.usd;
                 cost = keeb * price;
                 document.getElementById('jim').innerHTML = '$'+formatNum(cost.toFixed(2));
                 fillStat(cost);
