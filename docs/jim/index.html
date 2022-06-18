@@ -2,25 +2,22 @@
 <html lang="EN">
 
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>jim why</title>
-<link rel="apple-touch-icon" sizes="180x180" href="//bellala.org/favicons/apple-touch-icon.png?v=PYAnWEX75A">
-<link rel="icon" type="image/png" sizes="32x32" href="//bellala.org/favicons/favicon-32x32.png?v=PYAnWEX75A">
-<link rel="icon" type="image/png" sizes="16x16" href="//bellala.org/favicons/favicon-16x16.png?v=PYAnWEX75A">
-<link rel="manifest" href="//bellala.org/favicons/site.webmanifest?v=PYAnWEX75A">
-<link rel="mask-icon" href="//bellala.org/favicons/safari-pinned-tab.svg?v=PYAnWEX75A" color="#8fbcbb">
-<link rel="shortcut icon" href="//bellala.org/favicons/favicon.ico?v=PYAnWEX75A">
-<link rel="stylesheet" type="text/css" href="https://bellala.org/css/style.css">
-<meta name="description" content="Jim is financially stable">
-<meta name="apple-mobile-web-app-title" content="jim why">
-<meta name="application-name" content="jim why">
-<meta name="msapplication-TileColor" content="#8fbcbb">
-<meta name="msapplication-config" content="//bellala.org/favicons/browserconfig.xml?v=PYAnWEX75A">
-<meta name="theme-color" content="#ffffff">
-<style>
-    *{
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jim why</title>
+    <meta name="theme-color" content="#FFF">
+    <link rel="icon" href='//bellala.org/favicons/icon.svg?v=PYAnWEX76A'>
+    <link rel="mask-icon" href="//bellala.org/favicons/icon.svg?v=PYAnWEX76A" color="#8fbcbb">
+    <link rel="apple-touch-icon" href="//bellala.org/favicons/apple-touch-icon.png?v=PYAnWEX76A">
+    <link rel="manifest" href="//bellala.org/favicons/manifest.json?v=PYAnWEX76A">
+    <link rel="shortcut icon" sizes='32x32' href='//bellala.org/favicons/favicon.ico?v=PYAnWEX76A'>
+    <link rel="stylesheet" type="text/css" href="https://bellala.org/css/style.css">
+    <meta name="description" content="Jim is financially stable$i">
+    <meta name="apple-mobile-web-app-title" content="jim why">
+    <meta name="application-name" content="jim why">
+    <style>
+        *{
         box-sizing: border-box;
         margin: 0;
         padding: 0;
@@ -52,9 +49,10 @@
         width: 50%;
     }
 </style>
-<script type="text/javascript">
+    <script type="text/javascript">
     var keeb = 0.1227645;
-    function keebCost(){
+
+    function keebCost() {
         fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd', {
                 method: 'GET'
             })
@@ -64,75 +62,79 @@
             .then(function(json) {
                 price = json.bitcoin.usd;
                 cost = keeb * price;
-                document.getElementById('jim').innerHTML = '$'+formatNum(cost.toFixed(2));
+                document.getElementById('jim').innerHTML = '$' + formatNum(cost.toFixed(2));
                 fillStat(cost);
-                setTimeout(keebCost,5000);
+                setTimeout(keebCost, 5000);
             });
     }
-    function formatNum(x){
+
+    function formatNum(x) {
         // var x = n.toFixed(2);
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
-    function fillStat(cost){
-        kb = Math.trunc(cost/90);
-        kb_cost = kb*90;
+
+    function fillStat(cost) {
+        kb = Math.trunc(cost / 90);
+        kb_cost = kb * 90;
         document.getElementById('kb').innerHTML = formatNum(kb);
         document.getElementById('kb-cost').innerHTML = formatNum(kb_cost.toFixed(2));
-        iphone = Math.trunc(cost/999);
-        iphone_cost = iphone*999;
+        iphone = Math.trunc(cost / 999);
+        iphone_cost = iphone * 999;
         document.getElementById('iphone').innerHTML = formatNum(iphone);
         document.getElementById('iphone-cost').innerHTML = formatNum(iphone_cost.toFixed(2));
-        banana = Math.trunc(cost/0.30);
-        banana_cost = banana*0.30;
+        banana = Math.trunc(cost / 0.30);
+        banana_cost = banana * 0.30;
         document.getElementById('banana').innerHTML = formatNum(banana);
         document.getElementById('banana-cost').innerHTML = formatNum(banana_cost.toFixed(2));
-        milk = Math.trunc(cost/2.85);
-        milk_cost = milk*2.85;
+        milk = Math.trunc(cost / 2.85);
+        milk_cost = milk * 2.85;
         document.getElementById('milk').innerHTML = formatNum(milk);
         document.getElementById('milk-cost').innerHTML = formatNum(milk_cost.toFixed(2));
-        gt = cost/15685;
+        gt = cost / 15685;
         document.getElementById('gt').innerHTML = gt.toFixed(3);
         document.getElementById('gt-cost').innerHTML = formatNum(cost.toFixed(2));
     }
     keebCost();
-</script>
+    </script>
 </head>
+
 <body>
-<div>
-<h1 id='jim' title="0.1227645 BTC for 1 keyboard please"></h1>
-<!-- <h2>You could buy...</h2> -->
-<table>
-<!-- <caption>You could buy...</caption> -->
-<thead>
-    <tr>
-      <th>You could buy...</th>
-      <th>And it would cost...</th>
-    </tr>
-</thead>
-<tbody>
-  <tr>
-    <td title='$999.00 / iPhone'><span id=iphone></span> iPhone 13 Pros</td>
-    <td>$<span id=iphone-cost></span></td>
-  </tr>
-   <tr>
-    <td title='$0.30 / lb banana'><span id='banana'></span> lbs of bananas</td>
-    <td>$<span id='banana-cost'></span></td>
-  </tr>
-    <tr>
-    <td title='$2.85 / gal milk'><span id='milk'></span> gallons of milk</td>
-    <td>$<span id='milk-cost'></span></td>
-  </tr>
-  </tr>
-    <tr>
-    <td title="$90 due to that sweet Black Friday sale"><span id='kb'></span> keyboards</td>
-    <td>$<span id='kb-cost'></span></td>
-  </tr>
-  <tr>
-    <td title="$15,685 / semester for OOS students"><span id='gt'></span> semesters at <a href="https://finaid.gatech.edu/costs/undergraduate-costs">Georgia Tech</a></td>
-    <td>$<span id='gt-cost'></span></td>
-  </tr>
-</tbody>
-</table>
-</div>
+    <div>
+        <h1 id='jim' title="0.1227645 BTC for 1 keyboard please"></h1>
+        <!-- <h2>You could buy...</h2> -->
+        <table>
+            <!-- <caption>You could buy...</caption> -->
+            <thead>
+                <tr>
+                    <th>You could buy...</th>
+                    <th>And it would cost...</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td title='$999.00 / iPhone'><span id=iphone></span> iPhone 13 Pros</td>
+                    <td>$<span id=iphone-cost></span></td>
+                </tr>
+                <tr>
+                    <td title='$0.30 / lb banana'><span id='banana'></span> lbs of bananas</td>
+                    <td>$<span id='banana-cost'></span></td>
+                </tr>
+                <tr>
+                    <td title='$2.85 / gal milk'><span id='milk'></span> gallons of milk</td>
+                    <td>$<span id='milk-cost'></span></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td title="$90 due to that sweet Black Friday sale"><span id='kb'></span> keyboards</td>
+                    <td>$<span id='kb-cost'></span></td>
+                </tr>
+                <tr>
+                    <td title="$15,685 / semester for OOS students"><span id='gt'></span> semesters at <a href="https://finaid.gatech.edu/costs/undergraduate-costs">Georgia Tech</a></td>
+                    <td>$<span id='gt-cost'></span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
+
 </html>

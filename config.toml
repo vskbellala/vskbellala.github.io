@@ -11,7 +11,7 @@ enableGitInfo = true
     tag = "tags"
 [params]
   tileColor = '#8fbcbb'
-  themeColor = "#ffffff"
+  themeColor = "#FFFFFF"
   authors = ["Venkatsai Bellala"]
 
 [menu]
