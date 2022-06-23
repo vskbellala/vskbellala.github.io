@@ -35,7 +35,7 @@ enableGitInfo = true
 [markup]
   [markup.highlight]
   guessSyntax = true
-  style = "dracula"
+  style = "nord"
   [markup.tableOfContents]
   endLevel = 3
   ordered = true
