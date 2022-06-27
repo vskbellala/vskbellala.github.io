@@ -3,6 +3,7 @@ title: "Coffee Milk"
 date: 2021-07-24T22:55:43-04:00
 draft: false
 url: /music/coffee-milk/
+description: "English translation of Coffee Milk"
 ---
 {{<soundcloud 1093625464>}}
 

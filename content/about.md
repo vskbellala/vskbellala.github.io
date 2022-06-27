@@ -2,6 +2,7 @@
 title: "About Me"
 date: 2021-01-10T11:28:58-06:00
 draft: false
+description: "I am a student at Brown University concentrating in Biomedical Engineering."
 ---
 {{<github "vskbellala">}}
 

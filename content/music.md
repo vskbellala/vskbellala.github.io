@@ -2,6 +2,7 @@
 title: "Music"
 date: 2021-06-23T15:27:09-04:00
 draft: false
+description: "Musical compositions by yours truly."
 ---
 I produced music as part of MUSC0200: Computers and Music. Give my [SoundCloud](https://soundcloud.com/shri-bellala) a look. Latest music on top.
 ***

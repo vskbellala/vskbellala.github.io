@@ -6,6 +6,7 @@ enableRobotsTXT = true
 disableKinds = ["taxonomy", "term", "RSS"]
 publishDir = 'docs/'
 enableGitInfo = true
+summaryLength = 0
 [taxonomies]
     category = "categories"
     tag = "tags"
