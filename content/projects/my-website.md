@@ -2,7 +2,7 @@
 title: "bellala.org"
 date: '2021-01-09'
 draft: false
-image: "site.webp"
+images: ["/img/site.webp"]
 alt: "Screenshot of Site"
 ---
 {{<github "vskbellala/vskbellala.github.io">}}

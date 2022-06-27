@@ -2,7 +2,7 @@
 title: "Startpage"
 date: 2021-11-22T21:20:29-05:00
 draft: false
-image: "startpage.webp"
+images: ["/img/startpage.webp"]
 alt: "Screenshot of startpage"
 ---
 {{<github "vskbellala/start">}}

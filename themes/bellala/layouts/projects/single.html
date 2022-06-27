@@ -1,5 +1,5 @@
 {{ define "main" }}
-<p><img src='/img/{{ .Param "image" }}' alt='{{ .Param "alt" }}' title="{{ .Param "alt" }}"></p>
+<p><img src='{{ index .Params.images 0 }}' alt='{{ .Param "alt" }}' title="{{ .Param "alt" }}"></p>
 <header>
     <h1>{{ .Title }}</h1>
 </header>

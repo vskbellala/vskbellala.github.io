@@ -2,7 +2,7 @@
 title: "MVHS Robotics"
 date: '2021-01-08'
 draft: true
-image: "mvrobot.webp"
+images: ["/img/mvrobot.webp"]
 alt: "Robot Picture"
 ---
 I was the lead builder & designer for my robotics team 8995M Mustang Voltage, 3x VEX Worlds Qualifiers. I also co-managed a [Twitter](https://twitter.com/mvrobotics8995) account and [website](https://tinyurl.com/mvrobotics) for Metea Robotics.

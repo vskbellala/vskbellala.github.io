@@ -2,7 +2,7 @@
 title: "covid-visuals"
 date: '2021-01-10'
 draft: false
-image: "covid_visuals.webp"
+images: ["/img/covid_visuals.webp"]
 alt: "covid-visuals preview"
 ---
 {{<github "vskbellala/covid-visuals">}}

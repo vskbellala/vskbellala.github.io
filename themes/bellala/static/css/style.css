@@ -207,6 +207,11 @@ blockquote::before {
     left: -4px;
 }
 
+
+blockquote.twitter-tweet::before{
+    background: var(--color-nav);
+}
+
 blockquote small {
     font-weight: bold;
     font-size: 0.875rem;

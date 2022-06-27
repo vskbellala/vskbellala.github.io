@@ -2,7 +2,7 @@
 title: "SSW Solar Charger Dashboard"
 date: 2021-03-31T10:04:12-05:00
 draft: false
-image: "solar_charger.webp"
+images: ["/img/solar_charger.webp"]
 alt: "Plotly tech demo"
 ---
 

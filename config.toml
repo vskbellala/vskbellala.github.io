@@ -13,6 +13,7 @@ enableGitInfo = true
   tileColor = '#8fbcbb'
   themeColor = "#FFFFFF"
   authors = ["Venkatsai Bellala"]
+  images = ["/favicons/apple-touch-icon.png"]
 
 [menu]
   [[menu.main]]
