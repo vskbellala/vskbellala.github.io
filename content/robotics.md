@@ -1,16 +1,18 @@
 ---
 title: "MVHS Robotics"
 date: '2021-01-08'
-draft: true
+draft: false
 images: ["/img/mvrobot.webp"]
-alt: "Robot Picture"
 ---
-I was the lead builder & designer for my robotics team 8995M Mustang Voltage, 3x VEX Worlds Qualifiers. I also co-managed a [Twitter](https://twitter.com/mvrobotics8995) account and [website](https://tinyurl.com/mvrobotics) for Metea Robotics.
+Back in high school, I was the lead builder & designer for my robotics team 8995M Mustang Voltage, 3x VEX Worlds Qualifiers. I also co-managed a [Twitter](https://twitter.com/mvrobotics8995) account and website for Metea Robotics.
 <!--more-->
 
-Robot from the 2019-20 season pictured.
+<!-- Robot from the 2019-20 season pictured. -->
 
-## Our achievements
+## Achievements
+
+{{<twitter user="ipef204" id="1276550463773724674">}}
+
 - 3x VEX Worlds Appearances
     - 2018: 75th in the Research Division
     - 2019: 24th in the Engineering Division
@@ -32,3 +34,11 @@ Robot from the 2019-20 season pictured.
 - 2x Tournament Finalists
 - 1x Innovate Award
 - 1x Create Award
+
+## Featured media
+
+{{<youtube id="Iwv2PG4jYQU" title="72 point Driver Skills Run">}}
+
+![Robot 2019-20 Season](/img/mvrobot.webp)
+
+{{<youtube id="Jpl6D8xIyUQ" title="21 point Programming Skills Run">}}
