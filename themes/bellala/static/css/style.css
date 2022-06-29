@@ -555,6 +555,10 @@ section.a:hover, a:focus > section.a{
     background: var(--color-bg-emphasis);
 }
 
+div > iframe{
+    margin: 1rem 0;
+}
+
 @media print {
     :root {
         --color-bg: white;

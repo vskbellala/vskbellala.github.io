@@ -42,3 +42,29 @@ summaryLength = 0
   endLevel = 3
   ordered = true
   startLevel = 2
+
+
+[services]
+  [services.twitter]
+    disableInlineCSS = true
+
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = false
+    simple = true
+  [privacy.twitter]
+    disable = false
+    enableDNT = true
+    simple = true
+  [privacy.vimeo]
+    disable = false
+    enableDNT = true
+    simple = false
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = true

@@ -44,7 +44,7 @@
   
   <url>
     <loc>https://bellala.org/advising/</loc>
-    <lastmod>2022-06-12T12:55:05-04:00</lastmod>
+    <lastmod>2022-06-26T23:33:46-04:00</lastmod>
   </url>
   
   <url>
@@ -59,12 +59,12 @@
   
   <url>
     <loc>https://bellala.org/music/coffee-milk/</loc>
-    <lastmod>2021-07-24T23:11:37-04:00</lastmod>
+    <lastmod>2022-06-26T23:33:46-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://bellala.org/music/</loc>
-    <lastmod>2022-01-03T16:24:39-06:00</lastmod>
+    <lastmod>2022-06-26T23:33:46-04:00</lastmod>
   </url>
   
   <url>
@@ -74,7 +74,7 @@
   
   <url>
     <loc>https://bellala.org/about/</loc>
-    <lastmod>2022-06-14T11:06:03-04:00</lastmod>
+    <lastmod>2022-06-26T23:33:46-04:00</lastmod>
   </url>
   
   <url>
@@ -84,7 +84,7 @@
   
   <url>
     <loc>https://bellala.org/projects/</loc>
-    <lastmod>2022-01-03T16:24:39-06:00</lastmod>
+    <lastmod>2022-06-26T23:33:46-04:00</lastmod>
   </url>
   
   <url>
@@ -95,6 +95,11 @@
   <url>
     <loc>https://bellala.org/projects/my-website/</loc>
     <lastmod>2022-06-26T23:12:31-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellala.org/robotics/</loc>
+    <lastmod>2022-06-29T00:11:02-04:00</lastmod>
   </url>
   
 </urlset>
