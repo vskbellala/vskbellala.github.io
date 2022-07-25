@@ -1,5 +1,7 @@
 {{ define "main" }}
+{{if not .Params.noshow}}
 <p><img src='{{ index .Params.images 0 }}' alt='{{ .Param "alt" }}' title="{{ .Param "alt" }}"></p>
+{{end}}
 <header>
     <h1>{{ .Title }}</h1>
 </header>
