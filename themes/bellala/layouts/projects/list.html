@@ -3,7 +3,7 @@
 <h1>{{ .Title }}</h1>
 {{ .Content }}
 <div class='port'>
-    {{ range $index, $value := .Pages.ByTitle }}
+    {{ range $index, $value := .Pages.ByDate.Reverse }}
     <!-- <div style='background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/img/{{ .Param "image" }});'> -->
         <h2>{{ .Title }}<a title="Read more" href="{{ .RelPermalink }}" class='nobg'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></a></h2>
 
