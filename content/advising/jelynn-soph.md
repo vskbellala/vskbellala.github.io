@@ -10,7 +10,7 @@ I'm a Biochemistry and Molecular Biology concentrator. Most of my sophomore year
 ***
 ## Fall 2021
 ### CHEM0360 -- Organic Chemistry II {#CHEM0360}
-- Part two of the infamous chemistry sequence. A dreaded requirement for those who are pre-med, but most certainly very possible to do well in, despite its reputation of being difficult. A strong foundation of Organic Chemistry I (likely from some summer reviewing) is **imperative** to do well.
+- Part three of the infamous chemistry sequence. A dreaded requirement for those who are pre-med, but most certainly very possible to do well in, despite its reputation of being difficult. A strong foundation of Organic Chemistry I (likely from some summer reviewing) is **imperative** to do well.
 - Incredibly problem-solving heavy course, even more so than in the first course of the sequence. Homework assignments were few and far between, but valuable in gauging knowledge of content. **HIGHLY recommend using the suggested textbook problems to regularly test your knowledge.**
 - Just like in CHEM0350, there are TA-designed packets that can help you get more practice with the different types of reactions you might encounter in exams. Be warned that these packets actually tend to be much more complicated than the exams are designed to be, as they're meant to ensure that you know these topics like the back of your hand.
 - In my year, I was taught by Professor Charles Morton and Paul Williard, and we had 3 midterm exams and a final that had both an in-person exam and a take-home portion. Be warned that this is to change, as Professor Matthew Zimmt is usually in charge of the course and will return to campus in Fall 2022 to teach the course again.
