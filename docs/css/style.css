@@ -515,7 +515,7 @@ select {
     opacity: 0.8;
 }
 
-input[type^='submit'] {
+input[type^='submit'], button {
     width: auto;
     background-color: var(--color-main);
     color: var(--white);
@@ -530,7 +530,7 @@ input[type^='submit'] {
     transition-timing-function: ease;
 }
 
-input[type^='submit']:focus {
+input[type^='submit']:focus, button:hover, button:focus {
     background-color: transparent;
     color: var(--color-txt-emphasis);
     border: 2px solid var(--color-main);
@@ -559,6 +559,48 @@ div > iframe{
     margin: 1rem 0;
 }
 
+#the-canvas {
+  border: 1px solid var(--color-txt-emphasis);
+  direction: ltr;
+  width: 100%;
+  height: auto;
+  display: none;
+  border-radius: 0.5rem;
+    /*overflow-x: auto;*/
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#paginator {
+  display: none;
+  margin-bottom: 0.5rem;
+}
+
+#pdf-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#pdf-nav > h3 {
+    flex-grow: 1;
+}
+
+#loadingWrapper {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 23rem;
+}
+
+@keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+
 @media print {
     :root {
         --color-bg: white;
@@ -575,7 +617,8 @@ div > iframe{
     nav.menu,
     nav#TableOfContents,
     hr,
-    iframe {
+    iframe,
+    div.pdf  {
         display: none;
     }
 

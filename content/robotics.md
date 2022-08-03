@@ -37,8 +37,8 @@ Back in high school, I was the lead builder & designer for my robotics team 8995
 
 ## Featured media
 
-{{<youtube id="Iwv2PG4jYQU" title="72 point Driver Skills Run">}}
+{{<youtubew id="Iwv2PG4jYQU" title="72 point Driver Skills Run">}}
 
 ![Robot 2019-20 Season](/img/mvrobot.webp)
 
-{{<youtube id="Jpl6D8xIyUQ" title="21 point Programming Skills Run">}}
+{{<youtubew id="Jpl6D8xIyUQ" title="21 point Programming Skills Run">}}
