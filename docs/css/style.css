@@ -286,6 +286,9 @@ a[href^="/"] {
     /*a[href^="http://localhost:1313/"]*/
     --color-link: var(--color-nav);
 }
+a[href^="https://jelynn.netlify.app/"] {
+--color-link: #E277CD;
+}
 
 nav.menu a {
     --color-link: var(--color-main);
