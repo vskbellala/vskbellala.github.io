@@ -37,7 +37,7 @@ summaryLength = 0
 [markup]
   [markup.highlight]
   guessSyntax = true
-  style = "nord"
+  style = "dracula"
   [markup.tableOfContents]
   endLevel = 3
   ordered = true

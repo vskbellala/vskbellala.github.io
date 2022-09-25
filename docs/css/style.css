@@ -76,52 +76,43 @@
     --nord14: #a3be8c;
     --nord15: #b48ead;
 
-    /*Open color*/
-    --oc-white-rgb: 255, 255, 255;
-    --oc-black-rgb: 0, 0, 0;
-    --oc-gray-0-rgb: 248, 249, 250;
-    --oc-gray-1-rgb: 241, 243, 245;
-    --oc-gray-2-rgb: 233, 236, 239;
-    --oc-gray-3-rgb: 222, 226, 230;
-    --oc-gray-4-rgb: 206, 212, 218;
-    --oc-gray-5-rgb: 173, 181, 189;
-    --oc-gray-6-rgb: 134, 142, 150;
-    --oc-gray-7-rgb: 73, 80, 87;
-    --oc-gray-8-rgb: 52, 58, 64;
-    --oc-gray-9-rgb: 33, 37, 41;
-
-
     /* defaults */
-    --color-bg: var(--white);
+    /*    --color-bg: var(--white);
     --color-bg-emphasis: var(--nord6);
     --color-txt: var(--nord3);
     --color-txt-emphasis: var(--nord1);
     --color-main: var(--nord9);
     --color-link: var(--nord7);
     --color-highlight: var(--nord13);
-    --color-nav: var(--nord8);
+    --color-nav: var(--nord8);*/
 
-    /*--color-bg: rgb(var(--oc-white-rgb));
-    --color-bg-emphasis: rgb(var(--oc-gray-1-rgb));
-    --color-txt: rgb(var(--oc-gray-7-rgb));
-    --color-txt-emphasis: rgb(var(--oc-gray-8-rgb));
-    --color-main: var(--nord9);
-    --color-link: var(--nord7);
-    --color-highlight: var(--nord13);*/
+    --color-bg: #f8f9fa;
+    --color-bg-emphasis: #e9ecef;
+    --color-txt: #495057;
+    --color-txt-emphasis: #343a40;
+    --color-link: #7474C1;
+    --color-main: var(--color-link);
+    --color-highlight: #FDDD13;
+    --color-nav: #00B2A9;
 }
 
 @media (prefers-color-scheme: dark) {
 
     /*dark theme??? */
     :root {
-        --color-bg: var(--nord0);
+        /*    --color-bg: var(--nord0);
         --color-bg-emphasis: var(--nord1);
         --color-txt: var(--nord4);
         --color-txt-emphasis: var(--nord6);
         --color-main: var(--nord10);
         --color-link: var(--nord14);
         --color-highlight: var(--nord12);
-        --color-nav: var(--nord9);
+        --color-nav: var(--nord9);*/
+
+        --color-bg: #212529;
+        --color-bg-emphasis: #495057;
+        --color-txt: #e9ecef;
+        --color-txt-emphasis: #f1f3f5;
     }
 
     img {
@@ -208,7 +199,7 @@ blockquote::before {
 }
 
 
-blockquote.twitter-tweet::before{
+blockquote.twitter-tweet::before {
     background: var(--color-nav);
 }
 
@@ -234,19 +225,23 @@ q:after {
 a,
 a:link {
     color: var(--color-txt);
-    text-decoration: none;
-    background-position-y: -0%;
-    background-image: linear-gradient(transparent 50%, var(--color-link) 50%);
-    transition: background 100ms ease;
+    /*text-decoration: none;*/
+    text-decoration-color: var(--color-link);
+    text-decoration-thickness: 2px;
+    /*background-position-y: -0%;*/
+    /*background-image: linear-gradient(transparent 50%, var(--color-link) 50%);*/
+    transition: text-decoration-color 100ms ease;
+   /* transition: background 100ms ease;
     background-size: 2px;
-    background-size: auto 175%;
+    background-size: auto 175%;*/
     outline: none;
     --color-icon: var(--color-link);
 }
 
-a:hover,
+/*a:hover,*/
 a:focus {
-    background-position-y: 50%;
+    /*background-position-y: 50%;*/
+    text-decoration-color: var(--color-txt-emphasis);
 }
 
 mark {
@@ -262,7 +257,8 @@ li {
 
 nav.menu {
     padding: 0.75rem 0;
-    background: var(--color-bg);
+    padding: 0;
+    /*background: var(--color-bg);*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -275,9 +271,18 @@ nav.menu {
 }
 
 nav.menu a {
-    padding: 0.25rem;
+    padding: 0.75rem 0.25rem;
     font-size: 1.2rem;
     text-align: center;
+    flex-grow: 1;
+    background: var(--color-bg);
+    transition: background 100ms ease;
+    text-decoration: none;
+}
+
+nav.menu a:hover,
+nav.menu a:focus {
+    background: var(--color-bg-emphasis);
 }
 
 a.nav,
@@ -286,17 +291,26 @@ a[href^="/"] {
     /*a[href^="http://localhost:1313/"]*/
     --color-link: var(--color-nav);
 }
+
 a[href^="https://jelynn.netlify.app/"] {
---color-link: #E277CD;
+    --color-link: #E277CD;
 }
 
-nav.menu a {
+/*nav.menu a {
     --color-link: var(--color-main);
+}
+*/
+
+a.section{
+    text-decoration: none;
 }
 
 a.active,
 nav.menu a.active {
-    --color-link: var(--color-highlight);
+    /*--color-link: var(--color-highlight);*/
+    text-decoration: underline;
+    text-decoration-color: var(--color-txt-emphasis);
+    text-decoration-thickness: 2px;
 }
 
 a.nobg {
@@ -518,7 +532,8 @@ select {
     opacity: 0.8;
 }
 
-input[type^='submit'], button {
+input[type^='submit'],
+button {
     width: auto;
     background-color: var(--color-main);
     color: var(--white);
@@ -533,7 +548,9 @@ input[type^='submit'], button {
     transition-timing-function: ease;
 }
 
-input[type^='submit']:focus, button:hover, button:focus {
+input[type^='submit']:focus,
+button:hover,
+button:focus {
     background-color: transparent;
     color: var(--color-txt-emphasis);
     border: 2px solid var(--color-main);
@@ -546,7 +563,7 @@ textarea:focus {
     box-shadow: none;
 }
 
-section.a{
+section.a {
     /*background: var(--color-bg-emphasis);*/
     padding: 0.25rem 1.5rem;
     margin: 0.5rem 0;
@@ -554,54 +571,60 @@ section.a{
     transition: background 100ms ease;
 }
 
-section.a:hover, a:focus > section.a{
+section.a:hover,
+a:focus>section.a {
     background: var(--color-bg-emphasis);
 }
 
-div > iframe{
+div>iframe {
     margin: 1rem 0;
 }
 
 #the-canvas {
-  border: 1px solid var(--color-txt-emphasis);
-  direction: ltr;
-  width: 100%;
-  height: auto;
-  display: none;
-  border-radius: 0.5rem;
+    border: 1px solid var(--color-txt-emphasis);
+    direction: ltr;
+    width: 100%;
+    height: auto;
+    display: none;
+    border-radius: 0.5rem;
     /*overflow-x: auto;*/
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 #paginator {
-  display: none;
-  margin-bottom: 0.5rem;
+    display: none;
+    margin-bottom: 0.5rem;
 }
 
-#pdf-nav{
+#pdf-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
 }
 
-#pdf-nav > h3 {
+#pdf-nav>h3 {
     flex-grow: 1;
 }
 
 #loadingWrapper {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 23rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 23rem;
 }
 
 @keyframes spin {
-  to { -webkit-transform: rotate(360deg); }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
 }
+
 @-webkit-keyframes spin {
-  to { -webkit-transform: rotate(360deg); }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 @media print {
@@ -612,7 +635,12 @@ div > iframe{
         --color-bg-emphasis: black;
     }
 
-    body, section.a {
+    a{
+        text-decoration: none;
+    }
+
+    body,
+    section.a {
         padding: 0;
         margin: 0;
     }
@@ -621,7 +649,7 @@ div > iframe{
     nav#TableOfContents,
     hr,
     iframe,
-    div.pdf  {
+    div.pdf {
         display: none;
     }
 
