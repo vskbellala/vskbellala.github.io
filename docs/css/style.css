@@ -232,7 +232,7 @@ a:link {
     /*background-position-y: -0%;*/
     /*background-image: linear-gradient(transparent 50%, var(--color-link) 50%);*/
     transition: text-decoration-color 100ms ease;
-   /* transition: background 100ms ease;
+    /* transition: background 100ms ease;
     background-size: 2px;
     background-size: auto 175%;*/
     outline: none;
@@ -302,7 +302,7 @@ a[href^="https://jelynn.netlify.app/"] {
 }
 */
 
-a.section{
+a.section {
     text-decoration: none;
 }
 
@@ -435,16 +435,10 @@ hr {
 }
 
 
-summary {list-style: none; cursor: pointer;}
-summary::-webkit-details-marker {display: none; }
-
-details summary::before { 
-  content:"🡒"; 
-  color: var(--color-txt-emphasis);
-}
-
-details[open] summary::before { 
-  content:"🡑"; 
+summary {
+    /*list-style: none;*/
+    cursor: pointer;
+    color: var(--color-txt-emphasis);
 }
 
 caption {
@@ -641,12 +635,12 @@ div>iframe {
     }
 }
 
-.no-shadow{
+.no-shadow {
     box-shadow: none;
 }
 
-.no-round{
-     border-radius: 0;
+.no-round {
+    border-radius: 0;
 }
 
 /*.full-width {
@@ -658,10 +652,10 @@ div>iframe {
 }*/
 
 .full-width {
-width: 98vw;
-position: relative;
-left: 50%;
-transform: translateX(-50%);
+    width: 98vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
@@ -673,7 +667,7 @@ transform: translateX(-50%);
         --color-bg-emphasis: black;
     }
 
-    a{
+    a {
         text-decoration: none;
     }
 
