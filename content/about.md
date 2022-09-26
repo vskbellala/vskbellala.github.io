@@ -14,6 +14,6 @@ Last summer, I researched meterological and behavioral correlates of COVID-19 tr
 
 I write [advising commentaries](/advising) to guide my [Meiklejohn](https://www.brown.edu/academics/college/advising/peer/) advisees.
 
-I enjoy reading short stories and am passionate about open source technology, actively integrating it into my own life.
+In my free time, I enjoy reading short stories and engaging in [film photography](/photos).
 
 I also love to try my hand at designing [websites](/projects/covid-visuals/) (and [dashboards](/projects/solar-charger)).
