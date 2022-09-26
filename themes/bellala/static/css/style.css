@@ -92,6 +92,7 @@
     --color-txt-emphasis: #343a40;
     --color-link: #7474C1;
     --color-main: var(--color-link);
+    --color-icon: var(--color-bg-emphasis);
     --color-highlight: #FDDD13;
     --color-nav: #00B2A9;
 }
@@ -433,6 +434,19 @@ hr {
     border-radius: 4px;
 }
 
+
+summary {list-style: none; cursor: pointer;}
+summary::-webkit-details-marker {display: none; }
+
+details summary::before { 
+  content:"🡒"; 
+  color: var(--color-txt-emphasis);
+}
+
+details[open] summary::before { 
+  content:"🡑"; 
+}
+
 caption {
     text-align: left;
     font-size: 1.25rem;
@@ -626,6 +640,30 @@ div>iframe {
         -webkit-transform: rotate(360deg);
     }
 }
+
+.no-shadow{
+    box-shadow: none;
+}
+
+.no-round{
+     border-radius: 0;
+}
+
+/*.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+}*/
+
+.full-width {
+width: 98vw;
+position: relative;
+left: 50%;
+transform: translateX(-50%);
+}
+
 
 @media print {
     :root {
