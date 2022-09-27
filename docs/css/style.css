@@ -302,7 +302,8 @@ a[href^="https://jelynn.netlify.app/"] {
 }
 */
 
-a.section {
+a.section,
+a.icon {
     text-decoration: none;
 }
 
@@ -317,6 +318,10 @@ nav.menu a.active {
 a.nobg {
     background-image: none;
     background: none;
+}
+
+a.icon {
+    margin: 0.25rem;
 }
 
 nav#TableOfContents ol {
@@ -383,21 +388,30 @@ h2>a {
     margin-left: 0.5rem;
 }
 
-.port div {
-    /*margin-top: 3rem;*/
+.port>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.port>div section {
+    flex-grow: 1;
+}
+
+
+/*.port div {
     margin: 2rem auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
     aspect-ratio: 4/1;
-    /*border: 1px solid var(--color-bg-emphasis);*/
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0.25rem;
 
-}
+}*/
 
 a.button {
     padding: 0.5rem 1rem;
@@ -642,14 +656,6 @@ div>iframe {
 .no-round {
     border-radius: 0;
 }
-
-/*.full-width {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-}*/
 
 .full-width {
     width: 98vw;
