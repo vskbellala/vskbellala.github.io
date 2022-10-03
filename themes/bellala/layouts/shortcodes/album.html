@@ -6,7 +6,7 @@
     {{ range sort $album "ModTime" "desc"}}
     {{ $imgURL := print "img/" ($.Get 0) "/" .Name | absURL }}
     <!-- {{.Name}} {{.ModTime}}<br> -->
-    <img class='no-shadow no-round' src="{{ $imgURL }}" />
+    <img class='no-shadow no-round' loading="lazy" src="{{ $imgURL }}" />
     {{ end }}
 </div>
 <style>
