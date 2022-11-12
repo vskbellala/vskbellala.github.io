@@ -8,9 +8,11 @@ images: ["/img/film/llala11_llala11-R1-E009.jpg"]
 Film photography is a hobby of mine. Here are some of the photos I've taken so far.
 
 {{<spoiler "Equipment">}}
-- Camera: Polaroid 3200AF (28mm f/4.5 1/125s)
+- Cameras: 
+    - Polaroid 3200AF (28mm f/4.5 1/125s)
+    - Nikon F-601 with 35-70mm f/3.3-4.5 AF
 - Film stocks: Fujifilm Superia 400, Kodak Gold 200 (expired)
-- Developed at [Kerry's Warwick Photo](http://www.kerryswarwickphoto.com/) in Warwick, RI.
+- Developed and scanned at [Kerry's Warwick Photo](http://www.kerryswarwickphoto.com/) in Warwick, RI.
 {{</spoiler>}}
 
 {{<album film>}}
