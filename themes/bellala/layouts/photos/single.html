@@ -1,0 +1,26 @@
+{{ define "main" }}
+{{ $len := (len ($.Param "authors")) }}
+<header>
+    <h1>{{ .Title }}</h1>
+</header>
+<aside>
+    <p>
+        By {{ range $index, $value := $.Param "authors" }}
+        {{ . }}{{if not (eq (add $index 1) (add $len -1)) }}{{if not (eq (add $index 1) $len) }},
+        {{end}}{{else}}
+        {{if not (eq (add $index 1) $len)}}
+        and
+        {{end}}
+        {{end}}
+        {{ end }}
+    </p>
+    <p><small>
+            <strong>{{.Lastmod.Format "Jan 2, 2006"}}
+            </strong>
+        </small></p>
+    <hr>
+</aside>
+<article>
+    {{ .Content }}
+</article>
+{{ end }}

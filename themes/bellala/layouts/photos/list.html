@@ -1,0 +1,15 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{.Content}}
+    <!-- ranges through content in ascending order according to the "title" field set in front matter -->
+    {{ range .Pages.ByLastmod.Reverse }}
+    <a href="{{ .RelPermalink }}" class='section'><section class='a'>
+    {{ $len := (len (.Param "authors")) }}
+            <!-- <p><small>{{.Lastmod.Format "Jan 2, 2006"}}</small> &#8226; <a href="{{ .RelPermalink }}">{{ .Title }}</a> ({{.ReadingTime}} min) -- {{.Description}}</p> -->
+            <h3>{{ .Title }}</h3>
+            <p>{{.Description}}</p>
+            <p><small>{{.Lastmod.Format "Jan 2, 2006"}} 
+        </small></p>
+        </section></a>
+    {{ end }}
+{{ end }}
