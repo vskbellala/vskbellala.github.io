@@ -370,6 +370,11 @@ img {
     stroke-linejoin: round;
 }
 
+.invert-fill {
+    fill: var(--color-icon);
+    stroke: none;
+}
+
 .git {
     /*margin-right: 0.5rem;*/
     --color-icon: var(--color-txt-emphasis);
