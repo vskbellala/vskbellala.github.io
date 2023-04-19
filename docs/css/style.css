@@ -458,6 +458,13 @@ summary {
     /*list-style: none;*/
     cursor: pointer;
     color: var(--color-txt-emphasis);
+    margin: 1rem 0;
+}
+
+details div.spoiler{
+    background: var(--color-bg-emphasis);
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
 }
 
 caption {

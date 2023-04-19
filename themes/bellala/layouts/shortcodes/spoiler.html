@@ -3,5 +3,5 @@
     <summary>
         {{ .Get (.Scratch.Get "lastp") }}
     </summary>
-    {{ .Inner | markdownify }}
-</details><br>
+    <div class="spoiler">{{ .Inner | markdownify }}</div>
+</details>
