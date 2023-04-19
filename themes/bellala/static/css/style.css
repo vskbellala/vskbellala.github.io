@@ -58,34 +58,7 @@
 
 :root {
     /* Colors - Nord */
-    --white: #fafbfc;
-    --nord0: #2e3440;
-    --nord1: #3b4252;
-    --nord2: #434c5e;
-    --nord3: #4c566a;
-    --nord4: #d8dee9;
-    --nord5: #e5e9f0;
-    --nord6: #eceff4;
-    --nord7: #8fbcbb;
-    --nord8: #88c0d0;
-    --nord9: #81a1c1;
-    --nord10: #5e81ac;
-    --nord11: #bf616a;
-    --nord12: #d08770;
-    --nord13: #ebcb8b;
-    --nord14: #a3be8c;
-    --nord15: #b48ead;
-
-    /* defaults */
-    /*    --color-bg: var(--white);
-    --color-bg-emphasis: var(--nord6);
-    --color-txt: var(--nord3);
-    --color-txt-emphasis: var(--nord1);
-    --color-main: var(--nord9);
-    --color-link: var(--nord7);
-    --color-highlight: var(--nord13);
-    --color-nav: var(--nord8);*/
-
+    --white: #f8f9fa;
     --color-bg: #f8f9fa;
     --color-bg-emphasis: #e9ecef;
     --color-txt: #495057;
@@ -101,15 +74,6 @@
 
     /*dark theme??? */
     :root {
-        /*    --color-bg: var(--nord0);
-        --color-bg-emphasis: var(--nord1);
-        --color-txt: var(--nord4);
-        --color-txt-emphasis: var(--nord6);
-        --color-main: var(--nord10);
-        --color-link: var(--nord14);
-        --color-highlight: var(--nord12);
-        --color-nav: var(--nord9);*/
-
         --color-bg: #212529;
         --color-bg-emphasis: #495057;
         --color-txt: #e9ecef;

@@ -41,7 +41,7 @@ summaryLength = 0
 [markup]
   [markup.highlight]
   guessSyntax = true
-  style = "dracula"
+  style = "doom-one2"
   [markup.tableOfContents]
   endLevel = 3
   ordered = true
