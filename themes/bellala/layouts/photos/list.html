@@ -2,7 +2,7 @@
 <h1>{{ .Title }}</h1>
 {{.Content}}
     <!-- ranges through content in ascending order according to the "title" field set in front matter -->
-    {{ range .Pages.ByLastmod }}
+    {{ range .Pages.ByDate.Reverse }}
     <a href="{{ .RelPermalink }}" class='section'><section class='a'>
             <!-- <p><small>{{.Lastmod.Format "Jan 2, 2006"}}</small> &#8226; <a href="{{ .RelPermalink }}">{{ .Title }}</a> ({{.ReadingTime}} min) -- {{.Description}}</p> -->
             <h3>{{ .Title }}</h3>
