@@ -21,7 +21,6 @@
 <meta property="article:published_time" content="2022-09-26T14:07:03-04:00" />
 <meta property="article:modified_time" content="2023-03-12T01:15:47-05:00" />
 
-
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://bellala.org/img/film/polaroid/llala11_llala11-R1-E016.jpg"/>
 
@@ -115,12 +114,10 @@
      
     line-height: 0;
      
-    -webkit-column-count: 4;
-    -webkit-column-gap: 0px;
-    -moz-column-count: 5;
-    -moz-column-gap: 0px;
     column-count: 4;
     column-gap: 0px;
+    column-width: 25rem;
+    column-fill: balance;
 }
 
 #photos img {
@@ -131,37 +128,7 @@
     border: 3px solid transparent;
 }
 
-@media (max-width: 1200px) {
-    #photos {
-        -moz-column-count: 4;
-        -webkit-column-count: 4;
-        column-count: 4;
-    }
-}
-
-@media (max-width: 1000px) {
-    #photos {
-        -moz-column-count: 3;
-        -webkit-column-count: 3;
-        column-count: 3;
-    }
-}
-
-@media (max-width: 800px) {
-    #photos {
-        -moz-column-count: 2;
-        -webkit-column-count: 2;
-        column-count: 2;
-    }
-}
-
-@media (max-width: 400px) {
-    #photos {
-        -moz-column-count: 1;
-        -webkit-column-count: 1;
-        column-count: 1;
-    }
-}
+ 
 </style>
 
 </article>

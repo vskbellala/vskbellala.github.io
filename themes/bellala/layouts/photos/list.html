@@ -1,14 +1,47 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
 {{.Content}}
-    <!-- ranges through content in ascending order according to the "title" field set in front matter -->
+<!-- ranges through content in ascending order according to the "title" field set in front matter -->
+<div class="full-width" id="posts">
     {{ range .Pages.ByDate.Reverse }}
-    <a href="{{ .RelPermalink }}" class='section'><section class='a'>
+    {{ $img := ( .Params.images) }}
+    <a href="{{ .RelPermalink }}" class='section'>
+        <section class='a img' style="background-image: url({{index $img 0}});">
             <!-- <p><small>{{.Lastmod.Format "Jan 2, 2006"}}</small> &#8226; <a href="{{ .RelPermalink }}">{{ .Title }}</a> ({{.ReadingTime}} min) -- {{.Description}}</p> -->
             <h3>{{ .Title }}</h3>
             <p>{{.Description}}</p>
-            <p><small>{{.Lastmod.Format "Jan 2, 2006"}} 
-        </small></p>
-        </section></a>
+            <p><small>{{.Lastmod.Format "Jan 2, 2006"}}</small></p>
+        </section>
+    </a>
     {{ end }}
+</div>
+<style>
+#posts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    /*            align-content: flex-end;*/
+
+}
+
+#posts > * {
+    width: calc(33% - 0.5rem);
+    margin: 0.25rem;
+}
+
+@media (max-width: 1000px) {
+    #posts > * {
+        width: calc(50% - 0.5rem);
+    }
+}
+
+@media (max-width: 800px) {
+    #posts > * {
+        width: 100%;
+    }
+}
+</style>
 {{ end }}
