@@ -4,7 +4,7 @@ date: 2021-01-10T11:28:58-06:00
 draft: false
 description: "I am a student at Brown University concentrating in Biomedical Engineering."
 ---
-{{<github "vskbellala">}}
+{{<github "vskbellala">}} 
 {{<rawhtml>}}
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width = "24" height = "24" viewBox="0 0 256 256" class="icon invert-fill git" xml:space="preserve"><style type="text/css"> .st0{fill:var(--color-icon);} .st1{fill:var(--color-bg);}</style>
     <title>ORCID</title>
