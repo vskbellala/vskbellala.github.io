@@ -95,7 +95,7 @@
 
 * {
     box-sizing: border-box;
-/*    border: 1px solid red;*/
+    /*    border: 1px solid red;*/
 }
 
 body {
@@ -282,10 +282,6 @@ a.nobg {
     background: none;
 }
 
-a.icon {
-    margin: 0.25rem;
-}
-
 nav#TableOfContents ol {
     list-style-type: none;
     margin: 0;
@@ -330,7 +326,7 @@ img {
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
-    display:inline-block;
+    display: inline-block;
 }
 
 .invert-fill {
@@ -349,7 +345,7 @@ img {
     transition: stroke var(--ani-time) ease, color var(--ani-time) ease !important;
 }
 
-.link:hover ,
+.link:hover,
 .link:focus {
     stroke: var(--color-txt-emphasis);
     color: var(--color-link);
@@ -364,7 +360,6 @@ hr {
     border-radius: 4px;
 }
 
-
 summary {
     /*list-style: none;*/
     cursor: pointer;
@@ -372,7 +367,7 @@ summary {
     margin: 1rem 0;
 }
 
-details div.spoiler{
+details div.spoiler {
     background: var(--color-bg-emphasis);
     border-radius: 0.25rem;
     padding: 0.5rem 1rem;
@@ -509,7 +504,7 @@ section.img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    aspect-ratio: 3 / 2;    
+    aspect-ratio: 3 / 2;
     display: inline-flex;
     align-items: center;
     align-content: center;
@@ -521,19 +516,19 @@ section.img {
     transition: box-shadow var(--ani-time) ease !important;
 }
 
-section.img > *{
+section.img>* {
     opacity: 0;
     transition: opacity var(--ani-time) ease;
     text-align: center;
 }
 
-section.img:hover > *,
-a:focus>section.img > *{
+section.img:hover>*,
+a:focus>section.img>* {
     opacity: 1;
 }
 
 section.img:hover,
-a:focus>section.img{
+a:focus>section.img {
     box-shadow: 0px 0px 0px 100rem var(--color-bg) inset;
 }
 
@@ -602,6 +597,13 @@ div>iframe {
     transform: translateX(-50%);
 }
 
+.columns {
+    column-count: 3;
+    column-width: 25rem;
+    column-fill: balance;
+}
+
+
 
 @media print {
     :root {
@@ -630,7 +632,7 @@ div>iframe {
     }
 
     .icon {
-        stroke: black;
+        --color-icon: black;
     }
 
     blockquote {

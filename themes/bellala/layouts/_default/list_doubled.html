@@ -1,0 +1,24 @@
+{{ define "main" }}
+{{ $len := (len .Pages) }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+    {{ range $index, $value := .Pages.ByDate.Reverse }}
+        {{if (eq (mod $index 2) 0)}}
+        <section style="float:left; width:50%;">
+            <h2 class="link"><a title="Read more" href="{{ .RelPermalink }}" class='link'>{{ .Title }}</a></h2>
+            {{.Summary}}
+            <p><small>{{.Date.Format "Jan 2, 2006"}} &#8226; {{.ReadingTime}} min</small></p>
+        </section>
+        {{ with .PrevInSection }}
+        <section style="float:right; width:50%;">
+            <h2 class="link"><a title="Read more" href="{{ .RelPermalink }}" class='link'>x{{ .Title }}</a></h2>
+            {{.Summary}}
+            <p><small>{{.Date.Format "Jan 2, 2006"}} &#8226; {{.ReadingTime}} min</small></p>
+        </section>
+        {{ end }}
+        {{if not (eq (add $index 1) $len)}}
+            <hr>
+        {{end}}
+        {{ end }}
+    {{ end }}
+{{ end }}

@@ -6,10 +6,10 @@
         <section>
             <h2 class="link"><a title="Read more" href="{{ .RelPermalink }}" class='link'>{{ .Title }}</a></h2>
             {{.Summary}}
-            <p><small>{{.Lastmod.Format "Jan 2, 2006"}} &#8226; {{.ReadingTime}} min</small></p>
+            <p><small>{{.Date.Format "Jan 2, 2006"}} &#8226; {{.ReadingTime}} min</small></p>
+            {{if not (eq (add $index 1) $len)}}
+            <hr>
+            {{end}}
         </section>
-    {{if not (eq (add $index 1) $len)}}
-    <hr>
-    {{end}}
     {{ end }}
 {{ end }}
