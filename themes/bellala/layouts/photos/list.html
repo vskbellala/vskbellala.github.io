@@ -5,8 +5,8 @@
 <div class="full-width" id="posts">
     {{ range .Pages.ByDate.Reverse }}
     {{ $img := ( .Params.images) }}
-    <a href="{{ .RelPermalink }}" class='section'>
-        <section class='a img' style="background-image: url({{index $img 0}});">
+    <a href="{{ .RelPermalink }}" class='no-deco'>
+        <section class='img' style="background-image: url({{index $img 0}});">
             <!-- <p><small>{{.Lastmod.Format "Jan 2, 2006"}}</small> &#8226; <a href="{{ .RelPermalink }}">{{ .Title }}</a> ({{.ReadingTime}} min) -- {{.Description}}</p> -->
             <h3>{{ .Title }}</h3>
             <p>{{.Description}}</p>

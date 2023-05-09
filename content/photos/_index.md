@@ -14,3 +14,5 @@ Film photography is a hobby of mine. I've enjoyed it a lot, and organized some o
 - Film stocks: Mostly Fujifilm Superia 400, with some Fuji C200, Ilford XP2 Super, and expired Kodak Gold 200 mixed in.
 - Developed and scanned at [Kerry's Warwick Photo](http://www.kerryswarwickphoto.com/) in Warwick, RI.
 {{</spoiler>}}
+
+***

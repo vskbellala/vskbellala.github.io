@@ -2,7 +2,7 @@
 title: "Shri's Sophomore Year"
 date: 2021-08-27T15:22:26-05:00
 draft: false
-description: "An overview of my second year's courses."
+description: "An overview of my second year courses."
 ---
 *I am a Biomedical Engineering concentrator. In my second year, I found myself taking more BME requirements and better defining what BME means to me.*
 

@@ -1,13 +1,15 @@
 {{ define "main" }}
+{{ $len := (len .Pages) }}
 <h1>{{ .Title }}</h1>
 {{ .Content }}
-<ul>
-    <!-- ranges through content in ascending order according to the "title" field set in front matter -->
-    {{ range .Pages.ByDate.Reverse }}
-        <li>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-           <!--  <time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time> -->
-        </li>
+    {{ range $index, $value := .Pages.ByDate.Reverse }}
+        <section>
+            <h2 class="link"><a title="Read more" href="{{ .RelPermalink }}" class='link'>{{ .Title }}</a></h2>
+            {{.Summary}}
+            <p><small>{{.Lastmod.Format "Jan 2, 2006"}} &#8226; {{.ReadingTime}} min</small></p>
+        </section>
+    {{if not (eq (add $index 1) $len)}}
+    <hr>
+    {{end}}
     {{ end }}
-</ul>
 {{ end }}

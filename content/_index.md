@@ -5,6 +5,6 @@ draft: false
 description: "Venkatsai Shri Bellala's Personal Website"
 ---
 
-*Brown University '24. Sc.B. Biomedical Engineering.<!--  [Program in Liberal Medical Education](https://www.brown.edu/academics/medical/plme/). -->*
+*Brown University '24. Sc.B. Biomedical Engineering.*
 
 But you can call me Shri.

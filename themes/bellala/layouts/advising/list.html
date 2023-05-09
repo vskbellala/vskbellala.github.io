@@ -1,21 +1,25 @@
 {{ define "main" }}
+{{ $lenp := (len .Pages) }}
 <h1>{{ .Title }}</h1>
 {{.Content}}
-    <!-- ranges through content in ascending order according to the "title" field set in front matter -->
-    {{ range .Pages.ByLastmod.Reverse }}
-    <a href="{{ .RelPermalink }}" class='section'><section class='a'>
+<!-- ranges through content in ascending order according to the "title" field set in front matter -->
+{{ range $index, $value := .Pages.ByLastmod.Reverse }}
+<section>
     {{ $len := (len (.Param "authors")) }}
-            <!-- <p><small>{{.Lastmod.Format "Jan 2, 2006"}}</small> &#8226; <a href="{{ .RelPermalink }}">{{ .Title }}</a> ({{.ReadingTime}} min) -- {{.Description}}</p> -->
-            <h3>{{ .Title }}</h3>
-            <p>{{.Description}}</p>
-            <p><small>{{.Lastmod.Format "Jan 2, 2006"}} &#8226; {{.ReadingTime}} min &#8226; {{ range $index, $value := .Param "authors" }}
-        {{ . }}{{if not (eq (add $index 1) (add $len -1)) }}{{if not (eq (add $index 1) $len) }},
-        {{end}}{{else}}
-             {{if not (eq (add $index 1) $len)}}
-             and
-             {{end}}
-        {{end}}
-        {{ end }}</small></p>
-        </section></a>
-    {{ end }}
+    <!-- <p><small>{{.Lastmod.Format "Jan 2, 2006"}}</small> &#8226; <a href="{{ .RelPermalink }}">{{ .Title }}</a> ({{.ReadingTime}} min) -- {{.Description}}</p> -->
+    <h3 class='link'><a href="{{ .RelPermalink }}" class='link'>{{ .Title }}</a></h3>
+    <p>{{.Description}}</p>
+    <p><small>{{.Lastmod.Format "Jan 2, 2006"}} &#8226; {{.ReadingTime}} min &#8226; {{ range $index, $value := .Param "authors" }}
+            {{ . }}{{if not (eq (add $index 1) (add $len -1)) }}{{if not (eq (add $index 1) $len) }},
+            {{end}}{{else}}
+            {{if not (eq (add $index 1) $len)}}
+            and
+            {{end}}
+            {{end}}
+            {{ end }}</small></p>
+</section>
+{{if not (eq (add $index 1) $lenp)}}
+<hr>
+{{end}}
+{{ end }}
 {{ end }}
