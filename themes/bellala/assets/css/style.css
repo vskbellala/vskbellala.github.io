@@ -107,6 +107,13 @@ body {
     background: var(--color-bg);
     color: var(--color-txt);
     word-break: keep-all;
+    display:grid;
+    grid-template-rows:auto 1fr auto;
+    grid-template-columns:100%;
+    /* fallback height */
+    min-height:100vh;
+    /* new small viewport height for modern browsers */
+    min-height:100svh;
 }
 
 h1,
@@ -241,7 +248,7 @@ nav.menu {
     width: 100%;
 }
 
-nav.menu a {
+nav.menu > a {
     padding: 0.75rem 0.25rem;
     font-size: 1.2rem;
     text-align: center;
@@ -251,8 +258,8 @@ nav.menu a {
     text-decoration: none;
 }
 
-nav.menu a:hover,
-nav.menu a:focus {
+nav.menu > a:hover,
+nav.menu > a:focus {
     background: var(--color-bg-emphasis);
 }
 
@@ -615,6 +622,15 @@ object {
     margin: 1rem 0;
     border: 2px solid var(--color-bg-emphasis);
     border-radius: 0.25rem;
+    background-color: var(--white);
+}
+
+#copyright {
+    text-align: center;
+    display: block;
+    margin: 0.1rem 0;
+    font-size: smaller;
+    width: 100%;
 }
 
 @media print {
