@@ -14,17 +14,19 @@ Research products authored by Venkatsai Bellala.
 
 ## Publications
 
-{{<file "A machine learning method to characterize the crack length and position in high-density polyethylene using ultrasound -- Niu et al. 2023" "https://arxiv.org/abs/2304.11497">}}
+{{<file2 "https://arxiv.org/abs/2304.11497">}}S. Niu, **V. Bellala**, D. A. Qureshi, and V. Srivastava, 'A machine learning method to characterize the crack length and position in high-density polyethylene using ultrasound,' 2023. Publisher: arXiv Version Number: 1.{{</file2>}}
 {{<pdf "https://arxiv.org/pdf/2304.11497.pdf">}}
 
 ## Posters
 
-- {{<file "Meteorological and Behavioral Correlates of COVID-19 Transmissibility Across the United States -- Bellala et al. 2022" "/assets/VT_Bellala.pdf">}}
-- {{<file "Influenza Seasonality Assessed Through Climatic Variables and Indoor Activity Across the United States -- Coyle et al. 2022" "/assets/VT_Coyle.pdf">}}
-- {{<file "Response and Failure Mechanisms of HDPE and UHMWPE Under Chemical Environment -- Lu et al. 2022" "/assets/NE_Poster.pdf">}}
+- {{<file2 "/assets/VT_Bellala.pdf">}}**V. Bellala**, A. Coyle, and L. Marr, 'Meteorological and behavioral correlates of covid-19 transmissibility across the
+united states,' Presented at *Virginia Tech 2022 Summer Research Symposium*.{{</file2>}}
+- {{<file2 "/assets/VT_Coyle.pdf">}}A. Coyle, **V. Bellala**, and L. Marr, 'Influenza seasonality assessed through climatic variables and indoor activity across the united states,' Accepted at *Virginia Tech 2022 Summer Research Symposium*.{{</file2>}}
+- {{<file2 "/assets/NE_Poster.pdf">}}A. Lu, K. LoGiudice, Z. Ahmed, **V. Bellala**, and V. Srivastava, 'Response and failure mechanisms of hdpe and uhmwpe under chemical environment,' Presented at *Northeastern Regional Student Symposium of SEM - 2022*.{{</file2>}}
+- J. Zhong, A. Lu, **V. Bellala**, and V. Srivastava, 'Elasto-viscoplastic-damage in high density polyethylene under chemical environment, Accepted at *SEM 2022: Time Dependent Materials Technical Division*.
 
 
 
 ## Presentations
 - {{<file "(Informal) Meteorological and Behavioral Correlates of COVID-19 Transmissibility Across the United States -- Bellala et al. 2022" "/assets/VT_Bellala_Presentation.pdf">}}
-- {{<file "Elasto-Viscoplastic Damage in Polyethylene Under Chemical Environment -- Lu et al. 2022" "/assets/NE_Presentation.pdf">}}
+- {{<file2 "/assets/NE_Presentation.pdf">}}A. Lu, K. LoGiudice, Z. Ahmed, **V. Bellala**, and V. Srivastava, 'Response and failure mechanisms of hdpe and uhmwpe under chemical environment,' Presented at *Northeastern Regional Student Symposium of SEM - 2022*.{{</file2>}}

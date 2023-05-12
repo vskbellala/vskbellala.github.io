@@ -1,7 +1,9 @@
 {{ define "main" }}
+{{with .Title}}
 <header>
-<h1>{{ .Title }}</h1>
+<h1>{{ . }}</h1>
 </header>
+{{end}}
 <article>
 {{ .Content }}
 </article>

@@ -95,7 +95,7 @@
 
 * {
     box-sizing: border-box;
-    /*    border: 1px solid red;*/
+    /*        border: 1px solid red;*/
 }
 
 body {
@@ -107,13 +107,13 @@ body {
     background: var(--color-bg);
     color: var(--color-txt);
     word-break: keep-all;
-    display:grid;
-    grid-template-rows:auto 1fr auto;
-    grid-template-columns:100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
     /* fallback height */
-    min-height:100vh;
+    min-height: 100vh;
     /* new small viewport height for modern browsers */
-    min-height:100svh;
+    min-height: 100svh;
 }
 
 h1,
@@ -234,11 +234,10 @@ li {
 }
 
 nav.menu {
-    padding: 0.75rem 0;
     padding: 0;
     /*background: var(--color-bg);*/
     display: flex;
-    flex-wrap: wrap;
+/*    flex-wrap: wrap;*/
     justify-content: space-around;
     position: fixed;
     z-index: 2;
@@ -248,8 +247,8 @@ nav.menu {
     width: 100%;
 }
 
-nav.menu > a {
-    padding: 0.75rem 0.25rem;
+nav.menu>a {
+    padding: 0.5rem 0.25rem;
     font-size: 1.2rem;
     text-align: center;
     flex-grow: 1;
@@ -258,8 +257,8 @@ nav.menu > a {
     text-decoration: none;
 }
 
-nav.menu > a:hover,
-nav.menu > a:focus {
+nav.menu>a:hover,
+nav.menu>a:focus {
     background: var(--color-bg-emphasis);
 }
 
@@ -285,6 +284,24 @@ nav.menu a.active {
     text-decoration: underline;
     text-decoration-color: var(--color-txt-emphasis);
     text-decoration-thickness: 2px;
+}
+
+nav.menu2 {
+    width: 100%;
+    margin: 0.5rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+nav.menu2>a {
+    font-size: 1.1rem;
+    flex-grow: 1;
+    padding: 0.25rem 0;
+}
+
+#head {
+    text-align: center;
 }
 
 a.nobg {
@@ -351,16 +368,16 @@ img {
 }
 
 .link {
-    stroke: var(--color-txt-emphasis);
-    color: var(--color-txt-emphasis);
+    stroke: var(--color-txt-emphasis) !important;
+    color: var(--color-txt-emphasis) !important;
     text-decoration: none;
     transition: stroke var(--ani-time) ease, color var(--ani-time) ease !important;
 }
 
 .link:hover,
 .link:focus {
-    stroke: var(--color-link);
-    color: var(--color-link);
+    stroke: var(--color-link) !important;
+    color: var(--color-link) !important;
 }
 
 hr {
@@ -615,7 +632,7 @@ div>iframe {
     column-fill: balance;
 }
 
-object {
+object.file {
     display: block;
     width: 100%;
     aspect-ratio: 3 / 2;
@@ -651,7 +668,7 @@ object {
         margin: 0;
     }
 
-    nav.menu,
+    footer,
     nav#TableOfContents,
     hr,
     iframe,
