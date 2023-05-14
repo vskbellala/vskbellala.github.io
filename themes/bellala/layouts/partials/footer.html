@@ -1,5 +1,5 @@
 <hr><span id="copyright">{{ with replace .Site.Copyright "{currentYear}" now.Year }}{{ . | markdownify}}{{ end }} &#8226; <a href="https://github.com/vskbellala/vskbellala.github.io/commit/{{.Page.GitInfo.Hash}}">{{.Page.GitInfo.AbbreviatedHash}}</a></span>
-<nav class='menu'>
+<!-- <nav class='menu'>
     {{ $currentPage := . }}
     {{if (eq $currentPage.RelPermalink "/")}}
         {{ range where .Site.Menus.main "Name" "!=" "Home" }}
@@ -10,4 +10,4 @@
         <a class="{{if (eq $currentPage.RelPermalink .URL)}}active{{end}}" href="{{ .URL }}" title="{{ .Name }}" target="{{if eq .Name "Resume"}}_blank{{else}}_self{{end}}">{{.Name}}</a>
         {{ end }}
     {{end}}
-</nav>
+</nav> -->

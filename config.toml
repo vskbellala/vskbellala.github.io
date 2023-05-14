@@ -19,10 +19,10 @@ summaryLength = 0
   images = ["/favicons/apple-touch-icon.png"]
 
 [menu]
-  [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
+  #[[menu.main]]
+   # name = "Home"
+    #url = "/"
+    #weight = 1
   [[menu.main]]
     name = "About"
     url = "/about/"

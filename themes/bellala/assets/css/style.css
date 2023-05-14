@@ -95,7 +95,7 @@
 
 * {
     box-sizing: border-box;
-    /*        border: 1px solid red;*/
+/*    border: 1px solid red;*/
 }
 
 body {
@@ -108,7 +108,7 @@ body {
     color: var(--color-txt);
     word-break: keep-all;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 1fr auto;
     grid-template-columns: 100%;
     /* fallback height */
     min-height: 100vh;
@@ -226,7 +226,7 @@ mark {
     background-color: var(--color-highlight);
     border-radius: 2px;
     padding: 0px 2px 0px 2px;
-    color: var(--color-txt);
+    color: var(--black);
 }
 
 li {
@@ -237,7 +237,7 @@ nav.menu {
     padding: 0;
     /*background: var(--color-bg);*/
     display: flex;
-/*    flex-wrap: wrap;*/
+    flex-wrap: wrap;
     justify-content: space-around;
     position: fixed;
     z-index: 2;
@@ -259,6 +259,8 @@ nav.menu>a {
 
 nav.menu>a:hover,
 nav.menu>a:focus {
+/*nav.menu2>a:hover,*/
+/*nav.menu2>a:focus {*/
     background: var(--color-bg-emphasis);
 }
 
@@ -284,24 +286,6 @@ nav.menu a.active {
     text-decoration: underline;
     text-decoration-color: var(--color-txt-emphasis);
     text-decoration-thickness: 2px;
-}
-
-nav.menu2 {
-    width: 100%;
-    margin: 0.5rem 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-
-nav.menu2>a {
-    font-size: 1.1rem;
-    flex-grow: 1;
-    padding: 0.25rem 0;
-}
-
-#head {
-    text-align: center;
 }
 
 a.nobg {
@@ -470,7 +454,9 @@ form {
     box-shadow: none;
 }
 
-input:not([type="submit"]),
+input[type^='text'],
+input[type^='email'],
+input[type^='number'],
 textarea,
 select {
     width: 100%;
@@ -522,7 +508,9 @@ button:focus {
     border: 2px solid var(--color-main);
 }
 
-input:focus,
+input[type^='text']:focus,
+input[type^='email']:focus,
+input[type^='number']:focus,
 textarea:focus {
     background-color: var(--color-bg-emphasis);
     /*border: 1px solid var(--color-main);*/
@@ -650,6 +638,109 @@ object.file {
     width: 100%;
 }
 
+#logo {
+    width: 2.25rem;
+    height: auto;
+    pointer-events: none;
+    vertical-align: middle;
+}
+
+header#head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0.5rem 0;
+    z-index: 1;
+    width: 100%;
+    background-color: var(--color-bg);
+    display: flex;
+    justify-content: center;
+}
+
+nav.menu2 {
+    margin: 0.5rem auto !important;
+    font-size: 1.05rem;
+    text-align: center;
+    width: 100%;
+    background: var(--color-bg);
+    vertical-align: middle;
+}
+
+nav.menu2 > a, nav.menu2 > a:link {
+    padding: 0.5rem;
+    display: inline-block;
+    border-radius: 0.25rem;
+    margin: 0 0.25rem;
+    vertical-align: middle;
+    transition: background var(--ani-time) ease;
+}
+
+a#home:hover, a#home:focus {
+    background: var(--color-bg-emphasis);
+}
+
+#hamburger-input {
+    display: none;
+}
+
+#hamburger-menu {
+    transition: background var(--ani-time) ease;
+    display: none;
+    vertical-align: middle;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    float: right;
+    margin-right: 2rem;
+    margin-left: 0.25rem;
+}
+
+#hamburger-menu > * {
+    margin: 0;
+}
+
+nav#sidebar-menu {
+    display: none;
+    flex-flow: column nowrap;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    margin: 0 !important;
+    transition: height var(--ani-time) ease, opacity var(--ani-time) ease;
+    justify-content: center;
+    align-items: center;
+}
+
+#sidebar-menu > a {
+    margin: 0.25rem auto;
+}
+
+#hamburger-menu:hover {
+    background: var(--color-bg-emphasis);
+}
+
+#hamburger-input:checked + nav#sidebar-menu {
+    visibility: visible;
+    height: 100vh;
+    opacity: 1;
+}
+
+@media screen and (max-width: 500px) {
+    .menu-full {
+        display: none !important;
+    }
+    #sidebar-menu {
+        display: flex !important;
+    }
+    #hamburger-menu{
+        display: inline-block;
+    }
+    #home {
+        float: left;
+        margin-left: 2rem;
+    }
+}
+
+
 @media print {
     :root {
         --color-bg: white;
@@ -668,7 +759,7 @@ object.file {
         margin: 0;
     }
 
-    footer,
+    footer, header#head,
     nav#TableOfContents,
     hr,
     iframe,

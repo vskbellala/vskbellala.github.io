@@ -1,11 +1,29 @@
 <!-- <h1 class='link'><a href="/" class="link">Venkatsai Bellala</a></h1> -->
-<!-- <nav class='menu'>
-    {{ $currentPage := . }}
+{{ $currentPage := . }}
+{{if not (eq $currentPage.RelPermalink "/")}}
+{{end}}
+<nav class='menu2' id='nav-bar'>
     <a href="/" id='home'>
-        <object data="/favicons/icon.svg" type="image/svg+xml"></object>
+        <object data="/favicons/icon.svg" type="image/svg+xml" id='logo'></object>
     </a>
-    {{ range where .Site.Menus.main "Name" "!=" "Home" }}
-        <a class="{{if (eq $currentPage.RelPermalink .URL)}}active{{end}}" href="{{ .URL }}" title="{{ .Name }}" target="{{if eq .Name "Resume"}}_blank{{else}}_self{{end}}">{{.Name}}</a>
+    {{ range .Site.Menus.main}}
+    <a class="link menu-full {{if (eq $currentPage.RelPermalink .URL)}}active{{end}}" href="{{ .URL }}" title="{{ .Name }}" target="{{if eq .Name "Resume"}}_blank{{else}}_self{{end}}">{{.Name}}</a>
     {{ end }}
-</nav> -->
+    <label id="hamburger-menu" for="hamburger-input">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon git">
+            <title>Menu</title>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+    </label>
+    <input type="checkbox" id="hamburger-input" />
+    <nav class='menu2' id="sidebar-menu">
+        {{ range .Site.Menus.main}}
+        <a class="link {{if (eq $currentPage.RelPermalink .URL)}}active{{end}}" href="{{ .URL }}" title="{{ .Name }}" target="{{if eq .Name "Resume"}}_blank{{else}}_self{{end}}">{{.Name}}</a>
+        {{ end }}
+    </nav>
+</nav>    
+
+<!-- We add the checkbox -->
 <!-- <hr> -->

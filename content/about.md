@@ -4,17 +4,18 @@ date: 2021-01-10T11:28:58-06:00
 draft: false
 description: "I am a student at Brown University concentrating in Biomedical Engineering."
 ---
-{{<github "vskbellala">}} 
-{{<orcid>}}
+{{<github "vskbellala">}} {{<orcid>}}
 
-I am a [PLME](https://plme.med.brown.edu/) junior studying Biomedical Engineering at [Brown University](https://www.brown.edu/). My pronouns are **He/Him**.
+My name is Venkatsai, but you can call me by my middle name, {{<mark>}}Shri{{</mark>}}. I am a [PLME](https://plme.med.brown.edu/) junior studying Biomedical Engineering at [Brown University](https://www.brown.edu/academics/biomedical-engineering/). **He/Him** pronouns.
 
-At Brown, I investigate the effect of applied mechanical loading on the function and expression of brain cell populations in the [Srivastava Lab](https://sites.brown.edu/srivastavalab/). I previously conducted research in polymer mechanics and evaluating environmental effects on polymer performance.
+I am currently an [undergraduate researcher](/research) in the [Srivastava Lab](https://sites.brown.edu/srivastavalab/), where I study the effect of applied mechanical loading on the function and expression of brain cell populations. In Summer 2022, I investigated meteorological and behavioral correlates of COVID-19 transmissibility as a [REU](https://www.schmalelab.spes.vt.edu/REU/home.html) student in the [Marr Lab](http://www.air.cee.vt.edu/).
 
-Last summer, I researched meterological and behavioral correlates of COVID-19 transmissibility as a [REU](https://www.schmalelab.spes.vt.edu/REU/home.html) student in the [Marr Lab](http://www.air.cee.vt.edu/).
+<!-- At Brown, I [investigate](/research) the effect of applied mechanical loading on the function and expression of brain cell populations in the [Srivastava Lab](https://sites.brown.edu/srivastavalab/). I previously conducted research in polymer mechanics and evaluating [environmental impacts on polymer performance](/assets/NE_Poster.pdf).
 
-I write [advising commentaries](/advising) to guide my [Meiklejohn](https://www.brown.edu/academics/college/advising/peer/) advisees.
+In Summer 2022, I researched [meteorological and behavioral correlates of COVID-19 transmissibility](/assets/VT_Bellala.pdf) as a [REU](https://www.schmalelab.spes.vt.edu/REU/home.html) student in the [Marr Lab](http://www.air.cee.vt.edu/). -->
 
-In my free time, I enjoy reading short stories and engaging in [film photography](/photos).
+<!-- I write [advising commentaries](/advising) to guide my [Meiklejohn](https://www.brown.edu/academics/college/advising/peer/) advisees. -->
 
-I also love to try my hand at designing [websites](/projects/covid-visuals/) (and [dashboards](/projects/solar-charger)).
+I enjoy reading short stories, engaging in [film photography](/photos), taking on small coding [projects](/projects), and writing [commentaries](/advising) to guide my [Meiklejohn](https://www.brown.edu/academics/college/advising/peer/) advisees.
+
+<!-- I also love to try my hand at designing [websites](/projects/covid-visuals/) (and [dashboards](/projects/solar-charger)). -->
