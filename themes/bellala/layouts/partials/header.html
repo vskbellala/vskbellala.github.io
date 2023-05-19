@@ -9,6 +9,7 @@
     {{ range .Site.Menus.main}}
     <a class="link menu-full {{if (eq $currentPage.RelPermalink .URL)}}active{{end}}" href="{{ .URL }}" title="{{ .Name }}" target="{{if eq .Name "Resume"}}_blank{{else}}_self{{end}}">{{.Name}}</a>
     {{ end }}
+    <input type="checkbox" id="hamburger-input" />
     <label id="hamburger-menu" for="hamburger-input">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon git">
             <title>Menu</title>
@@ -17,7 +18,6 @@
             <line x1="3" y1="18" x2="21" y2="18"></line>
         </svg>
     </label>
-    <input type="checkbox" id="hamburger-input" />
     <nav class='menu2' id="sidebar-menu">
         {{ range .Site.Menus.main}}
         <a class="link {{if (eq $currentPage.RelPermalink .URL)}}active{{end}}" href="{{ .URL }}" title="{{ .Name }}" target="{{if eq .Name "Resume"}}_blank{{else}}_self{{end}}">{{.Name}}</a>

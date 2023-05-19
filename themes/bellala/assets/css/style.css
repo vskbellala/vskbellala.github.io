@@ -714,11 +714,11 @@ nav#sidebar-menu {
     margin: 0.25rem auto;
 }
 
-#hamburger-menu:hover {
+#hamburger-input:checked + #hamburger-menu{
     background: var(--color-bg-emphasis);
 }
 
-#hamburger-input:checked + nav#sidebar-menu {
+#hamburger-input:checked ~ nav#sidebar-menu {
     visibility: visible;
     height: 100vh;
     opacity: 1;
