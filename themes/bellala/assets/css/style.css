@@ -95,7 +95,7 @@
 
 * {
     box-sizing: border-box;
-/*    border: 1px solid red;*/
+    /*    border: 1px solid red;*/
 }
 
 body {
@@ -114,7 +114,7 @@ body {
     min-height: 100vh;
     /* new small viewport height for modern browsers */
     min-height: 100svh;
-    position:relative;
+    position: relative;
 }
 
 h1,
@@ -260,8 +260,8 @@ nav.menu>a {
 
 nav.menu>a:hover,
 nav.menu>a:focus {
-/*nav.menu2>a:hover,*/
-/*nav.menu2>a:focus {*/
+    /*nav.menu2>a:hover,*/
+    /*nav.menu2>a:focus {*/
     background: var(--color-bg-emphasis);
 }
 
@@ -675,7 +675,8 @@ nav.menu2 {
     vertical-align: middle;
 }
 
-nav.menu2 > a, nav.menu2 > a:link {
+nav.menu2>a,
+nav.menu2>a:link {
     padding: 0.5rem;
     display: inline-block;
     border-radius: 0.25rem;
@@ -684,7 +685,8 @@ nav.menu2 > a, nav.menu2 > a:link {
     transition: background var(--ani-time) ease;
 }
 
-a#home:hover, a#home:focus {
+a#home:hover,
+a#home:focus {
     background: var(--color-bg-emphasis);
 }
 
@@ -703,7 +705,7 @@ a#home:hover, a#home:focus {
     margin-left: 0.25rem;
 }
 
-#hamburger-menu > * {
+#hamburger-menu>* {
     margin: 0;
 }
 
@@ -719,15 +721,15 @@ nav#sidebar-menu {
     align-items: center;
 }
 
-#sidebar-menu > a {
+#sidebar-menu>a {
     margin: 0.25rem auto;
 }
 
-#hamburger-input:checked + #hamburger-menu{
+#hamburger-input:checked+#hamburger-menu {
     background: var(--color-bg-emphasis);
 }
 
-#hamburger-input:checked ~ nav#sidebar-menu {
+#hamburger-input:checked~nav#sidebar-menu {
     visibility: visible;
     height: 100vh;
     opacity: 1;
@@ -738,12 +740,15 @@ nav#sidebar-menu {
     .menu-full {
         display: none !important;
     }
+
     #sidebar-menu {
         display: flex !important;
     }
-    #hamburger-menu{
+
+    #hamburger-menu {
         display: inline-block;
     }
+
     #home {
         float: left;
         margin-left: 2rem;
@@ -769,7 +774,8 @@ nav#sidebar-menu {
         margin: 0;
     }
 
-    footer, header#head,
+    footer,
+    header#head,
     nav#TableOfContents,
     hr,
     iframe,

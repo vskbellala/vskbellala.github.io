@@ -4,7 +4,7 @@
 {{end}}
 <nav class='menu2' id='nav-bar'>
     <a href="/" id='home'>
-        <object data="/favicons/icon.svg" type="image/svg+xml" id='logo'></object>
+        <object data="/favicons/icon.svg" type="image/svg+xml" id='logo' title="Home"></object>
     </a>
     {{ range .Site.Menus.main}}
     <a class="link menu-full {{if (eq $currentPage.RelPermalink .URL)}}active{{end}}" href="{{ .URL }}" title="{{ .Name }}" target="{{if eq .Name "Resume"}}_blank{{else}}_self{{end}}">{{.Name}}</a>
