@@ -14,7 +14,8 @@ summaryLength = 0
     tag = "tags"
 [params]
   tileColor = '#8fbcbb'
-  themeColor = "#FFFFFF"
+  themeColor = "#f8f9fa"
+  themeColorDark = "#212529"
   authors = ["Venkatsai Bellala"]
   images = ["/favicons/apple-touch-icon.png"]
 

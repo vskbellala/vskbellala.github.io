@@ -7,7 +7,8 @@
     {{ if .Param "redirect" }}
     <meta http-equiv="refresh" content="0; {{.Param "redirPath"}}" />{{ else }}
     <meta http-equiv="X-UA-Compatible" content="IE=edge">{{ end }}
-    <meta name="theme-color" content="{{.Site.Params.themeColor}}">
+    <meta name="theme-color" content="{{.Site.Params.themeColor}}" media='(prefers-color-scheme: light)'>
+    <meta name="theme-color" content="{{.Site.Params.themeColorDark}}" media='(prefers-color-scheme: dark)'>
     <link rel="icon" href='/favicons/icon.svg?v=PYAnWEX76A'>
     <link rel="mask-icon" href="/favicons/icon.svg?v=PYAnWEX76A" color="{{.Site.Params.tileColor}}">
     <link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png?v=PYAnWEX76A">
