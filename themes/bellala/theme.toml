@@ -7,7 +7,7 @@ licenselink = "https://github.com/vskbellala/vskbellala.github.io/blob/master/LI
 description = "theme for my website"
 homepage = "https://bellala.org/"
 tags = ['simple', 'minimal','portfolio']
-features = ['system font']
+features = ['system font', 'open color']
 min_version = "0.41.0"
 
 [author]

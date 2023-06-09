@@ -18,6 +18,7 @@ summaryLength = 0
   themeColorDark = "#212529"
   authors = ["Venkatsai Bellala"]
   images = ["/favicons/apple-touch-icon.png"]
+  orcid = "0009-0005-0010-754X"
 
 [menu]
   #[[menu.main]]
