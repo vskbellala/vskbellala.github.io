@@ -387,6 +387,15 @@ details div.spoiler {
     padding: 0.5rem 1rem;
 }
 
+details[open] summary ~ * {
+  animation: sweep var(--ani-time) ease;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; transform: translateX(-1rem)}
+  100%  {opacity: 1; transform: translateX(0)}
+}
+
 caption {
     text-align: left;
     font-size: 1.25rem;
@@ -658,7 +667,6 @@ header#head {
     position: fixed;
     top: 0;
     left: 0;
-    padding: 0.5rem 0;
     z-index: 1;
     width: 100%;
     background-color: var(--color-bg);

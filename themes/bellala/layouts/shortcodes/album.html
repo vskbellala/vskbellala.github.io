@@ -2,7 +2,7 @@
 <!-- and insert shortcode "album albumName" in blogpost.md -->
 {{ $albumUrl := print "/static/img/" ($.Get 0) }}
 {{ $album := readDir $albumUrl}}
-<div class="full-width" id="photos">
+<div class="full-width photos">
     {{ range sort $album "ModTime" "desc"}}
     {{ $imgURL := print "img/" ($.Get 0) "/" .Name | absURL }}
     <!-- {{.Name}} {{.ModTime}}<br> -->
@@ -12,7 +12,7 @@
     {{ end }}
 </div>
 <style>
-#photos {
+.photos {
     /* Prevent vertical gaps */
     line-height: 0;
     /*Note: switch to 5 once I have more photos!*/
@@ -22,7 +22,7 @@
     column-fill: balance;
 }
 
-#photos img {
+.photos img {
     /* Just in case there are inline attributes */
     width: 100% !important;
     height: auto !important;

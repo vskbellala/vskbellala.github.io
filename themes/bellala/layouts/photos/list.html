@@ -10,7 +10,7 @@
             <!-- <p><small>{{.Lastmod.Format "Jan 2, 2006"}}</small> &#8226; <a href="{{ .RelPermalink }}">{{ .Title }}</a> ({{.ReadingTime}} min) -- {{.Description}}</p> -->
             <h2>{{ .Title }}</h2>
             <p>{{.Description}}</p>
-            <p><small>{{.Lastmod.Format "Jan 2, 2006"}}</small></p>
+            <p><small>{{.Date.Format "Jan 2, 2006"}}</small></p>
         </section>
     </a>
     {{ end }}
