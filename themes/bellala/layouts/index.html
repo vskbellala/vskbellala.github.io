@@ -1,4 +1,18 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
+<header>
+<h1 class='align-center'>{{ .Title }}</h1>
+</header>
+<article>
 {{ .Content }}
+</article>
+
+<section class='emphasis'>
+<h2>Recent Photography</h2>
+{{ range ( where .Site.RegularPages "Type" "photos" | first 2 ) }}
+<p>
+<h3 class="link" style="display:inline;"><a title="Read more" href="{{ .RelPermalink }}" class='link'>{{ .Title }}</a></h3> &#8226; {{ .Description }}
+</p> 
+{{ end }}
+<p><a title="See more" href="/photos">See more &#8230;</a></p>
+</section>
 {{ end }}

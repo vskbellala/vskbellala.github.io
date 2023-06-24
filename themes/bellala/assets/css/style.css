@@ -456,6 +456,10 @@ address a::before {
     content: '🔗 ';
 }
 
+.align-center {
+    text-align: center;
+}
+
 /* needs to be reworked */
 form {
     background-color: var(--color-bg);
@@ -558,6 +562,15 @@ section.img:hover,
 a:focus>section.img {
     box-shadow: 0px 0px 0px 100rem var(--color-bg) inset;
 }
+
+section.emphasis {
+    border-radius: 0.25rem;
+    background-color: var(--color-bg-emphasis);
+    padding: 0.25rem 1rem;
+    margin: 0.5rem 0;
+}
+
+
 
 div>iframe {
     margin: 1rem 0;
