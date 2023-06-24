@@ -9,9 +9,11 @@ publishDir = 'docs/'
 enableGitInfo = true
 enableInlineShortcodes = true
 summaryLength = 0
+
 [taxonomies]
     category = "categories"
     tag = "tags"
+    
 [params]
   tileColor = '#8fbcbb'
   themeColor = "#f8f9fa"

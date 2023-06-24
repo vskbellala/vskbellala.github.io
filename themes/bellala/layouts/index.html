@@ -10,7 +10,7 @@
 <h2>Recent Photography</h2>
 {{ range ( where .Site.RegularPages "Type" "photos" | first 2 ) }}
 <p>
-<h3 class="link" style="display:inline;"><a title="Read more" href="{{ .RelPermalink }}" class='link'>{{ .Title }}</a></h3> &#8226; {{ .Description }}
+<h3 class="link" style="display:inline;"><a title="Read more" href="{{ .RelPermalink }}" class='link'>{{ .Title }}</a></h3> &nbsp;&#8226; {{ .Description }}
 </p> 
 {{ end }}
 <p><a title="See more" href="/photos">See more &#8230;</a></p>
