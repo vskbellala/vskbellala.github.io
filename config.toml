@@ -18,6 +18,9 @@ summaryLength = 0
   home     = ["HTML"]
   section  = ["HTML"]
 
+[minify]
+    minifyOutput = true
+
 [author]
   name = "Venkatsai Bellala"
     
