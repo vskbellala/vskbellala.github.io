@@ -2,8 +2,11 @@
 title: "Photos"
 date: 2022-09-26T14:07:03-04:00
 draft: false
-description: "Film Photography by Shri"
+description: "Film Photography by Shri."
 images: ["/img/film/Ven1140_Ven1140-R1-056-26A.jpg"]
+outputs:
+- html
+- rss
 ---
 Film photography is a hobby of mine. I've enjoyed it a lot, and organized some of my favorites into the posts below.
 

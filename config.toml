@@ -4,7 +4,7 @@ title = "Venkatsai Bellala"
 theme = "bellala"
 copyright = "&copy; {currentYear} Venkatsai Bellala"
 enableRobotsTXT = true
-disableKinds = ["taxonomy", "term", "RSS"]
+disableKinds = ["taxonomy", "term"]
 publishDir = 'docs/'
 enableGitInfo = true
 enableInlineShortcodes = true
@@ -13,6 +13,13 @@ summaryLength = 0
 [taxonomies]
     category = "categories"
     tag = "tags"
+
+[outputs]
+  home     = ["HTML"]
+  section  = ["HTML"]
+
+[author]
+  name = "Venkatsai Bellala"
     
 [params]
   tileColor = '#8fbcbb'
