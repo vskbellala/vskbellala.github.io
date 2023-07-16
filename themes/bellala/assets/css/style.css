@@ -405,6 +405,7 @@ table {
     border-collapse: collapse;
     margin: 1rem 0;
     width: 100%;
+    border-bottom: 2px solid var(--color-main);
 }
 
 td,
@@ -413,7 +414,12 @@ th {
     text-align: left;
 }
 
-table tbody tr:nth-child(odd) {
+table thead {
+    background-color: var(--color-txt-emphasis);
+    color: var(--color-bg);
+}
+
+table tbody tr:nth-child(even) {
     background: var(--color-bg-emphasis);
 }
 
