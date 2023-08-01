@@ -1,7 +1,7 @@
 ---
 title: "End of Junior Year"
 date: 2023-07-31T20:23:21-05:00
-draft: true
+draft: false
 description: "One of my last rolls before leaving Brown for the summer."
 images: ["/img/film/junior/000067920036.jpg"]
 ---
