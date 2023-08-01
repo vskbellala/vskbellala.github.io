@@ -18,7 +18,7 @@ Research products authored by Venkatsai Bellala.
 {{<pdf "https://arxiv.org/pdf/2304.11497.pdf">}}
 
 ## Posters
-- {{<file2 "/assets/MayoSURF_Bellala.pdf">}}**V. Bellala**, T. Lo, S. Nfonoyim-Hara, N. Chia, and Y. Liu, 'Toward integrating 3D microstructures in a digital microfluidic platform for enhanced cell capture,' Presented at *2023 Mayo Clinic SURF Poster Session*.{{</file2>}}
+- {{<file2 "/assets/MayoSURF_Bellala.pdf">}}**V. Bellala**, T. Lo, S. Nfonoyim-Hara, N. Chia, and Y. Liu, 'Toward integrating 3D microstructures in a digital microfluidic platform for enhanced cell capture,' Presented at *2023 Mayo Clinic Graduate School of Biomedical Sciences Summer Student Symposium*.{{</file2>}}
 - {{<file2 "/assets/VT_Bellala.pdf">}}**V. Bellala**, A. Coyle, and L. Marr, 'Meteorological and behavioral correlates of covid-19 transmissibility across the
 united states,' Presented at *Virginia Tech 2022 Summer Research Symposium*.{{</file2>}}
 - {{<file2 "/assets/VT_Coyle.pdf">}}A. Coyle, **V. Bellala**, and L. Marr, 'Influenza seasonality assessed through climatic variables and indoor activity across the united states,' Accepted at *Virginia Tech 2022 Summer Research Symposium*.{{</file2>}}
