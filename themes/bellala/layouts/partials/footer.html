@@ -1,4 +1,4 @@
-<hr><span id="copyright">{{ with replace .Site.Copyright "{currentYear}" now.Year }}{{ . | markdownify}}{{ end }}{{ with .Page.GitInfo }} &#8226; <a href="https://github.com/vskbellala/vskbellala.github.io/commit/{{.Hash}}">{{.AbbreviatedHash}}</a>{{ end }} {{ with .OutputFormats.Get "rss" -}} &#8226;<a href="{{ .RelPermalink }}"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="link icon git">
+<hr><span id="copyright">{{ with replace .Site.Copyright "{currentYear}" now.Year }}{{ . | markdownify}}{{ end }} {{ with .OutputFormats.Get "rss" -}} &#8226;<a href="{{ .RelPermalink }}"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="link icon git">
 <title>RSS</title>
     <path d="M4 11a9 9 0 0 1 9 9"></path>
     <path d="M4 4a16 16 0 0 1 16 16"></path>
@@ -16,3 +16,4 @@
         {{ end }}
     {{end}}
 </nav> -->
+<!-- {{ with .Page.GitInfo }} &#8226; <a href="https://github.com/vskbellala/vskbellala.github.io/commit/{{.Hash}}">{{.AbbreviatedHash}}</a>{{ end }} -->
