@@ -10,5 +10,4 @@ With the encouragement from my friend Joshua, I served as a volunteer photograph
 
 Shot on a Canon EOS Rebel T100 APS-C Camera with 18-55mm lens.
 
-***
 {{<album "TEDxBrownU">}}
