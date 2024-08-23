@@ -5,7 +5,7 @@ draft: false
 description: "Venkatsai Shri Bellala's Personal Website"
 ---
 {{<center>}}
-*Brown University '24. Sc.B. Biomedical Engineering.*
+*M.D. '28 at the Warren Alpert Medical School of Brown University.*
 
 But you can call me [Shri](/about).
 {{</center>}}

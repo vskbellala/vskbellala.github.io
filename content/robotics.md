@@ -13,7 +13,7 @@ Back in high school, I was the lead builder & designer for my robotics team 8995
 
 {{<twitter user="ipef204" id="1276550463773724674">}}
 
-| Category||   
+|Achievements|Details|   
 |:---:|---|
 | 3x VEX Worlds Appearances | 2018: 75th in the Research Division <br> 2019: 24th in the Engineering Division <br> 2020 Virtual Worlds: 41st in the Research Division|
 |2x CREATE US Open Appearances|2019: 38th in the Orange Division, Round of 32 <br> ~~2020: CANCELED~~|
