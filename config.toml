@@ -13,16 +13,13 @@ summaryLength = 0
 [taxonomies]
     category = "categories"
     tag = "tags"
-
+      
 [outputs]
   home     = ["HTML"]
   section  = ["HTML"]
 
 [minify]
     minifyOutput = true
-
-[author]
-  name = "Venkatsai Bellala"
     
 [params]
   tileColor = '#8fbcbb'
@@ -31,6 +28,8 @@ summaryLength = 0
   authors = ["Venkatsai Bellala"]
   images = ["/favicons/apple-touch-icon.png"]
   orcid = "0009-0005-0010-754X"
+  [params.author]
+    name = "Venkatsai Bellala"
 
 [menu]
   #[[menu.main]]

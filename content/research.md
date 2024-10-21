@@ -18,6 +18,8 @@ Research products authored by Venkatsai Bellala.
 {{<pdf "https://arxiv.org/pdf/2304.11497.pdf">}}
 
 ## Posters
+- E. E. Ozcan, **V. Bellala**, A. Q. Wu, C. J. Shin, T. Meng-Saccoccio, P. Ogan, P. H. Lee, and S. H. Sojar, 'A novel rapid delivery device for intravenous adenosine administration,' 2024. Presented at *50th Northeast Bioengineering Conference at Stevens Institute of Technology*.
+- T. Meng-Saccoccio, C. J. Shin, P. Ogan, E. E. Ozcan, **V. Bellala**, A. Q. Wu, P. H. Lee, and S. H. Sojar, 'Fluid dynamics of the three-way stopcock: simulation and experimental validation,' 2024. Presented at *50th Northeast Bioengineering Conference at Stevens Institute of Technology*.
 - {{<file2 "/assets/URI_Poster_Ultrasound.pdf">}}**V. Bellala**, D.A. Quershi, F.D. Abulencia, S. Niu, and V. Srivastava, 'Mechanics with Machine Learning: Applications in Flaw and Tumor Detection,' 2023. Presented at *Symposium on Materials and Structures Under Extreme Loading Conditions in honor of Dr. Arun Shukla's 70th birthday*.{{</file2>}}
 - {{<file2 "/assets/Niu_Steel.pdf">}}S.Niu, **V. Bellala**, and V. Srivastava, 'Convolutional and Physics-Informed Neural Networks for Structural Mechanics Problems,' 2023.{{</file2>}}
 - {{<file2 "/assets/MayoSURF_Bellala.pdf">}}**V. Bellala**, T. Lo, S. Nfonoyim-Hara, N. Chia, and Y. Liu, 'Toward integrating 3D microstructures in a digital microfluidic platform for enhanced cell capture,' 2023. Presented at *2023 Mayo Clinic Graduate School of Biomedical Sciences Summer Student Symposium*.{{</file2>}}
