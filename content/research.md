@@ -20,8 +20,8 @@ Research products authored by Venkatsai Bellala.
 ## Posters
 - E. E. Ozcan, **V. Bellala**, A. Q. Wu, C. J. Shin, T. Meng-Saccoccio, P. Ogan, P. H. Lee, and S. H. Sojar, 'A novel rapid delivery device for intravenous adenosine administration,' 2024. Presented at *50th Northeast Bioengineering Conference at Stevens Institute of Technology*.
 - T. Meng-Saccoccio, C. J. Shin, P. Ogan, E. E. Ozcan, **V. Bellala**, A. Q. Wu, P. H. Lee, and S. H. Sojar, 'Fluid dynamics of the three-way stopcock: simulation and experimental validation,' 2024. Presented at *50th Northeast Bioengineering Conference at Stevens Institute of Technology*.
-- **V. Bellala**, K. Palac, K. LoGiudice, and V. Srivastava, "Mechanical properties and cellular function impairment of brain
-tissue mimicking surrogates," 2024. Presented at *6th Annual Student Neurology and Neurosurgery Research
+- **V. Bellala**, K. Palac, K. LoGiudice, and V. Srivastava, 'Mechanical properties and cellular function impairment of brain
+tissue mimicking surrogates,'' 2024. Presented at *6th Annual Student Neurology and Neurosurgery Research
 Conference at the Warren Alpert School of Medicine of Brown University*.
 - {{<file2 "/assets/URI_Poster_Ultrasound.pdf">}}**V. Bellala**, D.A. Quershi, F.D. Abulencia, S. Niu, and V. Srivastava, 'Mechanics with Machine Learning: Applications in Flaw and Tumor Detection,' 2023. Presented at *Symposium on Materials and Structures Under Extreme Loading Conditions in honor of Dr. Arun Shukla's 70th birthday*.{{</file2>}}
 - {{<file2 "/assets/Niu_Steel.pdf">}}S.Niu, **V. Bellala**, and V. Srivastava, 'Convolutional and Physics-Informed Neural Networks for Structural Mechanics Problems,' 2023.{{</file2>}}
