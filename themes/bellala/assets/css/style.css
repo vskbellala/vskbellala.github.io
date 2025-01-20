@@ -387,13 +387,20 @@ details div.spoiler {
     padding: 0.5rem 1rem;
 }
 
-details[open] summary ~ * {
-  animation: sweep var(--ani-time) ease;
+details[open] summary~* {
+    animation: sweep var(--ani-time) ease;
 }
 
 @keyframes sweep {
-  0%    {opacity: 0; transform: translateX(-1rem)}
-  100%  {opacity: 1; transform: translateX(0)}
+    0% {
+        opacity: 0;
+        transform: translateX(-1rem)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
 }
 
 caption {
@@ -763,6 +770,13 @@ nav#sidebar-menu {
     padding: 2rem 0;
 }
 
+img.left-float {
+    float: left;
+    width: 35%;
+    margin-right: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
 @media screen and (max-width: 500px) {
     .menu-full {
         display: none !important;
@@ -779,6 +793,12 @@ nav#sidebar-menu {
     #home {
         float: left;
         margin-left: 2rem;
+    }
+
+    img.left-float {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
     }
 }
 
