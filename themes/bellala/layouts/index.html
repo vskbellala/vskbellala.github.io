@@ -1,28 +1,30 @@
 {{ define "main" }}
 <header>
-<h1 class='align-center'>{{ .Title }}</h1>
+    <h1>{{ .Title }}</h1>
 </header>
 <article>
-{{ .Content }}
+    {{ .Content }}
+    {{ with .Site.GetPage "page" "/about.md" }}
+    {{ .Content }}
+    {{ end }}
 </article>
-
-<section class='emphasis'>
-<h2>Recent Posts</h2>
-{{ range (where .Site.RegularPages "Type" "in" (slice "photos" "projects" "advising") | first 4 ) }}
-<p>
-<h3 class="link" style="display:inline;"><a title="Read more" href="{{ .RelPermalink }}" class='link'>{{ .Title }}</a></h3> &nbsp;&#8226; {{ .Date.Format "Jan 2, 2006" }}
-</p> 
-<p>
-	{{if .Description}}
-	{{ .Description }}
-	{{else}}
-	{{.Summary}}
-	{{end}}
-</p>
-{{ end }}
-<!-- <p><a title="See more" href="/photos">See more &#8230;</a></p> -->
+<hr>
+<section>
+    <h2>Recent Posts</h2>
+    {{ range (where .Site.RegularPages "Type" "in" (slice "photos" "projects" "advising") | first 4 ) }}
+    <p>
+        <h3 class="link" style="display:inline;"><a title="Read more" href="{{ .RelPermalink }}" class='link'>{{ .Title }}</a></h3> &nbsp;&#8226; {{ .Date.Format "Jan 2, 2006" }}
+    </p>
+    <p>
+        {{if .Description}}
+        {{ .Description }}
+        {{else}}
+        {{.Summary}}
+        {{end}}
+    </p>
+    {{ end }}
+    <!-- <p><a title="See more" href="/photos">See more &#8230;</a></p> -->
 </section>
-
 <!-- <section class='emphasis'>
 <h2>Recent <a title="See more" href="/photos" class='link'>Photography</a></h2>
 {{ range ( where .Site.RegularPages "Type" "photos" | first 2 ) }}
@@ -32,5 +34,4 @@
 {{ end }}
 <p><a title="See more" href="/photos">See more &#8230;</a></p>
 </section> -->
-
 {{ end }}

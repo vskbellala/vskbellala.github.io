@@ -36,10 +36,10 @@ summaryLength = 0
    # name = "Home"
     #url = "/"
     #weight = 1
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 2
+  #[[menu.main]]
+   # name = "About"
+    #url = "/about/"
+    #weight = 2
   [[menu.main]]
     name = "Photos"
     url = "/photos/"
@@ -73,6 +73,9 @@ summaryLength = 0
 [services]
   [services.twitter]
     disableInlineCSS = true
+  [services.x]
+    disableInlineCSS = true
+
 
 
 [privacy]
@@ -84,6 +87,10 @@ summaryLength = 0
     disable = false
     simple = true
   [privacy.twitter]
+    disable = false
+    enableDNT = true
+    simple = true
+  [privacy.x]
     disable = false
     enableDNT = true
     simple = true
