@@ -85,7 +85,7 @@
 
     img {
         opacity: .75;
-        transition: opacity 500ms ease-in-out;
+        transition: opacity var(--ani-time) ease-in-out;
     }
 
     img:hover {
@@ -582,6 +582,7 @@ section.img>* {
     opacity: 0;
     transition: opacity var(--ani-time) ease;
     text-align: center;
+    color: var(--white);
 }
 
 section.img:hover>*,
@@ -591,7 +592,8 @@ a:focus>section.img>* {
 
 section.img:hover,
 a:focus>section.img {
-    box-shadow: 0px 0px 0px 100rem var(--color-bg) inset;
+    /*box-shadow: 0px 0px 0px 100rem var(--color-bg) inset;*/
+    box-shadow: 0px 0px 0px 100rem rgba(0, 0, 0, 0.7) inset;
 }
 
 section.emphasis {

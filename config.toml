@@ -9,6 +9,7 @@ publishDir = 'docs/'
 enableGitInfo = true
 enableInlineShortcodes = true
 summaryLength = 0
+renderToMemory = true
 
 [taxonomies]
     category = "categories"
