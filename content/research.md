@@ -20,6 +20,8 @@ Research products authored by Venkatsai Bellala.
 high-density polyethylene using microseconds ultrasound time signal,' 2023. Publisher: arXiv.{{</citation>}}
 <!-- {{<pdf "https://arxiv.org/pdf/2304.11497.pdf">}} -->
 
+***
+
 ## Posters
 
 ### 2024
@@ -32,6 +34,7 @@ T. Meng-Saccoccio, C. J. Shin, P. Ogan, E. E. Ozcan, **V. Bellala**, A. Q. Wu, P
 tissue mimicking surrogates,' 2024. Presented at *6th Annual Student Neurology and Neurosurgery Research
 Conference at the Warren Alpert School of Medicine of Brown University*.
 
+
 ### 2023
 
 {{<citation "/assets/URI_Poster_Ultrasound.pdf">}}**V. Bellala**, D.A. Quershi, F.D. Abulencia, S. Niu, and V. Srivastava, 'Mechanics with Machine Learning: Applications in Flaw and Tumor Detection,' 2023. Presented at *Symposium on Materials and Structures Under Extreme Loading Conditions in honor of Dr. Arun Shukla's 70th birthday*.{{</citation>}}
@@ -39,6 +42,7 @@ Conference at the Warren Alpert School of Medicine of Brown University*.
 {{<citation "/assets/Niu_Steel.pdf">}}S.Niu, **V. Bellala**, and V. Srivastava, 'Convolutional and Physics-Informed Neural Networks for Structural Mechanics Problems,' 2023.{{</citation>}}
 
 {{<citation "/assets/MayoSURF_Bellala.pdf">}}**V. Bellala**, T. Lo, S. Nfonoyim-Hara, N. Chia, and Y. Liu, 'Toward integrating 3D microstructures in a digital microfluidic platform for enhanced cell capture,' 2023. Presented at *2023 Mayo Clinic Graduate School of Biomedical Sciences Summer Student Symposium*.{{</citation>}}
+
 
 ### 2022
 
@@ -51,7 +55,7 @@ Conference at the Warren Alpert School of Medicine of Brown University*.
 
 J. Zhong, A. Lu, **V. Bellala**, and V. Srivastava, 'Elasto-viscoplastic-damage in high density polyethylene under chemical environment,' 2022. Accepted at *SEM 2022: Time Dependent Materials Technical Division*.
 
-
+***
 
 ## Presentations
 

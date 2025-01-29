@@ -679,7 +679,7 @@ div>iframe {
 object.file {
     display: block;
     width: 100%;
-    aspect-ratio: 3 / 2;
+    aspect-ratio: 1 / 1;
     margin: 1rem 0;
     border: 2px solid var(--color-bg-emphasis);
     border-radius: 0.25rem;

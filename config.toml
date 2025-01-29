@@ -57,6 +57,10 @@ renderToMemory = true
     name = "Advising"
     url = "/advising/"
     weight = 6
+  [[menu.main]]
+    name = "Resume"
+    url = "/resume/"
+    weight = 7
 
 [markup]
   [markup.highlight]

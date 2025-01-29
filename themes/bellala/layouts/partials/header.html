@@ -7,7 +7,10 @@
         <object data="/favicons/icon.svg" type="image/svg+xml" id='logo' title="Home"></object>
     </a>
     {{ range .Site.Menus.main}}
-    <a class="link menu-full {{if (eq $currentPage.RelPermalink .URL)}}active{{end}}" href="{{ .URL }}" title="{{ .Name }}" target="{{if eq .Name "Resume"}}_blank{{else}}_self{{end}}">{{.Name}}</a>
+    <a class="link menu-full {{if (eq $currentPage.RelPermalink .URL)}}active{{end}}" href="{{ .URL }}" title="{{ .Name }}" target="_self">{{.Name}}</a>
+    {{/*
+    <!-- <a class="link menu-full {{if (eq $currentPage.RelPermalink .URL)}}active{{end}}" href="{{ .URL }}" title="{{ .Name }}" target="{{if eq .Name "Resume"}}_blank{{else}}_self{{end}}"> -->
+    */}}
     {{ end }}
     <input type="checkbox" id="hamburger-input" />
     <label id="hamburger-menu" for="hamburger-input">
@@ -20,8 +23,11 @@
     </label>
     <nav class='menu2' id="sidebar-menu">
         {{ range .Site.Menus.main}}
-        <a class="link {{if (eq $currentPage.RelPermalink .URL)}}active{{end}}" href="{{ .URL }}" title="{{ .Name }}" target="{{if eq .Name "Resume"}}_blank{{else}}_self{{end}}">{{.Name}}</a>
+        <a class="link {{if (eq $currentPage.RelPermalink .URL)}}active{{end}}" href="{{ .URL }}" title="{{ .Name }}" target="_self">{{.Name}}</a>
         {{ end }}
+        {{/* 
+        <!-- <a class="link {{if (eq $currentPage.RelPermalink .URL)}}active{{end}}" href="{{ .URL }}" title="{{ .Name }}" target="{{if eq .Name "Resume"}}_blank{{else}}_self{{end}}">{{.Name}}</a> -->
+        */}}
     </nav>
 </nav>    
 
