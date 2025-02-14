@@ -83,14 +83,14 @@
         --color-txt-emphasis: #f1f3f5;
     }
 
-    img {
+    /* img {
         opacity: .75;
-        transition: opacity var(--ani-time) ease-in-out;
+        transition: opacity 500ms ease-in-out;
     }
 
     img:hover {
         opacity: 1;
-    }
+    } */
 }
 
 * {
