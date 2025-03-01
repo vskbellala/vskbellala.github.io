@@ -11,7 +11,7 @@ Back in high school, I was the lead builder & designer for my robotics team 8995
 
 ## Achievements
 
-{{<twitter user="ipef204" id="1276550463773724674">}}
+{{<x user="ipef204" id="1276550463773724674">}}
 
 |Achievements|Details|   
 |:---:|---|
