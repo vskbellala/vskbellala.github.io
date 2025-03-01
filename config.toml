@@ -10,6 +10,7 @@ enableGitInfo = true
 enableInlineShortcodes = true
 summaryLength = 0
 renderToMemory = true
+timeout = "120s"
 
 [taxonomies]
     category = "categories"
@@ -74,14 +75,11 @@ renderToMemory = true
     [markup.goldmark.renderer]
       unsafe = true
 
-
 [services]
   [services.twitter]
     disableInlineCSS = true
   [services.x]
     disableInlineCSS = true
-
-
 
 [privacy]
   [privacy.disqus]

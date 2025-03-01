@@ -821,6 +821,24 @@ img.left-float-profile {
   margin-bottom: 1rem;
 }
 
+.photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+  /*Note: switch to 5 once I have more photos!*/
+  column-count: 4;
+  column-gap: 0px;
+  column-width: 25rem;
+  column-fill: balance;
+}
+
+.photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+  display: inline-block !important;
+  border: 3px solid transparent;
+}
+
 @media screen and (max-width: 500px) {
   .menu-full {
     display: none !important;

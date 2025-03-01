@@ -1,32 +1,52 @@
 <!-- put bunch of photos in /static/img/albumName -->
 <!-- and insert shortcode "album albumName" in blogpost.md -->
-{{ $albumUrl := print "/static/img/" ($.Get 0) }}
-{{ $album := readDir $albumUrl}}
-<div class="full-width photos">
-    {{ range sort $album "ModTime" "desc"}}
-    {{ $imgURL := print "img/" ($.Get 0) "/" .Name | absURL }}
+{{ $albumUrl := print "/img/" ($.Get 0) "/*.{png,jpg,jpeg}"}}
+{{/*
+<!-- {{ $album := readDir $albumUrl}} -->
+<!-- <div class="full-width photos"> -->
+    <!-- {{ range sort $album "ModTime" "desc"}} -->
+    <!-- {{ $imgURL := print "img/" ($.Get 0) "/" .Name | absURL }} -->
     <!-- {{.Name}} {{.ModTime}}<br> -->
-    <a href="{{ $imgURL }}" class='no-deco'>
-        <img class='no-shadow no-round' loading="lazy" src="{{ $imgURL }}"/>
-    </a>
+    <!-- <a href="{{ $imgURL }}" class='no-deco'> -->
+        <!-- <img class='no-shadow no-round' loading="lazy" src="{{ $imgURL }}"/> -->
+    <!-- </a> -->
+    <!-- {{ end }} -->
+<!-- </div> -->
+*/}}
+{{ $filters := slice
+    images.AutoOrient
+    (images.Process "resize 2000x q85 lanczos")
+}}
+{{ $filters_nosize := slice
+    images.AutoOrient
+    (images.Process "q50 lanczos")
+}}
+
+<div class="full-width photos">
+    {{ range resources.Match $albumUrl }}
+            {{ $imgURL :=  .Name }}
+            {{/*  {{ if or (gt .Width 2000) (gt .Height 2000) }}
+                {{ with .Filter $filters | resources.Copy $imgURL}}
+                    <a href="{{.RelPermalink}}" class='no-deco'>
+                        <img class='no-shadow no-round' loading="lazy" src="{{.RelPermalink}}"/>
+                    </a>
+                {{ end }}
+            {{ else }}
+                {{ with .Filter $filters_nosize | resources.Copy $imgURL}}
+                    <a href="{{.RelPermalink}}" class='no-deco'>
+                        <img class='no-shadow no-round' loading="lazy" src="{{.RelPermalink}}"/>
+                    </a>
+                {{ end }}
+            {{ end }}  */}}
+            {{ with .Filter $filters_nosize | resources.Copy $imgURL}}
+                <a href="{{.RelPermalink}}" class='no-deco'>
+                    <img class='no-shadow no-round' loading="lazy" src="{{.RelPermalink}}"/>
+                </a>
+            {{ end }}
     {{ end }}
 </div>
-<style>
-.photos {
-    /* Prevent vertical gaps */
-    line-height: 0;
-    /*Note: switch to 5 once I have more photos!*/
-    column-count: 4;
-    column-gap: 0px;
-    column-width: 25rem;
-    column-fill: balance;
-}
 
-.photos img {
-    /* Just in case there are inline attributes */
-    width: 100% !important;
-    height: auto !important;
-    display: inline-block !important;
-    border: 3px solid transparent;
-}
-</style>
+{{/*  {{ range first 1 .Colors }}
+                    {{ $colors := .ColorHex }}
+                    <p>{{ printf "%#v" $colors }}</p>
+                {{ end }}  */}}
