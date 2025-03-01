@@ -40,7 +40,7 @@
             {{ end }}  */}}
             {{ with .Filter $filters_nosize | resources.Copy $imgURL}}
                 <a href="{{.RelPermalink}}" class='no-deco'>
-                    <img class='no-shadow no-round' loading="lazy" src="{{.RelPermalink}}"/>
+                    <img class='no-shadow no-round' loading="lazy" src="{{.RelPermalink}}" alt="Photograph"/>
                 </a>
             {{ end }}
     {{ end }}
