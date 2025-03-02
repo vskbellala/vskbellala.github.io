@@ -839,6 +839,12 @@ img.left-float-profile {
   border: 3px solid transparent;
 }
 
+span.icon-info {
+  display: inline-block;
+  margin: 0.25rem 0;
+  white-space: nowrap;
+}
+
 @media screen and (max-width: 500px) {
   .menu-full {
     display: none !important;
