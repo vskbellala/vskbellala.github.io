@@ -8,7 +8,7 @@ outputs:
 - html
 - rss
 ---
-Film photography is a hobby of mine. I've enjoyed it a lot, and organized some of my favorites into the posts below.
+Film photography is a hobby of mine. I've enjoyed it a lot, and organized some of my favorites into the posts below. Photos have been optimized for web use and may not fully reflect the quality of the original film.
 
 {{<spoiler "Equipment">}}
 - Cameras: 
