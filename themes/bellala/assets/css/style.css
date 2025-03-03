@@ -422,7 +422,7 @@ details {
   margin: 1rem 0;
 }
 summary {
-  /* list-style: none; */
+  list-style: none;
   cursor: pointer;
   color: var(--color-txt-emphasis);
   padding: 0.5rem 1rem;
@@ -438,16 +438,33 @@ details div.spoiler {
   padding: 0.5rem 1rem;
 }
 
-/* details[open] summary ~ * {
-  animation: sweep var(--ani-time) ease;
-} */
+details[open] summary ~ * {
+  animation: sweep-top var(--ani-time) ease;
+}
 
 details[open] summary {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-@keyframes sweep {
+details summary::before {
+  content: "▸"; /* Default arrow */
+  display: inline-block;
+  margin-right: 0.25rem;
+  transition: transform var(--ani-time) ease;
+  transform-origin: center center;
+  line-height: 1;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+details[open] summary::before {
+  transform: rotate(90deg); /* Rotate when open */
+}
+
+@keyframes sweep-left {
   0% {
     opacity: 0;
     transform: translateX(-1rem);
@@ -456,6 +473,17 @@ details[open] summary {
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes sweep-top {
+  0% {
+    opacity: 0;
+    margin-top: -0.5rem;
+  }
+  100% {
+    opacity: 1;
+    margin-top: initial;
   }
 }
 
