@@ -421,13 +421,19 @@ hr {
 details {
   margin: 1rem 0;
 }
-summary {
+
+details summary {
   list-style: none;
   cursor: pointer;
   color: var(--color-txt-emphasis);
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   background: var(--color-bg-emphasis);
+}
+
+details summary::-webkit-details-marker,
+details summary::marker {
+  display: none;
 }
 
 details div.spoiler {
