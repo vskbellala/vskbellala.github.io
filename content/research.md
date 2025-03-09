@@ -14,6 +14,11 @@ Research products authored by Venkatsai Bellala.
 
 ## Publications
 
+### 2025
+
+{{<citation "https://issuu.com/saemonline/docs/saem_pulse_march-april_2025/28">}}**V. Bellala** and K. D. Martin, "Tularemia on the rise: A growing concern for emergency medicine," *SAEM Pulse*, vol. 40,
+pp. 28–29, March 2025. Publisher: Society for Academic Emergency Medicine.{{</citation>}}
+
 ### 2023
 
 {{<citation "https://arxiv.org/pdf/2304.11497.pdf">}}S. Niu, **V. Bellala**, D. A. Qureshi, and V. Srivastava, 'A method to measure the embedded crack length and position in

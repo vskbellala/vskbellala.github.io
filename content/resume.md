@@ -9,4 +9,4 @@ description: "Venkatsai Bellala's Resume"
 ---
 <!-- If you are not redirected, [click here](https://bellala.org/start/blueno.gif). -->
 
-{{<pdf "/assets/VenkatsaiBellala_Resume_Web_2025-01-29.pdf">}}
+{{<pdf "/assets/VenkatsaiBellala_Resume_Web_2025-03-09.pdf">}}
