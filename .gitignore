@@ -3,4 +3,4 @@ docs/
 # docs/projects/*
 # !docs/projects/index.html
 /themes/minimal
-resources/
+# resources/
