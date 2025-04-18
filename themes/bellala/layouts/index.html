@@ -13,7 +13,7 @@
     <h2>Recent Posts</h2>
     {{ range (where .Site.RegularPages "Type" "in" (slice "photos" "projects" "advising") | first 4 ) }}
     <p>
-        <h3 class="link" style="display:inline;"><a title="Read more" href="{{ .RelPermalink }}" class='link'>{{ .Title }}</a></h3> &nbsp;&#8226; {{ .Date.Format "Jan 2, 2006" }}
+        <h3 class="link" style="display:inline;"><a title="Read more" href="{{ .RelPermalink }}" class='link'>{{ .Title }}</a></h3> &nbsp;&#8226; <span title='Last Modified: {{.Lastmod.Format "Jan 2, 2006"}}'>{{.Date.Format "Jan 2, 2006"}}</span>
     </p>
     <p>
         {{if .Description}}

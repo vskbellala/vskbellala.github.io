@@ -5,7 +5,7 @@
 <header>
     <h1>{{ .Title }}</h1>
     <p><small>
-            <strong>{{.Date.Format "Jan 2, 2006"}} &#8226; {{.ReadingTime}} min</strong>
+            <strong><span title='Last Modified: {{.Lastmod.Format "Jan 2, 2006"}}'>{{.Date.Format "Jan 2, 2006"}}</span> &#8226; {{.ReadingTime}} min</strong>
     </small></p>
 </header>
 <article>
