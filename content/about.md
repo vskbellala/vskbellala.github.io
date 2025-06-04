@@ -9,7 +9,7 @@ description: "I am a medical student at the Warren Alpert Medical School of Brow
 
 <img class='left-float-profile' alt="Headshot of Venkatsai Bellala" src="/img/VenkatsaiBellala.webp">
 
-Hello! My name is Venkatsai, but you can call me by my middle name, **Shri**. I am a first-year medical student at the [Warren Alpert Medical School of Brown University](https://medical.brown.edu/). I previously studied Biomedical Engineering at [Brown University](https://www.brown.edu/academics/biomedical-engineering/), where I was also part of the [PLME](https://plme.med.brown.edu/).
+Hello! My name is Venkatsai, but you can call me by my middle name, **Shri**. I am a rising second-year medical student at the [Warren Alpert Medical School of Brown University](https://medical.brown.edu/). I previously studied Biomedical Engineering at [Brown University](https://www.brown.edu/academics/biomedical-engineering/), where I was also part of the [PLME](https://plme.med.brown.edu/).
 
 As an undergraduate, I investigated the effect of impact loading on brain cell populations in the [Srivastava Lab](https://sites.brown.edu/srivastavalab/). I previously interned for a summer at the [Mayo Clinic](https://college.mayo.edu/academics/biomedical-research-training/summer-undergraduate-research-fellowship-surf/), where I designed 3D microstructures for immune cell phenotyping. 
 
