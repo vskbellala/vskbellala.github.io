@@ -911,7 +911,7 @@ span.icon-info {
 
   img.left-float-profile {
     float: none;
-    margin: 0 auto;
+    margin: 1rem auto;
     width: 100%;
   }
 }
