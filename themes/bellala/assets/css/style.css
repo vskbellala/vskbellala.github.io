@@ -746,7 +746,7 @@ div > iframe {
   column-fill: balance;
 }
 
-object.file {
+object.file, embed.file {
   display: block;
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -939,6 +939,8 @@ span.icon-info {
   nav#TableOfContents,
   hr,
   iframe,
+  object,
+  embed,
   div.pdf {
     display: none;
   }

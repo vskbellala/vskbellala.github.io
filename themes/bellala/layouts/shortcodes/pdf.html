@@ -1,4 +1,5 @@
 <p>
 <small><a href="{{ .Get 0 }}" class="button-inline">PDF</a></small>
-<object data = "{{ .Get 0 }}" type='application/pdf' class='file {{.Get 1}}'></object>
+<embed src = "{{ .Get 0 }}" type='application/pdf' width="100%" class='file {{.Get 1}}'/>
+{{/*  </object>  */}}
 </p>
