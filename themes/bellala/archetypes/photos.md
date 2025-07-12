@@ -7,3 +7,5 @@ images: [""]
 ---
 
 **Insert Lead paragraph here.**
+
+{{<album "">}}
