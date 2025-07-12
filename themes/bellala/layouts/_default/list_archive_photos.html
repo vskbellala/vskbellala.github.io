@@ -1,0 +1,18 @@
+{{ define "main" }}
+{{ $len := (len .Pages) }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+<p class="align-center"><a href="/photos/" class="button-inline">&#8592; Back to Photos</a></p>
+<hr>
+    <ul>
+    {{ $twoYearsAgo := now.AddDate -2 0 0 }}
+    {{ range where .Site.RegularPages "Section" "photos" }}
+      {{ if lt .Date $twoYearsAgo }}
+        <li>
+          <a href="{{ .RelPermalink }}" class="link" title="{{.Description}}">{{ .Title }}</a>
+          <small>(<span title='Last Modified: {{.Lastmod.Format "Jan 2, 2006"}}'>{{.Date.Format "Jan 2, 2006"}}</span>)</small>
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+{{ end }}

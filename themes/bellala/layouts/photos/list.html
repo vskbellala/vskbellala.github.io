@@ -3,18 +3,22 @@
 {{.Content}}
 <!-- ranges through content in ascending order according to the "title" field set in front matter -->
 <div class="full-width" id="posts">
+    {{ $twoYearsAgo := now.AddDate -2 0 0 }}
     {{ range .Pages.ByDate.Reverse }}
-    {{ $img := ( .Params.images) }}
-    <a href="{{ .RelPermalink }}" class='no-deco'>
-        <section class='img' style="background-image: url({{index $img 0}});">
-            <!-- <p><small>{{.Lastmod.Format "Jan 2, 2006"}}</small> &#8226; <a href="{{ .RelPermalink }}">{{ .Title }}</a> ({{.ReadingTime}} min) -- {{.Description}}</p> -->
-            <h2>{{ .Title }}</h2>
-            <p>{{.Description}}</p>
-            <p><small>{{.Date.Format "Jan 2, 2006"}}</small></p>
-        </section>
-    </a>
+    {{ if ge .Date $twoYearsAgo }}
+        {{ $img := ( .Params.images) }}
+        <a href="{{ .RelPermalink }}" class='no-deco'>
+            <section class='img' style="background-image: url({{index $img 0}});">
+                <!-- <p><small>{{.Lastmod.Format "Jan 2, 2006"}}</small> &#8226; <a href="{{ .RelPermalink }}">{{ .Title }}</a> ({{.ReadingTime}} min) -- {{.Description}}</p> -->
+                <h2>{{ .Title }}</h2>
+                <p>{{.Description}}</p>
+                <p><small>{{.Date.Format "Jan 2, 2006"}}</small></p>
+            </section>
+        </a>
+    {{ end }}
     {{ end }}
 </div>
+<p class="align-center"><a href="/photos/archive/" class="button-inline">View Older Posts</a></p>
 <style>
 #posts {
     display: flex;
