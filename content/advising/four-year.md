@@ -1,7 +1,7 @@
 ---
 title: "Four Year Plan Template"
 date: 2022-06-13T13:42:26-04:00
-draft: false
+draft: true
 description: "Your very own fill-in-the-blank four year plan!"
 authors: ["Jelynn Tatad", "Venkatsai Bellala"]
 ---
