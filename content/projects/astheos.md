@@ -6,7 +6,7 @@ images: ["/img/astheos/astheos-logo.webp"]
 alt: "Astheos Logo"
 ---
 
-[Astheos](https://astheos.com/) is an in-development, OpenAI-powered educational and interactive web app designed to help patients interpret lab tests. Astheos is being developed in collaboration with Archit Chabbi and Samanyu Kunchanapalli, with input from professors and clinicians at the Warren Alpert Medical School and Brown University.
+[Astheos](https://astheos.com/) is an in-development, OpenAI-powered educational and interactive web app designed to help patients interpret lab tests. Astheos is being developed by Venkatsai Bellala, Archit Chabbi, and Samanyu Kunchanapalli, with input from professors and clinicians at the Warren Alpert Medical School and Brown University.
 <!--more-->
 
 Many patients receive lab results with little context, leading to confusion, unnecessary anxiety, or missed opportunities for proactive health management. Astheos bridges this gap by offering personalized, easy-to-understand explanations that help users make sense of their results in a way that is informative, safe, and non-diagnostic. Our goal for this project is to improve health literacy, particularly in underserved communities by creating an accessible platform for patients to safely ask questions about their bloodwork.
