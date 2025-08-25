@@ -855,7 +855,8 @@ nav#sidebar-menu {
 
 #hamburger-input:checked ~ nav#sidebar-menu {
   visibility: visible;
-  height: 100vh;
+  height: 100vh;     /* fallback */
+  height: 100dvh;    /* modern fix */
   opacity: 1;
   padding: 2rem 0;
 }
