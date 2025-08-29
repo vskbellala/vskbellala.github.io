@@ -137,7 +137,7 @@ body {
   /* fallback height */
   min-height: 100vh;
   /* new small viewport height for modern browsers */
-  min-height: 100dvh;
+  min-height: 100svh;
   position: relative;
 }
 
@@ -846,7 +846,8 @@ nav#sidebar-menu {
 }
 
 #sidebar-menu > a {
-  margin: 0.25rem auto;
+  margin: 0.5rem auto;
+  font-size: larger;
 }
 
 #hamburger-input:checked + #hamburger-menu {
@@ -855,8 +856,8 @@ nav#sidebar-menu {
 
 #hamburger-input:checked ~ nav#sidebar-menu {
   visibility: visible;
-  height: 100vh;     /* fallback */
-  height: 100dvh;    /* modern fix */
+  height: 100vh;
+  height: 100dvh;
   opacity: 1;
   padding: 2rem 0;
 }
