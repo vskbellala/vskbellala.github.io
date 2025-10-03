@@ -16,18 +16,27 @@ Research products authored by Venkatsai Bellala.
 
 ### 2025
 
-{{<citation "https://issuu.com/saemonline/docs/saem_pulse_march-april_2025/28">}}**V. Bellala** and K. D. Martin, "Tularemia on the rise: A growing concern for emergency medicine," *SAEM Pulse*, vol. 40,
-pp. 28–29, March 2025. Publisher: Society for Academic Emergency Medicine.{{</citation>}}
+**V. Bellala** and I. Latich, "Stellate ganglion blockade for management of coronary vasospasm," *Case in Point*, 2025. Publisher: American College of Radiology.
+
+**V. Bellala** and K. D. Martin, "Tularemia on the rise: A growing concern for emergency medicine," *SAEM Pulse*, vol. 40, pp. 28–29, March 2025. Publisher: Society for Academic Emergency Medicine. Available [online](https://issuu.com/saemonline/docs/saem_pulse_march-april_2025/28).
 
 ### 2023
 
-{{<citation "https://arxiv.org/pdf/2304.11497.pdf">}}S. Niu, **V. Bellala**, D. A. Qureshi, and V. Srivastava, "A method to measure the embedded crack length and position in
-high-density polyethylene using microseconds ultrasound time signal," 2023. Publisher: arXiv.{{</citation>}}
+{{<citation "https://arxiv.org/pdf/2304.11497.pdf">}}S. Niu, **V. Bellala**, D. A. Qureshi, and V. Srivastava, "A method to measure the embedded crack length and position in high-density polyethylene using microseconds ultrasound time signal," 2023. Publisher: arXiv.{{</citation>}}
 <!-- {{<pdf "https://arxiv.org/pdf/2304.11497.pdf">}} -->
 
 ***
 
 ## Posters
+
+### 2025
+
+**V. Bellala** and D. Bui, "Management for urgent femur fixation in a post-lung transplant patient on apixaban with
+chronic kidney disease and distorted neuraxial anatomy," 2025. Presented at *ANESTHESIOLOGY 2025 under Medically
+Challenging Cases*. Available [online](https://posters.asahq.org/asa/2025/eposters/4180135/).
+
+<!-- {{<citation "/assets/Bellala_ASA_2025_MCC.pdf">}} -->
+<!-- {{</citation>}} -->
 
 ### 2024
 

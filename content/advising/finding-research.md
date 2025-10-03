@@ -5,6 +5,11 @@ draft: false
 description: "A quick tutorial on finding research opportunities."
 ---
 
+**Update (October 2, 2025):** This article was cited in [*Freezing Cold Emails*](https://education.med.brown.edu/sites/default/files/Freezing%20Cold%20Emails.pdf), a guide to cold emailing by Dr. Stephanie Garbern, [Director of Medical Student Research ](https://education.med.brown.edu/student-enrichment/student-research-resources) at the Warren Alpert Medical School. I highly recommend checking it out!
+
+
+***
+
 *Here at Brown, you will come across a multitude of opportunities to conduct research, either on your own or with a faculty member. Think of this rough write-up as just a glimpse of where to look.*
 
 The explanations and sites linked here tend to be more Biomedical oriented, as these are the places I am most familiar with. However, research opportunities in say the humanities or CS are still very plentiful and not at all difficult to find. [This page](https://www.brown.edu/academics/biology/undergraduate-education/index.php?q=undergraduate-research) may be helpful for folks interested in biology. 
