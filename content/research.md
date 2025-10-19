@@ -31,12 +31,10 @@ Research products authored by Venkatsai Bellala.
 
 ### 2025
 
-**V. Bellala** and D. Bui, "Management for urgent femur fixation in a post-lung transplant patient on apixaban with
+{{<citation "/assets/Bellala_ASA_2025_MCC.pdf">}} **V. Bellala** and D. Bui, "Management for urgent femur fixation in a post-lung transplant patient on apixaban with
 chronic kidney disease and distorted neuraxial anatomy," 2025. Presented at *ANESTHESIOLOGY 2025 under Medically
-Challenging Cases*. Available [online](https://posters.asahq.org/asa/2025/eposters/4180135/).
+Challenging Cases*. Available [online](https://posters.asahq.org/asa/2025/eposters/4180135/). {{</citation>}}
 
-<!-- {{<citation "/assets/Bellala_ASA_2025_MCC.pdf">}} -->
-<!-- {{</citation>}} -->
 
 ### 2024
 
