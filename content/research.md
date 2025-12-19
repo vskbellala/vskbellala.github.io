@@ -15,21 +15,33 @@ Research products authored by Venkatsai Bellala.
 ## Publications
 
 ### 2025
+**V. Bellala**, A. R. Laguna, A. Harwell, M. Mai, H. Zhang, V. Angenent-Mari, S. Buchanan, E. M. Persad-Paisley, and S. H. Ahn, "Bridging the language gap: Readability and quality of english and spanish-language online uterine artery embolization patient education resources," *Journal of Vascular and Interventional Radiology*, p. 107927, Nov. 2025. Available [online](https://doi.org/10.1016/j.jvir.2025.107927).
+
+D. Qureshi, **V. Bellala**, S. Niu, and V. Srivastava, "A machine learning method to measure the embedded crack length and position in high-density polyethylene using ultrasound time signal," *Journal of Nondestructive Evaluation, Diagnostics and Prognostics of Engineering Systems*, p. 1–23, Nov. 2025. Available [online](https://doi.org/10.1115/1.4070539).
 
 **V. Bellala** and I. Latich, "Stellate ganglion blockade for management of coronary vasospasm," *Case in Point*, 2025. Publisher: American College of Radiology.
 
 **V. Bellala** and K. D. Martin, "Tularemia on the rise: A growing concern for emergency medicine," *SAEM Pulse*, vol. 40, pp. 28–29, March 2025. Publisher: Society for Academic Emergency Medicine. Available [online](https://issuu.com/saemonline/docs/saem_pulse_march-april_2025/28).
 
-### 2023
+<!-- ### 2023
 
 {{<citation "https://arxiv.org/pdf/2304.11497.pdf">}}S. Niu, **V. Bellala**, D. A. Qureshi, and V. Srivastava, "A method to measure the embedded crack length and position in high-density polyethylene using microseconds ultrasound time signal," 2023. Publisher: arXiv.{{</citation>}}
-<!-- {{<pdf "https://arxiv.org/pdf/2304.11497.pdf">}} -->
+{{<pdf "https://arxiv.org/pdf/2304.11497.pdf">}} -->
 
 ***
 
 ## Posters
 
+<!-- ### 2026
+
+M. Lou, D. Sawka, T. Addo, A. Barisano, **V. Bellala**, R. Cavin, M. K. White, and A. C. Gimovsky, "Prospective comparison of
+two cost-effective cervical cerclage simulation models for obgyn resident training," in *SMFM 2026 Pregnancy Meeting*,
+Society for Maternal-Fetal Medicine, 2026. Accepted for poster presentation. -->
+
 ### 2025
+
+**V. Bellala**, T. Meng-Saccoccio, E. E. Ozcan, A. Q. Wu, C. J. Shin, P. H. Lee, and S. H. Sojar, "A novel rapid delivery device for
+intravenous adenosine administration," 2025. Presented at *19th Warren Alpert Medical School Academic Symposium*.
 
 {{<citation "/assets/Bellala_ASA_2025_MCC.pdf">}} **V. Bellala** and D. Bui, "Management for urgent femur fixation in a post-lung transplant patient on apixaban with
 chronic kidney disease and distorted neuraxial anatomy," 2025. Presented at *ANESTHESIOLOGY 2025 under Medically
