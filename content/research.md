@@ -15,9 +15,9 @@ Research products authored by Venkatsai Bellala.
 ## Publications
 
 ### 2025
-**V. Bellala**, A. R. Laguna, A. Harwell, M. Mai, H. Zhang, V. Angenent-Mari, S. Buchanan, E. M. Persad-Paisley, and S. H. Ahn, "Bridging the language gap: Readability and quality of english and spanish-language online uterine artery embolization patient education resources," *Journal of Vascular and Interventional Radiology*, p. 107927, Nov. 2025. Available [online](https://doi.org/10.1016/j.jvir.2025.107927).
+**V. Bellala**, A. R. Laguna, A. Harwell, M. Mai, H. Zhang, V. Angenent-Mari, S. Buchanan, E. M. Persad-Paisley, and S. H. Ahn, "Bridging the language gap: Readability and quality of english and spanish-language online uterine artery embolization patient education resources," *Journal of Vascular and Interventional Radiology*, p. 107927, Nov. 2025, doi: [10.1016/j.jvir.2025.107927](https://doi.org/10.1016/j.jvir.2025.107927).
 
-D. Qureshi, **V. Bellala**, S. Niu, and V. Srivastava, "A machine learning method to measure the embedded crack length and position in high-density polyethylene using ultrasound time signal," *Journal of Nondestructive Evaluation, Diagnostics and Prognostics of Engineering Systems*, p. 1–23, Nov. 2025. Available [online](https://doi.org/10.1115/1.4070539).
+D. Qureshi, **V. Bellala**, S. Niu, and V. Srivastava, "A machine learning method to measure the embedded crack length and position in high-density polyethylene using ultrasound time signal," *Journal of Nondestructive Evaluation, Diagnostics and Prognostics of Engineering Systems*, p. 1–23, Nov. 2025, doi: [10.1115/1.4070539](https://doi.org/10.1115/1.4070539).
 
 **V. Bellala** and I. Latich, "Stellate ganglion blockade for management of coronary vasospasm," *Case in Point*, 2025. Publisher: American College of Radiology.
 
