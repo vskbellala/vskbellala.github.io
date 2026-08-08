@@ -76,8 +76,6 @@ timeout = "120s"
       unsafe = true
 
 [services]
-  [services.twitter]
-    disableInlineCSS = true
   [services.x]
     disableInlineCSS = true
 
@@ -88,10 +86,6 @@ timeout = "120s"
     disable = true
   [privacy.instagram]
     disable = false
-    simple = true
-  [privacy.twitter]
-    disable = false
-    enableDNT = true
     simple = true
   [privacy.x]
     disable = false
