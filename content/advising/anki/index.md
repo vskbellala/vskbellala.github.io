@@ -2,7 +2,7 @@
 title: "Anki"
 date: 2026-08-08T08:22:32-05:00
 draft: false
-description: "My Anki Settings!"
+description: "A practical overview of my Anki setup, including FSRS settings, addons, deck configurations, and review strategies."
 authors: ["Venkatsai Bellala"]
 ---
 ## TLDR

@@ -1,7 +1,7 @@
 ---
 title: "Anki Study Scheduler"
 date: 2025-09-26T12:56:13-04:00
-draft: false
+draft: true
 images: ["/img/ankistudyscheduler.webp"]
 alt: "Screenshot of addon"
 noshow: true
