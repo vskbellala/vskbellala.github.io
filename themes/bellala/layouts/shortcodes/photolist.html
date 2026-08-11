@@ -1,0 +1,9 @@
+{{- $folder := .Get 0 -}}
+{{- $path := printf "img/%s/*" $folder -}}
+{{- $images := .Page.Resources.Match $path -}}
+
+<div class="photo-list">
+  {{- range sort $images "Name" -}}
+    <p><img src="{{ .RelPermalink }}" alt="{{ .Name }}"></p>
+  {{- end -}}
+</div>

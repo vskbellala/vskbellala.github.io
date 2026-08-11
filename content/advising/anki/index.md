@@ -17,9 +17,7 @@ Paste these into Anki's FSRS parameters:
 These are the parameters I personally use, but they may not be optimal for everyone. FSRS works best when it has enough review history to optimize the parameters for your specific cards and study habits. That said, beginning with settings from another medical student (instead of the default parameters) can be a helpful starting point.
 {{</spoiler>}}
 
-I use an 8BitDo Micro as my Anki remote through the Contanki addon. My configuration is available here:
-
-{{<file "8BitDo_Micro.contanki" "8BitDo_Micro.contanki">}}
+I use an 8BitDo Micro as my Anki remote through the Contanki addon. My configuration is available [here](#8bitdo-micro-anki-remote-settings).
 
 {{<spoiler "Anki Addon Codes">}}
 These are the addons currently in my setup:
@@ -75,9 +73,13 @@ This is simply the setup I currently use, so feel free to copy whatever you find
 ***
 ## Deck Settings
 
+### Daily Limits
+
 {{< figure src="img/dailylimits.png" alt="Daily Limits">}}
 
 I recommend setting the display order to 9999 for new cards and max reviews, as the goal should be to finish all your reviews every day. I would set the new cards/day limit to a specific number if I wanted to unsuspend a large batch of cards at once but spread them out over a set period of time, such as with the Shelf tag for my current rotation.
+
+### Learning Steps
 
 {{< figure src="img/learningsteps.png" alt="Learning Steps">}}
 
@@ -85,17 +87,31 @@ I use `15m` for both learning and relearning steps. For me, that is enough time 
 
 Also, set your [Learn Ahead limit](https://docs.ankiweb.net/preferences.html#scheduler) to a few minutes longer than your learning step (mine is 20 minutes). This way, when you only have "orange" learning cards left, you don't have to sit around waiting for the next card to become available just to finish your reviews.
 
+### Display Order
+
 {{< figure src="img/displayorder.png" alt="Display Order">}}
 
-For display order, I like to do new cards after reviews, so I have `Show after reviews` selected. I also like to get my learning cards done before reviews, so I use `Show before reviews`. For the review sort order, I use `Descending retrievability`. This has the most evidence supporting it, and I find that it also helps me get through my reviews more quickly.
+For display order, I like to do new cards after reviews, so I have `Show after reviews` selected. I also like to get my learning cards done before reviews, so I use `Show before reviews`. For the review sort order, I use `Descending retrievability`. This has [the most evidence](https://www.instagram.com/p/DUudZDviZGi/) supporting it, and I find that it also helps me get through my reviews more quickly.
+
+### FSRS
 
 {{< figure src="img/fsrs.png" alt="FSRS">}}
 
-**USE FSRS.** For a medical student doing a large number of reviews, this is one of the biggest improvements you can make to your scheduling. 
+**USE FSRS.** For a medical student doing a large number of reviews, this is one of the biggest improvements you can make to your scheduling.
 
-My FSRS parameters are in the [TL;DR](#tldr). You can use them until you've built up enough review history to optimize FSRS to your own learning. I typically optimize my FSRS parameters after every block or shelf exam. I recommend starting at 90% desired retention and gradually lower it if the review burden gets too high, down to a minimum of 85%. I had to do this during Micro II when my review load became too much.
+You can read more about FSRS [here](https://docs.ankiweb.net/deck-options.html?#fsrs). When using FSRS in Anki, rate the card based on how well and how quickly you actually recalled the answer, not on how difficult the card feels.
+
+- *Again:* You got any part of it wrong or genuinely forgot it.
+- *Good:* You got it right in a typical/reasonable amount of time.
+- *Easy:* You got it right essentially instantly, without any effort.
+- *Hard:* You got it right, but it took an unusually long time or required significant effort.
+
+Don't use Hard just because you were close to the correct answer, and don't use Easy just because you never want to see that card again. Also, don't choose a rating based on the interval you want. Choose the rating that truly reflects what happened during recall. FSRS works best when you self-rate honestly.
+
+My FSRS parameters are in the [TL;DR](#tldr). You can use them until you've built up enough review history to optimize FSRS to your own learning. I typically optimize my FSRS parameters after every block or shelf exam (every 4-6 weeks). I recommend starting at 90% desired retention and gradually lower it if the review burden becomes too high, down to a minimum of 85%. I had to do this during Micro II when my review load became too much.
 
 In the box below the parameters, make sure it only says `preset:"YOURPRESETNAME"`; do not include `-is:suspended`. This ensures suspended cards' review history is still used when optimizing. My preset is called `Anking-Justin`, which is why that's shown in the screenshot.
+
 
 ### Optional Settings
 
@@ -111,7 +127,7 @@ In the box below the parameters, make sure it only says `preset:"YOURPRESETNAME"
 
 I won't highlight all of them due to space, but they are all great! The codes for the addons I use are available in the [TL;DR](#tldr).
 
-* **AMBOSS**: Adds AMBOSS integration directly into Anki, making it easy to look up concepts and connect your cards with relevant AMBOSS resources.
+* **AMBOSS**: Adds AMBOSS integration directly into Anki, making it easy to look up concepts and connect your cards with relevant AMBOSS resources (requires subscription).
 
 * **AnkiHub**: Lets you subscribe to and collaborate on shared Anki decks, including the AnKing Step Deck (requires subscription).
 
@@ -137,9 +153,21 @@ I won't highlight all of them due to space, but they are all great! The codes fo
 
 If you like using a remote to control Anki, the [8BitDo Micro](https://www.amazon.com/8Bitdo-Micro-Bluetooth-Pocket-sized-Controller-Switch-Raspberry-Nintendo/dp/B0CDG2HKBF) is a small, inexpensive option that works really well with [Contanki](https://ankiweb.net/shared/info/1898790263). I use it to make card reviews a little more comfortable, especially during longer study sessions.
 
-I’ve included my personal button layout below, which you can import directly into Contanki:
+If using the Micro with Contanki, make sure it is set to D mode. I've included my personal button layout below, which you can import directly into Contanki:
 
 {{<file "8BitDo_Micro.contanki" "8BitDo_Micro.contanki">}}
+
+{{< spoiler "8BitDo Micro Button Layout" >}}
+
+These screenshots show the button layouts and controls I use with Contanki, so you can use them as a reference if the profile doesn't work as expected.
+
+{{< photolist "contanki" >}}
+
+{{< /spoiler >}}
+
+If you want to use the Micro on other devices, such as Anki for iOS or other operating systems that don't support Anki controllers, you can use the Micro's keyboard mode (K Mode). Configure it using [the 8BitDo Ultimate Software](https://support.8bitdo.com/ultimate/micro.html), then copy the keyboard shortcuts below.
+
+{{< figure src="img/8bitdo_micro_kbmode.png" alt="8BitDo Micro Keyboard Mode Settings in 8BitDo Ultimate Software.">}}
 
 ***
 
@@ -148,6 +176,8 @@ I’ve included my personal button layout below, which you can import directly i
 Here are a few other tips and tricks I've picked up that have made using Anki a little easier and more efficient. None of these are essential, but they've helped make Anki more manageable for me.
 
 As an aside, I have my next day starting four hours past midnight, so my reviews reset for the next day at 4:00 AM. I like this because I will sometimes do reviews really late at night if I have had a busy day but do not feel like sleeping yet.
+
+I highly recommend downloading Anki on your phone or tablet: [iOS ($24.99)](https://apps.apple.com/us/app/ankimobile-flashcards/id373493387) or [Android (free)](https://play.google.com/store/apps/details?id=com.ichi2.anki&hl=en-US&pli=1). It's well worth the cost to be able to review conveniently on the go. I also recommend doing Anki on the treadmill or StairMaster to get your cardio and reviews done at the same time; an Anki remote is super helpful to have here.
 
 ### FSRS Helper
 
@@ -179,7 +209,7 @@ So, in summary, I think of them as:
 
 ### Filtered Decks
 
-I created a few filtered decks to make it easier to break up reviews from the main Step Deck without having to move cards into separate decks. If you’re new to filtered decks, the Anki documentation has a [good overview](https://docs.ankiweb.net/filtered-decks.html).
+I created a few filtered decks to make it easier to break up reviews from the main Step Deck without having to move cards into separate decks. If you're new to filtered decks, the Anki documentation has a [good overview](https://docs.ankiweb.net/filtered-decks.html).
 
 **For all of these filtered decks, make sure you select *"Reschedule cards based on my answers in this deck."***
 
