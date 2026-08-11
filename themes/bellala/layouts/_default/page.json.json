@@ -1,0 +1,8 @@
+{{- $photos := slice -}}
+
+{{- range resources.Match "img/film/*/*.{png,jpg,jpeg,webp,gif}" -}}
+  {{- $url := urls.JoinPath $.Site.BaseURL .Name -}}
+  {{- $photos = $photos | append $url -}}
+{{- end -}}
+
+{{- $photos | jsonify -}}

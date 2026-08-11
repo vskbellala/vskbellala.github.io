@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{ partial "head.html" . }}
+</head>
+
+<body class="film-page">
+
+  <main class="film-photo">
+    <img id="random-film" alt="Random Film Photograph">
+  </main>
+
+  <script>
+    fetch("/img/film/filmphotos.json")
+      .then(response => response.json())
+      .then(photos => {
+        if (!photos.length) return;
+
+        const photo = photos[Math.floor(Math.random() * photos.length)];
+        document.getElementById("random-film").src = photo;
+      })
+      .catch(error => {
+        console.error("Could not load film photos:", error);
+      });
+  </script>
+
+</body>
+
+</html>

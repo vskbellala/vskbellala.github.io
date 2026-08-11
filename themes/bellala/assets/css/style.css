@@ -893,6 +893,37 @@ span.icon-info {
   white-space: nowrap;
 }
 
+.film-page {
+  max-width: none;
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  min-height: 0;
+  padding: 0;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.film-page .film-photo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.film-page .film-photo img {
+  max-width: calc(100vw - 2rem);
+  max-height: 90%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
 @media screen and (max-width: 500px) {
   .menu-full {
     display: none !important;
