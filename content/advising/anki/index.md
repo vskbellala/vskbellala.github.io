@@ -4,8 +4,10 @@ date: 2026-08-08T08:22:32-05:00
 draft: false
 description: "A practical overview of my Anki setup, including FSRS settings, addons, deck configurations, and review strategies."
 authors: ["Venkatsai Bellala"]
+url: "/anki/"
+aliases: ["/advising/anki/"]
 ---
-## TLDR
+## TL;DR
 
 If you just want to copy my setup, here are the important pieces.
 
@@ -157,7 +159,7 @@ If using the Micro with Contanki, make sure it is set to D mode. I've included m
 
 {{<file "8BitDo_Micro.contanki" "8BitDo_Micro.contanki">}}
 
-{{< spoiler "8BitDo Micro Button Layout" >}}
+{{< spoiler "8BitDo Micro Button Layout (Contanki)" >}}
 
 These screenshots show the button layouts and controls I use with Contanki, so you can use them as a reference if the profile doesn't work as expected.
 
@@ -167,7 +169,7 @@ These screenshots show the button layouts and controls I use with Contanki, so y
 
 If you want to use the Micro on other devices, such as Anki for iOS or other operating systems that don't support Anki controllers, you can use the Micro's keyboard mode (K Mode). Configure it using [the 8BitDo Ultimate Software](https://support.8bitdo.com/ultimate/micro.html), then copy the keyboard shortcuts below.
 
-{{< figure src="img/8bitdo_micro_kbmode.png" alt="8BitDo Micro Keyboard Mode Settings in 8BitDo Ultimate Software.">}}
+{{< figure src="img/8bitdo_micro_kbmode.png" alt="8BitDo Micro Keyboard Mode Settings in 8BitDo Ultimate Software." caption="8BitDo Micro Keyboard Mode Settings in 8BitDo Ultimate Software.">}}
 
 ***
 

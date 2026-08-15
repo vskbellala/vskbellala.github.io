@@ -357,6 +357,18 @@ img {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
+figure {
+  margin: 1rem auto;
+  padding: 0;
+  text-align: center;
+}
+
+figure figcaption {
+  font-size: smaller;
+  color: var(--color-txt-emphasis);
+  margin-top: 1rem;
+}
+
 .icon {
   vertical-align: top;
   stroke: var(--color-icon);
