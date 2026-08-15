@@ -290,6 +290,10 @@ nav.menu > a:focus {
   background: var(--color-bg-emphasis);
 }
 
+[id] {
+  scroll-margin-top: 6rem;
+}
+
 a.nav,
 a[href^="#"],
 a[href^="/"] {
