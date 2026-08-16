@@ -24,7 +24,7 @@ I use an 8BitDo Micro as my Anki remote through the Contanki addon. My configura
 {{<spoiler "Anki Addon Codes">}}
 These are the addons currently in my setup:
 
-```
+```mkd {linenos=inline, anchorLineNos=true}
 1466251171 - Addons Code Exporter Fixed Backup
 874215009 - Advanced Browser
 1044112126 - AMBOSS Official  Medical School Step  Shelf Study Resource
@@ -153,15 +153,17 @@ I won't highlight all of them due to space, but they are all great! The codes fo
 
 ## 8BitDo Micro (Anki Remote) Settings
 
-If you like using a remote to control Anki, the [8BitDo Micro](https://www.amazon.com/8Bitdo-Micro-Bluetooth-Pocket-sized-Controller-Switch-Raspberry-Nintendo/dp/B0CDG2HKBF) is a small, inexpensive option that works really well with [Contanki](https://ankiweb.net/shared/info/1898790263). I use it to make card reviews a little more comfortable, especially during longer study sessions.
+I highly recommend using a dedicated remote or game controller with Anki. The [8BitDo Micro](https://www.amazon.com/8Bitdo-Micro-Bluetooth-Pocket-sized-Controller-Switch-Raspberry-Nintendo/dp/B0CDG2HKBF) is a small, inexpensive option that works really well with [Contanki](https://ankiweb.net/shared/info/1898790263). I use it to make card reviews more comfortable and ergonomic, especially during longer study sessions.
 
-If using the Micro with Contanki, make sure it is set to D mode. I've included my personal button layout below, which you can import directly into Contanki:
+> **MacOS users:** If your 8BitDo Micro launches Launchpad / Apple Games when you press the controller's "Home" button, [disable "Press Home Button to Open Launchpad"](https://apple.stackexchange.com/a/473038) in System Settings under the Game Controllers section.
+
+When using the Micro with Contanki, make sure it is set to D mode. I've included my personal button layout below, which you can import directly into Contanki:
 
 {{<file "8BitDo_Micro.contanki" "8BitDo_Micro.contanki">}}
 
 {{< spoiler "8BitDo Micro Button Layout (Contanki)" >}}
 
-These screenshots show the button layouts and controls I use with Contanki, so you can use them as a reference if the profile doesn't work as expected.
+The below screenshots show the button layouts and controls I use with Contanki, so you can use them as a reference if the profile doesn't work as expected.
 
 {{< photolist "contanki" >}}
 
