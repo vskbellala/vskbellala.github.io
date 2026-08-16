@@ -5,5 +5,6 @@ draft: false
 redirect: true
 redirPath: 'https://brown.zoom.us/my/bellala'
 sitemap_exclude: true
+aliases: ["/zoom/"]
 ---
 If you are not redirected, [click here](https://brown.zoom.us/my/bellala).
