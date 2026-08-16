@@ -312,7 +312,8 @@ a.icon {
 }
 
 a.active,
-nav.menu a.active {
+nav.menu a.active,
+.page-item.active a {
   /*--color-link: var(--color-highlight);*/
   text-decoration: underline;
   text-decoration-color: var(--color-txt-emphasis);
@@ -938,6 +939,36 @@ span.icon-info {
   height: auto;
   object-fit: contain;
   display: block;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem auto;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination a {
+  padding: 0.5rem 0.25rem;
+  font-size: 1.2rem;
+  color: var(--color-txt);
+  text-decoration: none;
+  transition: color var(--ani-time) ease;
+}
+
+.pagination a:hover {
+  color: var(--color-nav);
+}
+
+.page-item.active a{
+  pointer-events: none;
+}
+
+.page-item.disabled a{
+  color: var(--color-bg-emphasis);
+  pointer-events: none;
 }
 
 @media screen and (max-width: 500px) {

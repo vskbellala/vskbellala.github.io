@@ -4,3 +4,5 @@ docs/
 # !docs/projects/index.html
 /themes/minimal
 # resources/
+.frontmatter/*
+frontmatter.json
