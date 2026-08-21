@@ -1,10 +1,10 @@
-/*! system-font.css v2.0.2 | CC0-1.0 License | github.com/jonathantneal/system-font-css */
 /*Icons by Feather https://feathericons.com/*/
 @font-face {
   font-family: system-ui;
   font-style: normal;
   font-weight: 300;
-  src: local(".SFNS-Light"), local(".SFNSText-Light"),
+  src:
+    local(".SFNS-Light"), local(".SFNSText-Light"),
     local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"),
     local("Segoe UI Light"), local("Ubuntu Light"), local("Roboto-Light"),
     local("DroidSans"), local("Tahoma");
@@ -14,7 +14,8 @@
   font-family: system-ui;
   font-style: italic;
   font-weight: 300;
-  src: local(".SFNS-LightItalic"), local(".SFNSText-LightItalic"),
+  src:
+    local(".SFNS-LightItalic"), local(".SFNSText-LightItalic"),
     local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"),
     local("Segoe UI Light Italic"), local("Ubuntu Light Italic"),
     local("Roboto-LightItalic"), local("DroidSans"), local("Tahoma");
@@ -24,7 +25,8 @@
   font-family: system-ui;
   font-style: normal;
   font-weight: 400;
-  src: local(".SFNS-Regular"), local(".SFNSText-Regular"),
+  src:
+    local(".SFNS-Regular"), local(".SFNSText-Regular"),
     local(".HelveticaNeueDeskInterface-Regular"), local(".LucidaGrandeUI"),
     local("Segoe UI"), local("Ubuntu"), local("Roboto-Regular"),
     local("DroidSans"), local("Tahoma");
@@ -34,7 +36,8 @@
   font-family: system-ui;
   font-style: italic;
   font-weight: 400;
-  src: local(".SFNS-Italic"), local(".SFNSText-Italic"),
+  src:
+    local(".SFNS-Italic"), local(".SFNSText-Italic"),
     local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"),
     local("Segoe UI Italic"), local("Ubuntu Italic"), local("Roboto-Italic"),
     local("DroidSans"), local("Tahoma");
@@ -44,7 +47,8 @@
   font-family: system-ui;
   font-style: normal;
   font-weight: 500;
-  src: local(".SFNS-Medium"), local(".SFNSText-Medium"),
+  src:
+    local(".SFNS-Medium"), local(".SFNSText-Medium"),
     local(".HelveticaNeueDeskInterface-MediumP4"), local(".LucidaGrandeUI"),
     local("Segoe UI Semibold"), local("Ubuntu Medium"), local("Roboto-Medium"),
     local("DroidSans-Bold"), local("Tahoma Bold");
@@ -54,7 +58,8 @@
   font-family: system-ui;
   font-style: italic;
   font-weight: 500;
-  src: local(".SFNS-MediumItalic"), local(".SFNSText-MediumItalic"),
+  src:
+    local(".SFNS-MediumItalic"), local(".SFNSText-MediumItalic"),
     local(".HelveticaNeueDeskInterface-MediumItalicP4"),
     local(".LucidaGrandeUI"), local("Segoe UI Semibold Italic"),
     local("Ubuntu Medium Italic"), local("Roboto-MediumItalic"),
@@ -65,7 +70,8 @@
   font-family: system-ui;
   font-style: normal;
   font-weight: 700;
-  src: local(".SFNS-Bold"), local(".SFNSText-Bold"),
+  src:
+    local(".SFNS-Bold"), local(".SFNSText-Bold"),
     local(".HelveticaNeueDeskInterface-Bold"), local(".LucidaGrandeUI"),
     local("Segoe UI Bold"), local("Ubuntu Bold"), local("Roboto-Bold"),
     local("DroidSans-Bold"), local("Tahoma Bold");
@@ -75,7 +81,8 @@
   font-family: system-ui;
   font-style: italic;
   font-weight: 700;
-  src: local(".SFNS-BoldItalic"), local(".SFNSText-BoldItalic"),
+  src:
+    local(".SFNS-BoldItalic"), local(".SFNSText-BoldItalic"),
     local(".HelveticaNeueDeskInterface-BoldItalic"), local(".LucidaGrandeUI"),
     local("Segoe UI Bold Italic"), local("Ubuntu Bold Italic"),
     local("Roboto-BoldItalic"), local("DroidSans-Bold"), local("Tahoma Bold");
@@ -155,22 +162,24 @@ caption {
 }
 
 code {
-  padding: 2px 4px;
-  margin: 0;
-  vertical-align: text-bottom;
-  font-family: Consolas, Monaco, Lucida Console, Liberation Mono,
-    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family:
+    Consolas, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono",
+    "Bitstream Vera Sans Mono", "Courier New", monospace;
   font-size: 0.8rem;
   font-weight: 400;
-  border-radius: 2px;
+}
+
+code:not([class^="language-"]) {
+  padding: 0 4px;
+  vertical-align: text-bottom;
+  border-radius: 0.25rem;
   background: var(--color-bg-emphasis);
   display: inline-block;
 }
 
-pre code {
-  padding: 0;
-  margin: 0;
-  background: inherit;
+code[class^="language-"] > span:has(> span[id]:target) {
+  background-color: var(--color-highlight);
+  border-radius: 0.25rem;
 }
 
 pre {
@@ -178,7 +187,9 @@ pre {
   display: block;
   border-radius: 0.25rem;
   overflow-x: auto;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow:
+    0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 blockquote {
@@ -301,8 +312,7 @@ a[href^="/"] {
   --color-link: var(--color-nav);
 }
 
-a[href^="https://jelynn.netlify.app/"]
-{
+a[href^="https://jelynn.netlify.app/"] {
   --color-link: #e277cd;
 }
 
@@ -359,7 +369,9 @@ img {
   width: 100%;
   height: auto;
   border-radius: 0.25rem;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 figure {
@@ -399,7 +411,9 @@ figure figcaption {
   stroke: var(--color-txt-emphasis) !important;
   color: var(--color-txt-emphasis) !important;
   text-decoration: none;
-  transition: stroke var(--ani-time) ease, color var(--ani-time) ease !important;
+  transition:
+    stroke var(--ani-time) ease,
+    color var(--ani-time) ease !important;
 }
 
 .link:hover,
@@ -417,7 +431,9 @@ a.button-inline {
   border-radius: 0.25rem;
   text-decoration: none;
   display: inline-block;
-  transition: border-color var(--ani-time) ease, color var(--ani-time) ease !important;
+  transition:
+    border-color var(--ani-time) ease,
+    color var(--ani-time) ease !important;
 }
 
 a.button-inline:hover,
@@ -657,26 +673,33 @@ section.img {
   background-position: center center;
   aspect-ratio: 3 / 2;
   display: inline-flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-end;
   flex-direction: column;
   width: 100%;
   margin: 0;
-  padding: 0.25rem 1.5rem;
+  padding: 1.5rem;
   transition: box-shadow var(--ani-time) ease !important;
 }
 
 section.img > * {
-  opacity: 0;
-  transition: opacity var(--ani-time) ease;
-  text-align: center;
-  color: var(--white);
+  opacity: 1;
+  transition:
+    background var(--ani-time) ease,
+    color var(--ani-time) ease,
+    opacity var(--ani-time) ease;
+  text-align: left;
+  /* color: var(--color-txt-emphasis); */
+  margin: 0.25rem 0;
+  padding: 0.25rem 0.5rem;
+  background: var(--color-bg);
+  border-radius: 0.25rem;
 }
 
 section.img:hover > *,
 a:focus > section.img > * {
-  opacity: 1;
+  color: var(--white);
+  background: none;
 }
 
 section.img:hover,
@@ -703,7 +726,9 @@ div > iframe {
   height: auto;
   display: none;
   border-radius: 0.25rem;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow:
+    0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 #paginator {
@@ -763,7 +788,8 @@ div > iframe {
   column-fill: balance;
 }
 
-object.file, embed.file {
+object.file,
+embed.file {
   display: block;
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -857,7 +883,9 @@ nav#sidebar-menu {
   visibility: hidden;
   opacity: 0;
   margin: 0 !important;
-  transition: height var(--ani-time) ease, opacity var(--ani-time) ease;
+  transition:
+    height var(--ani-time) ease,
+    opacity var(--ani-time) ease;
   justify-content: flex-start;
   align-items: center;
 }
@@ -962,11 +990,11 @@ span.icon-info {
   color: var(--color-nav);
 }
 
-.page-item.active a{
+.page-item.active a {
   pointer-events: none;
 }
 
-.page-item.disabled a{
+.page-item.disabled a {
   color: var(--color-bg-emphasis);
   pointer-events: none;
 }

@@ -1,29 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     {{ partial "head.html" . }}
-</head>
+  </head>
 
-<body class="film-page">
+  <body class="film-page">
+    <main class="film-photo">
+      <img id="random-film" alt="Random Film Photograph by Venkatsai Bellala" />
+      <button id="refreshButton" aria-label="Refresh page">↻</button>
+    </main>
 
-  <main class="film-photo">
-    <img id="random-film" alt="Random Film Photograph">
-  </main>
+    <style>
+      #refreshButton {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        padding: 0.25rem 0.5rem;
+        font-size: 1.5rem;
 
-  <script>
-    fetch("/img/film/filmphotos.json")
-      .then(response => response.json())
-      .then(photos => {
-        if (!photos.length) return;
+        background: transparent;
+        border: none;
+        color: transparent;
+        opacity: 0;
+        cursor: pointer;
 
-        const photo = photos[Math.floor(Math.random() * photos.length)];
-        document.getElementById("random-film").src = photo;
-      })
-      .catch(error => {
-        console.error("Could not load film photos:", error);
+        transition: opacity var(--ani-time) ease;
+        z-index: 9999;
+      }
+
+      #refreshButton:hover {
+        opacity: 1;
+        color: var(--color-txt-emphasis);
+      }
+    </style>
+
+    <script>
+      fetch("/img/film/filmphotos.json")
+        .then((response) => response.json())
+        .then((photos) => {
+          if (!photos.length) return;
+
+          const photo = photos[Math.floor(Math.random() * photos.length)];
+          document.getElementById("random-film").src = photo;
+        })
+        .catch((error) => {
+          console.error("Could not load film photos:", error);
+        });
+      document.getElementById("refreshButton").addEventListener("click", () => {
+        location.reload();
       });
-  </script>
-
-</body>
-
+    </script>
+  </body>
 </html>
