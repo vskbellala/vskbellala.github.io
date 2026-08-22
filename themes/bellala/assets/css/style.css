@@ -177,7 +177,9 @@ code:not([class^="language-"]) {
   display: inline-block;
 }
 
-code[class^="language-"] > span:has(> span[id]:target) {
+/* code[class^="language-"] > span:has(> span[id]:target) { */
+
+code[class^="language-"] span[id]:target {
   background-color: var(--color-highlight);
   border-radius: 0.25rem;
 }
@@ -656,6 +658,7 @@ button:focus {
   background-color: transparent;
   color: var(--color-txt-emphasis);
   border: 2px solid var(--color-main);
+  cursor: pointer;
 }
 
 input[type^="text"]:focus,
@@ -999,6 +1002,17 @@ span.icon-info {
   pointer-events: none;
 }
 
+
+@media screen and (min-width: 86rem) {
+  nav#TableOfContents {
+    position: fixed;
+    top: 8rem;
+    width: 16rem;
+    max-width: 16rem;
+    left: calc(50% - 26rem - 16rem);
+  }
+}
+
 @media screen and (max-width: 500px) {
   .menu-full {
     display: none !important;
@@ -1029,7 +1043,7 @@ span.icon-info {
     --color-bg: white;
     --color-txt: black;
     --color-txt-emphasis: black;
-    --color-bg-emphasis: black;
+    --color-bg-emphasis: white;
   }
 
   a {

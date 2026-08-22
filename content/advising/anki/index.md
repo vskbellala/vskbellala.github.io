@@ -29,7 +29,6 @@ These are the addons currently in my setup:
 874215009 - Advanced Browser
 1044112126 - AMBOSS Official  Medical School Step  Shelf Study Resource
 175794613 - Anki Leaderboard - Compete with friends to boost motivation Custom by Shige
-1138356489 - Anki Wrapped
 933207442 - AnkiCord - Discord Rich Presence Customized by Shige
 1322529746 - AnkiHub
 1165281739 - AnkiLock
@@ -61,7 +60,6 @@ These are the addons currently in my setup:
 236979321 - SynapsePro - The Ultimate Anki Workspace
 1489494509 - Toggle Remaining Card Count Visibility
 94685914 - Transfer scheduling data from one card to another
-271205340 - UWorld2Anki
 ```
 {{</spoiler>}}
 
